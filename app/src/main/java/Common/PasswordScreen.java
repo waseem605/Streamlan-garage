@@ -7,23 +7,27 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.streamlangarage.Common.Login.ProfileStep1;
 import com.example.streamlangarage.R;
 
-public class OTP_Verify extends AppCompatActivity {
+public class PasswordScreen extends AppCompatActivity {
 
-    private Button mBtn;
+    private Button mConfirmPassword;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_otp_verify);
-        mBtn = (Button)findViewById(R.id.verify_number_btn);
+        setContentView(R.layout.activity_password_screen);
 
-        mBtn.setOnClickListener(new View.OnClickListener() {
+        mConfirmPassword = (Button)findViewById(R.id.password_confirmBtn);
+
+        mConfirmPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(OTP_Verify.this, PasswordScreen.class);
+                Intent intent = new Intent(PasswordScreen.this, ProfileStep1.class);
                 startActivity(intent);
             }
         });
+
     }
 }

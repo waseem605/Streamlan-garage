@@ -15,4 +15,39 @@
     <string name="otp_desc">Please enter your mobile number.You will receive a code to verify mobile number.</string>
 
 
+    <!--password verification-->
+    <string name="choose_verification">Choose verification type</string>
+    <string name="send_sms">Send SMS</string>
+    <string name="send_email">Send Email</string>
+    <string name="go_back">←Go back</string>
+    <string name="username">John Doe</string>
+    <string name="userprofile_email">johndoe@example.com</string>
+
+    <!-- New Account -->
+    <string name="skip">Skip</string>
+    <string name="create_account">Create New Account</string>
+    <string name="add_profile">Add profile image</string>
+    <string name="account_desc">Join the community of over one million people</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="email">Email Address</string>
+    <string name="address">Address</string>
+    <string name="terms">By clicking Sign up you agree to our Terms and Conditions</string>
+    <string name="create_password">Create Your Password</string>
+    <string name="Confirm_btn">Confirm</string>
+    <!-- com.example.streamlangarage.Common.Login-->
+    <string name="sign_in">Sign In</string>
+    <string name="email_mobile">E-Mail or Mobile</string>
+    <string name="Log_in_btn">Log-in</string>
+    <string name="password">Password</string>
+    <string name="forget_password">Forgot password?</string>
+    <string name="notification">Notification</string>
+    <string name="user">User</string>
+    <string name="search">Search</string>
+    <string name="home">Home</string>
+    <string name="your_work_profile">Your Work Profile</string>
+    <string name="profile_desc">Your information will be share with our Expert team who will verify your identity.</string>
+    <string name="upload_garage_image">Upload Garage Image</string>
+
+
 </resources>

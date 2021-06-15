@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="your_work_profile">Your Work Profile</string>
+    <string name="profile_desc">Your information will be share with our Expert team who will verify your identity.</string>
+    <string name="upload_garage_image">Upload Garage Image</string>
+</resources>
