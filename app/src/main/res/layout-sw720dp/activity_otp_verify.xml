@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Common.OTP_Verify">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="2300px"
+        android:background="@drawable/bottomsheet"
+        android:id="@+id/Relativeotp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <View
+            android:layout_width="300px"
+            android:layout_height="20px"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="360dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/gray"
+            android:layout_marginEnd="360dp"
+            android:padding="30dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="900dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="308dp"
+        android:fontFamily="@font/hk_grotesk_bold"
+        android:text="@string/verify_phone"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="65sp"
+        android:padding="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="650dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/number"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:fontFamily="@font/hk_grotesk_semi_bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+
+    <com.chaos.view.PinView
+        android:id="@+id/pin_view"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:cursorVisible="true"
+        android:inputType="number"
+        app:itemCount="4"
+        android:padding="25dp"
+        app:itemHeight="125dp"
+        app:itemRadius="20dp"
+        app:itemWidth="125dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:lineColor="@color/black" />
+
+    <Button
+        android:id="@+id/verify_number_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/rounded"
+        android:text="@string/verify_Number"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        android:padding="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pin_view" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="120dp"
+        android:fontFamily="@font/hk_grotesk_regular"
+        android:text="@string/resend_otp"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verify_number_btn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:fontFamily="@font/hk_grotesk_regular"
+        android:text="Resend"
+        android:textColor="@color/red"
+        android:textSize="40sp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.791"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verify_number_btn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
