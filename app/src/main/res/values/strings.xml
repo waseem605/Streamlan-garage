@@ -13,6 +13,14 @@
 
     <string name="otp_heading">Enter your phone number</string>
     <string name="otp_desc">Please enter your mobile number.You will receive a code to verify mobile number.</string>
+    <string name="today_08_30_am">Today,08:30 AM</string>
+    <string name="esther_berry">Esther Berry</string>
+    <string name="vehicle_service">Vehicle Service</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="qutation_management">Qutation Management</string>
+    <string name="you_have_5_open_requests">You have 5 open Requests</string>
+    <string name="preferred_service_date_range">Preferred Service Date Range</string>
 
 
     <!--password verification-->

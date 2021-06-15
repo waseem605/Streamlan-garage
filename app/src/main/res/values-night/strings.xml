@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="your_work_profile">Your Work Profile</string>
-    <string name="profile_desc">Your information will be share with our Expert team who will verify your identity.</string>
-    <string name="upload_garage_image">Upload Garage Image</string>
+    <string name="today_08_30_am">Today,08:30 AM</string>
+    <string name="esther_berry">Esther Berry</string>
+    <string name="vehicle_service">Vehicle Service</string>
+    <string name="you_have_5_open_requests">You have 5 open Requests</string>
+    <string name="preferred_service_date_range">Preferred Service Date Range</string>
 </resources>

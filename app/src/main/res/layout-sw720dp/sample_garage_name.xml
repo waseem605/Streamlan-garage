@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/gray"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/rounded"
+        android:layout_margin="80dp"
+        android:backgroundTint="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/tvname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/esther_berry"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="40sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="170dp"
+            android:layout_marginRight="170dp" />
+
+        <TextView
+            android:id="@+id/tvtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvname"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:text="@string/today_08_30_am"
+            android:textSize="36sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="140dp"
+            android:layout_marginLeft="170dp"
+            android:layout_marginRight="160dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvtime"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:text="@string/vehicle_service"
+            android:background="@drawable/rounded"
+            android:textSize="26sp"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/orange"
+            android:layout_marginRight="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="100dp" />
+    </RelativeLayout>
+
+</RelativeLayout>
