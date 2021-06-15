@@ -66,6 +66,11 @@
     <string name="basic_info_garage">Xpress Auto has been the leader in automotive repair in the Triad area for twenty years. continuing the outstanding level of service Triad area residents expect from our</string>
     <string name="select_aminities">select Aminities</string>
     <string name="_24_7_service">24/7 Service</string>
+    <string name="wifi">Wifi</string>
+    <string name="loaner_car">Loaner car</string>
+    <string name="cctv">CCTV</string>
+    <string name="shuttle_service">Shuttle service</string>
+    <string name="continuebtn">Continue</string>
 
 
 </resources>
