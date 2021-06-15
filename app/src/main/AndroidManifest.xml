@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.StreamlanGarage">
-        <activity android:name=".Common.Login.ProfileStep1"></activity>
+        <activity android:name="Common.ProfileStep2"></activity>
+        <activity android:name="Common.ProfileStep1" />
         <activity android:name="Common.PasswordVerify" />
         <activity android:name="Common.LoginScreen" />
         <activity android:name="Common.PasswordScreen" />
