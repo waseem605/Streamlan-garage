@@ -117,13 +117,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/password_layout"
-                            android:layout_marginStart="30dp"
-                            android:layout_marginLeft="20dp"
+                            android:layout_marginLeft="30dp"
                             android:layout_marginTop="20dp"
-                            android:layout_marginEnd="30dp"
-                            android:layout_marginRight="20dp"
+                            android:layout_marginRight="30dp"
                             android:background="@drawable/white_rounded"
-                            android:hint="Garage Name"
+                            android:hint="@string/garage_name"
                             android:paddingLeft="5dp"
                             android:paddingRight="5dp">
 
@@ -140,13 +138,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/password_layout"
-                            android:layout_marginStart="30dp"
-                            android:layout_marginLeft="20dp"
+                            android:layout_marginLeft="30dp"
                             android:layout_marginTop="20dp"
-                            android:layout_marginEnd="30dp"
-                            android:layout_marginRight="20dp"
+                            android:layout_marginRight="30dp"
                             android:background="@drawable/white_rounded"
-                            android:hint="Owner Name"
+                            android:hint="@string/owner_name"
                             android:paddingLeft="5dp"
                             android:paddingRight="5dp">
 
@@ -162,14 +158,11 @@
                             android:id="@+id/Address_layout"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_below="@id/password_layout"
-                            android:layout_marginStart="30dp"
-                            android:layout_marginLeft="20dp"
+                            android:layout_marginLeft="30dp"
                             android:layout_marginTop="20dp"
-                            android:layout_marginEnd="30dp"
-                            android:layout_marginRight="20dp"
+                            android:layout_marginRight="30dp"
                             android:background="@drawable/white_rounded"
-                            android:hint="Address"
+                            android:hint="@string/addressP"
                             android:paddingLeft="5dp"
                             android:paddingRight="5dp">
 
@@ -178,21 +171,55 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/hk_grotesk_regular"
-                                android:inputType="textPassword"
+                                android:inputType="text"
                                 android:textSize="24sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/dropdown_country"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="30dp">
+                            <!--
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+                                -->
+                            <AutoCompleteTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:menu="@menu/dropdown"
+                                android:inputType="none"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/dropdown_state"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="30dp"
+                            android:hint="state"
+                            android:layout_marginRight="20dp">
+                            <!--
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                            >-->
+                            <AutoCompleteTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:menu="@menu/dropdown"
+                                android:inputType="none"/>
+
                         </com.google.android.material.textfield.TextInputLayout>
                         <com.google.android.material.textfield.TextInputLayout
                             android:id="@+id/email_layout"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_below="@id/password_layout"
-                            android:layout_marginStart="30dp"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginEnd="30dp"
-                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginRight="30dp"
                             android:background="@drawable/white_rounded"
-                            android:hint="Email"
+                            android:hint="@string/email_p"
                             android:paddingLeft="5dp"
                             android:paddingRight="5dp">
 
@@ -201,10 +228,71 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/hk_grotesk_regular"
-                                android:inputType="textPassword"
+                                android:inputType="text"
                                 android:textSize="24sp" />
                         </com.google.android.material.textfield.TextInputLayout>
 
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:background="@drawable/white_rounded"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginRight="30dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/basic_informations"
+                                android:textColor="@color/black"
+                                android:padding="5dp"
+                                android:textSize="13sp"
+                                android:fontFamily="@font/hk_grotesk_semi_bold"/>
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:layout_margin="10dp"
+                                android:padding="10dp"
+                                android:hint="@string/basic_info_garage"
+                                android:textSize="13sp"
+                                android:textColor="@color/black"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="30dp"
+                            android:padding="10dp"
+                            android:background="@drawable/white_rounded"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginRight="30dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/select_aminities"
+                                android:textSize="13sp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/hk_grotesk_regular"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <CheckBox
+                                    android:layout_width="180dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/_24_7_service"
+                                    android:background="@drawable/rounded"
+                                    android:backgroundTint="@color/orange"
+                                    android:textColor="@color/white"
+                                    android:padding="5dp"/>
+                            </LinearLayout>
+                        </LinearLayout>
 
                     </LinearLayout>
 

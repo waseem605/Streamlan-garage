@@ -5,4 +5,8 @@
     <string name="vehicle_service">Vehicle Service</string>
     <string name="you_have_5_open_requests">You have 5 open Requests</string>
     <string name="preferred_service_date_range">Preferred Service Date Range</string>
+    <string name="basic_informations">Basic Informations</string>
+    <string name="basic_info_garage">Xpress Auto has been the leader in automotive repair in the Triad area for twenty years. continuing the outstanding level of service Triad area residents expect from our</string>
+    <string name="select_aminities">select Aminities</string>
+    <string name="_24_7_service">24/7 Service</string>
 </resources>
