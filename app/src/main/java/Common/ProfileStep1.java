@@ -1,4 +1,4 @@
-package com.example.streamlangarage.Common.Login;
+package Common;
 
 import androidx.appcompat.app.AppCompatActivity;
 

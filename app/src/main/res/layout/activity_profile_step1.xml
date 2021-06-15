@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Common.Login.ProfileStep1">
+    tools:context="Common.ProfileStep1">
 
 
         <RelativeLayout
@@ -42,50 +42,175 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/work_profile_desc"
-                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/rounded"
-                android:backgroundTint="@color/white"
-                android:padding="20dp"
-                android:layout_margin="15dp"
-                android:layout_below="@id/work_profile_desc"
-                android:orientation="vertical">
-                <ImageView
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="180dp"
-                    android:id="@+id/garage_image"
-                    android:src="@drawable/garage_pic"
-                    android:background="@drawable/white_rounded"/>
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/rounded"
+                        android:backgroundTint="@color/white"
+                        android:id="@+id/imgLinear"
+                        android:orientation="vertical"
+                        android:padding="20dp">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/doted_border"
-                    android:layout_marginTop="25dp"
-                    android:padding="10dp"
-                    android:id="@+id/upload_garage_img"
-                    android:orientation="horizontal">
-                    <Button
-                        android:layout_width="wrap_content"
+                        <ImageView
+                            android:id="@+id/garage_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:background="@drawable/white_rounded"
+                            android:src="@drawable/garage_pic" />
+
+                        <LinearLayout
+                            android:id="@+id/upload_garage_img"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                            android:background="@drawable/doted_border"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/ring"
+                                android:text="+"
+                                android:textColor="@color/orange"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/hk_grotesk_semi_bold"
+                                android:text="@string/upload_garage_image"
+                                android:textColor="@color/orange"
+                                android:textSize="17sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="@font/hk_grotesk_regular"
+                            android:gravity="center"
+                            android:text="@string/profile_instruction"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/ring"
-                        android:text="+"
-                        android:textColor="@color/orange"
-                        android:textSize="20sp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/upload_garage_image"
-                        android:textColor="@color/orange"
-                        android:textSize="17sp"
-                        android:fontFamily="@font/hk_grotesk_semi_bold"/>
-                </LinearLayout>
-            </LinearLayout>
+                        android:background="@drawable/rounded"
+                        android:backgroundTint="@color/white"
+                        android:layout_below="@id/imgLinear"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/garag_neme_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/password_layout"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/white_rounded"
+                            android:hint="Garage Name"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/garage_name_ET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/hk_grotesk_regular"
+                                android:inputType="text"
+                                android:textSize="24sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/owner_name_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/password_layout"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/white_rounded"
+                            android:hint="Owner Name"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/owner_name_ET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/hk_grotesk_regular"
+                                android:inputType="text"
+                                android:textSize="24sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/Address_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/password_layout"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/white_rounded"
+                            android:hint="Address"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/Address_ET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/hk_grotesk_regular"
+                                android:inputType="textPassword"
+                                android:textSize="24sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/email_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/password_layout"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/white_rounded"
+                            android:hint="Email"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/email_ET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/hk_grotesk_regular"
+                                android:inputType="textPassword"
+                                android:textSize="24sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
 
             </ScrollView>
 
