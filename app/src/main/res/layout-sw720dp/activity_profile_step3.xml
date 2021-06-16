@@ -212,7 +212,7 @@
                     android:layout_height="match_parent"
                     android:id="@+id/wednesday"
                     android:textSize="26sp"
-                    android:text="@string/wednesday"
+                    android:text="Wednesday"
                     android:buttonTint="@color/orange"
                     android:background="@drawable/white_rounded"
                     android:layout_below="@id/tuesday"
