@@ -32,7 +32,7 @@
                         android:id="@+id/work_profile"
                         android:text="@string/your_work_profile"
                         android:gravity="center"
-                        android:textSize="24sp"
+                        android:textSize="32sp"
                         android:textColor="@color/black"
                         android:fontFamily="@font/hk_grotesk_bold"
                         android:padding="10dp"/>
@@ -42,10 +42,10 @@
                         android:id="@+id/work_profile_desc"
                         android:gravity="center"
                         android:text="@string/profile_desc"
-                        android:textSize="16sp"
+                        android:textSize="24sp"
                         android:layout_below="@id/work_profile"
-                        android:layout_marginStart="50dp"
-                        android:layout_marginEnd="50dp"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginEnd="60dp"
                         android:textColor="@color/black"
                         android:fontFamily="@font/hk_grotesk_regular"/>
                     <LinearLayout
@@ -62,7 +62,7 @@
                         <ImageView
                             android:id="@+id/garage_image"
                             android:layout_width="match_parent"
-                            android:layout_height="180dp"
+                            android:layout_height="250dp"
                             android:background="@drawable/white_rounded"
                             android:src="@drawable/garage_pic" />
 
@@ -71,9 +71,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="25dp"
+                            android:gravity="center"
                             android:background="@drawable/doted_border"
                             android:orientation="horizontal"
-                            android:padding="5dp">
+                            android:padding="10dp">
 
                             <Button
                                 android:layout_width="wrap_content"
@@ -81,7 +82,7 @@
                                 android:background="@drawable/ring"
                                 android:text="+"
                                 android:textColor="@color/orange"
-                                android:textSize="20sp" />
+                                android:textSize="22sp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -89,7 +90,7 @@
                                 android:fontFamily="@font/hk_grotesk_semi_bold"
                                 android:text="@string/upload_garage_image"
                                 android:textColor="@color/orange"
-                                android:textSize="17sp" />
+                                android:textSize="22sp" />
                         </LinearLayout>
 
                         <TextView
@@ -100,7 +101,7 @@
                             android:gravity="center"
                             android:text="@string/profile_instruction"
                             android:textColor="@color/black"
-                            android:textSize="16sp" />
+                            android:textSize="20sp" />
 
                     </LinearLayout>
 
@@ -137,7 +138,7 @@
                                 android:padding="5dp"
                                 android:fontFamily="@font/hk_grotesk_regular"
                                 android:inputType="text"
-                                android:textSize="16sp" />
+                                android:textSize="20sp" />
                         </com.google.android.material.textfield.TextInputLayout>
                         <com.google.android.material.textfield.TextInputLayout
                             android:id="@+id/owner_name_layout"
@@ -160,7 +161,7 @@
                                 android:inputType="text"
                                 android:background="@null"
                                 android:padding="5dp"
-                                android:textSize="16sp" />
+                                android:textSize="20sp" />
                         </com.google.android.material.textfield.TextInputLayout>
                         <com.google.android.material.textfield.TextInputLayout
                             android:id="@+id/Address_layout"
@@ -182,7 +183,7 @@
                                 android:inputType="text"
                                 android:background="@null"
                                 android:padding="5dp"
-                                android:textSize="16sp" />
+                                android:textSize="20sp" />
                         </com.google.android.material.textfield.TextInputLayout>
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
@@ -201,6 +202,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@null"
+                                android:textSize="20sp"
                                 app:menu="@menu/dropdown"
                                 android:inputType="none"/>
 
@@ -224,6 +226,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@null"
+                                android:textSize="20sp"
                                 app:menu="@menu/dropdown"
                                 android:inputType="none"/>
 
@@ -248,7 +251,7 @@
                                 android:inputType="text"
                                 android:background="@null"
                                 android:padding="5dp"
-                                android:textSize="16sp" />
+                                android:textSize="20sp" />
                         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -267,15 +270,15 @@
                                 android:text="@string/basic_informations"
                                 android:textColor="@color/black"
                                 android:padding="5dp"
-                                android:textSize="13sp"
+                                android:textSize="20sp"
                                 android:fontFamily="@font/hk_grotesk_semi_bold"/>
                             <EditText
                                 android:layout_width="match_parent"
-                                android:layout_height="80dp"
+                                android:layout_height="90dp"
                                 android:layout_margin="10dp"
                                 android:padding="10dp"
                                 android:hint="@string/basic_info_garage"
-                                android:textSize="13sp"
+                                android:textSize="16sp"
                                 android:textColor="@color/black"/>
 
                         </LinearLayout>
@@ -291,12 +294,12 @@
                                 android:layout_height="wrap_content"
                                 android:id="@+id/aminities"
                                 android:text="@string/select_aminities"
-                                android:textSize="13sp"
+                                android:textSize="20sp"
                                 android:textColor="@color/black"
                                 android:fontFamily="@font/hk_grotesk_regular"/>
 
                             <CheckBox
-                                android:layout_width="155dp"
+                                android:layout_width="230dp"
                                 android:layout_height="wrap_content"
                                 android:id="@+id/hours"
                                 android:text="@string/_24_7_service"
@@ -304,22 +307,22 @@
                                 android:layout_marginTop="20dp"
                                 android:layout_marginStart="5dp"
                                 android:fontFamily="@font/hk_grotesk_medium"
-                                android:textSize="12sp"
+                                android:textSize="16sp"
                                 android:buttonTint="@color/white"
                                 android:background="@drawable/rounded"
                                 android:backgroundTint="@color/orange"
                                 android:textColor="@color/white"
                                 android:padding="5dp"/>
                             <CheckBox
-                                android:layout_width="155dp"
+                                android:layout_width="230dp"
                                 android:layout_height="wrap_content"
                                 android:id="@+id/wifi"
                                 android:text="@string/wifi"
                                 android:layout_toEndOf="@id/hours"
                                 android:layout_below="@id/aminities"
                                 android:fontFamily="@font/hk_grotesk_medium"
-                                android:textSize="12sp"
-                                android:layout_marginStart="15dp"
+                                android:textSize="16sp"
+                                android:layout_marginStart="20dp"
                                 android:layout_marginTop="20dp"
                                 android:buttonTint="@color/white"
                                 android:background="@drawable/rounded"
@@ -327,14 +330,14 @@
                                 android:textColor="@color/white"
                                 android:padding="5dp"/>
                             <CheckBox
-                                android:layout_width="155dp"
+                                android:layout_width="230dp"
                                 android:layout_height="wrap_content"
                                 android:id="@+id/cctv"
                                 android:text="@string/cctv"
                                 android:layout_below="@id/hours"
                                 android:layout_marginTop="20dp"
                                 android:fontFamily="@font/hk_grotesk_medium"
-                                android:textSize="12sp"
+                                android:textSize="16sp"
                                 android:layout_marginStart="5dp"
                                 android:buttonTint="@color/white"
                                 android:background="@drawable/rounded"
@@ -342,15 +345,15 @@
                                 android:textColor="@color/white"
                                 android:padding="5dp"/>
                             <CheckBox
-                                android:layout_width="155dp"
+                                android:layout_width="230dp"
                                 android:layout_height="wrap_content"
                                 android:id="@+id/Loaner_car"
                                 android:text="@string/loaner_car"
                                 android:layout_toEndOf="@id/cctv"
                                 android:layout_below="@id/wifi"
-                                android:layout_marginStart="15dp"
+                                android:layout_marginStart="20dp"
                                 android:fontFamily="@font/hk_grotesk_medium"
-                                android:textSize="12sp"
+                                android:textSize="16sp"
                                 android:layout_marginTop="20dp"
                                 android:buttonTint="@color/white"
                                 android:background="@drawable/rounded"
@@ -358,12 +361,12 @@
                                 android:textColor="@color/white"
                                 android:padding="5dp"/>
                             <CheckBox
-                                android:layout_width="155dp"
+                                android:layout_width="230dp"
                                 android:layout_height="wrap_content"
                                 android:id="@+id/shuttleservice"
-                                android:fontFamily="@font/hk_grotesk_medium"
-                                android:textSize="12sp"
                                 android:text="@string/shuttle_service"
+                                android:fontFamily="@font/hk_grotesk_medium"
+                                android:textSize="16sp"
                                 android:layout_below="@id/Loaner_car"
                                 android:layout_marginStart="5dp"
                                 android:layout_marginTop="20dp"
@@ -373,47 +376,47 @@
                                 android:textColor="@color/white"
                                 android:padding="5dp"/>
                             <CheckBox
-                                android:layout_width="155dp"
+                                android:layout_width="230dp"
                                 android:layout_height="wrap_content"
                                 android:id="@+id/tow_pic_up"
                                 android:text="Tow pick up"
                                 android:layout_toEndOf="@id/shuttleservice"
                                 android:layout_below="@id/Loaner_car"
-                                android:layout_marginStart="15dp"
-                                android:fontFamily="@font/hk_grotesk_medium"
-                                android:textSize="12sp"
+                                android:layout_marginStart="20dp"
                                 android:layout_marginTop="20dp"
+                                android:fontFamily="@font/hk_grotesk_medium"
+                                android:textSize="16sp"
                                 android:buttonTint="@color/white"
                                 android:background="@drawable/rounded"
                                 android:backgroundTint="@color/orange"
                                 android:textColor="@color/white"
                                 android:padding="5dp"/>
                             <CheckBox
-                                android:layout_width="155dp"
+                                android:layout_width="230dp"
                                 android:layout_height="wrap_content"
                                 android:id="@+id/mobilemechanic"
                                 android:text="Mobile mechanic"
                                 android:layout_below="@id/shuttleservice"
                                 android:layout_marginStart="5dp"
                                 android:layout_marginTop="20dp"
-                                android:fontFamily="@font/hk_grotesk_medium"
-                                android:textSize="12sp"
                                 android:buttonTint="@color/white"
+                                android:fontFamily="@font/hk_grotesk_medium"
+                                android:textSize="16sp"
                                 android:background="@drawable/rounded"
                                 android:backgroundTint="@color/orange"
                                 android:textColor="@color/white"
                                 android:padding="5dp"/>
                             <CheckBox
-                                android:layout_width="155dp"
+                                android:layout_width="230dp"
                                 android:layout_height="wrap_content"
                                 android:id="@+id/cardelivery"
                                 android:text="Tow pick up"
                                 android:layout_toEndOf="@id/mobilemechanic"
                                 android:layout_below="@id/tow_pic_up"
-                                android:layout_marginStart="15dp"
-                                android:fontFamily="@font/hk_grotesk_medium"
-                                android:textSize="12sp"
+                                android:layout_marginStart="20dp"
                                 android:layout_marginTop="20dp"
+                                android:fontFamily="@font/hk_grotesk_medium"
+                                android:textSize="16sp"
                                 android:buttonTint="@color/white"
                                 android:background="@drawable/rounded"
                                 android:backgroundTint="@color/orange"
@@ -439,7 +442,7 @@
                             android:id="@+id/continuetx"
                             android:padding="10dp"
                             android:textColor="@color/white"
-                            android:textSize="19sp"
+                            android:textSize="24sp"
                             android:fontFamily="@font/hk_grotesk_semi_bold"/>
 
                         <ImageView
