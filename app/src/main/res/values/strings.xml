@@ -141,5 +141,15 @@
         <string name="view_diagnosis_quotes">View Diagnosis Quotes</string>
         <string name="view_history">View History</string>
         <string name="view_history_desc">Your service quote has been saved in services history. You can view it again in completed history tab.</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="others_information">Others Information</string>
+    <string name="availability_hours">Availability hours</string>
+    <string name="day">Day</string>
+    <string name="time">Time</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="send_request_for_approval">Send Request for Approval</string>
+    <string name="wednesday">Wednesday</string>
 
-    </resources>
+</resources>
