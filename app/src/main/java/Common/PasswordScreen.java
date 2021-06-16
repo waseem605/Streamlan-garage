@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.streamlangarage.Common.VehicleSevice;
 import com.example.streamlangarage.R;
 
 public class PasswordScreen extends AppCompatActivity {
@@ -23,7 +24,7 @@ public class PasswordScreen extends AppCompatActivity {
         mConfirmPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PasswordScreen.this, ProfileStep1.class);
+                Intent intent = new Intent(PasswordScreen.this, VehicleSevice.class);
                 startActivity(intent);
             }
         });

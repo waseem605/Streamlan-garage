@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="Common.Review">
+   <androidx.appcompat.widget.Toolbar
+       android:layout_width="match_parent"
+       android:layout_height="100dp"
+       android:background="@color/Back_color"
+       android:id="@+id/toolbar">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <ImageView
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:src="@drawable/left_arrow"
+               app:tint="@color/white"
+               android:layout_marginTop="5dp"
+               android:layout_alignParentStart="true"
+               android:layout_alignParentTop="true"
+               android:layout_marginStart="10dp"
+               android:id="@+id/lefarrow"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Reviews"
+               android:layout_toEndOf="@id/lefarrow"
+               android:textSize="40sp"
+               android:layout_marginTop="2dp"
+               android:layout_marginStart="150dp"
+               android:textColor="@color/white"
+               android:fontFamily="@font/dm_sans_bold"
+               ></TextView>
+
+
+       </RelativeLayout>
+   </androidx.appcompat.widget.Toolbar>
+<include layout="@layout/sample_reviews"
+    android:layout_margin="20dp"
+    android:layout_below="@id/toolbar"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+   ></include>
+</RelativeLayout>

@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name="Common.Chat"></activity>
+        <activity android:name="Common.Review" />
+        <activity android:name="Common.Services" />
+        <activity android:name="Common.VerifySuccessfully" />
+        <activity android:name="Common.OpenRequestDetails" />
         <activity android:name=".Common.VehicleSevice" />
         <activity android:name="Common.OTP_Verify" />
         <activity android:name="Common.PasswordScreen" />

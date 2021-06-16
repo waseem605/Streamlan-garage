@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Common.VerifySuccessfully">
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/message"
+        android:id="@+id/IVmsg"></ImageView>
+    <TextView
+        android:id="@+id/TVmsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IVmsg"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:text="Request Send Successfully"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:fontFamily="@font/hk_grotesk_bold"></TextView>
+
+    <TextView
+        android:id="@+id/TVtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TVmsg"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Our Expert Team will check and confirm about your profile within 2-3 Business day."
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="20sp"
+        android:fontFamily="@font/hk_grotesk_regular"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TVtxt"
+        android:padding="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/rounded"
+        android:text="Go to Home Dashboard"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:fontFamily="@font/hk_grotesk_semi_bold"/>
+
+</RelativeLayout>

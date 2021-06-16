@@ -120,130 +120,13 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="20dp"
                 android:text="Diagnose"
-                android:textColor="@color/black"
+                android:textColor="@color/orange"
                 android:textSize="24sp"
                 android:layout_marginStart="45dp"></TextView>
 
 
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="2dp"
-            android:background="@color/white"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Schedule Service Repair Date"
-                android:layout_marginStart="10dp"
-                android:textSize="26sp"
-                android:textColor="@color/black"
-                android:layout_marginTop="20dp" />
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <RelativeLayout
-                    android:layout_width="230dp"
-                    android:layout_height="70dp"
-                    android:background="@drawable/white_rounded"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Date"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentTop="true"
-                        android:id="@+id/tvdate"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginLeft="10dp"
-                        android:textSize="22sp"
-                        android:textColor="@color/black"></TextView>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/tvdate"
-                        android:text="12-03-2020"
-                        android:textSize="16sp"
-                        android:layout_marginBottom="10dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_alignParentLeft="true"
-                        android:id="@+id/tvrange"></TextView>
-
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_marginStart="71dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:layout_marginRight="-41dp"
-                        android:layout_toEndOf="@id/tvdate"
-                        android:src="@drawable/date_range_24"></ImageView>
-
-                </RelativeLayout>
-                <RelativeLayout
-                    android:layout_width="150dp"
-                    android:layout_height="70dp"
-                    android:background="@drawable/white_rounded"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginStart="30dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="10dp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Time"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentTop="true"
-                        android:id="@+id/tvtime"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginLeft="10dp"
-                        android:textSize="24sp"
-                        android:textColor="@color/black"></TextView>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/tvtime"
-                        android:text="10:50 AM"
-                        android:textSize="16sp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_alignParentLeft="true"
-                        android:id="@+id/tvtimerange"></TextView>
-                </RelativeLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="Problem Description"
-                    android:textSize="26sp">
-                </TextView>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="16sp"
-                    android:layout_marginBottom="10dp"
-                    android:hint="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" />
-            </LinearLayout>
-
-        </LinearLayout>
 
     </LinearLayout>
 </RelativeLayout>
