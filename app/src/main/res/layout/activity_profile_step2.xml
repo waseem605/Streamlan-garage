@@ -1,9 +1,356 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="Common.ProfileStep2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/work_profile"
+                android:text="@string/others_information"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/hk_grotesk_bold"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/work_profile_desc"
+                android:gravity="center"
+                android:text="@string/profile_desc"
+                android:textSize="16sp"
+                android:layout_below="@id/work_profile"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/hk_grotesk_regular"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded"
+                android:backgroundTint="@color/white"
+                android:id="@+id/middle_relative"
+                android:layout_below="@id/work_profile_desc"
+                android:layout_margin="15dp">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/licence"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    app:hintTextColor="@color/Back_color"
+                    android:background="@drawable/white_rounded"
+                    android:hint="@string/license_county"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/licence_ET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hk_grotesk_regular"
+                        android:inputType="text"
+                        android:background="@null"
+                        android:padding="5dp"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/licence_state_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/licence"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    app:hintTextColor="@color/Back_color"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/white_rounded"
+                    android:hint="@string/license_of_state"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/garage_name_ET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hk_grotesk_regular"
+                        android:inputType="text"
+                        android:background="@null"
+                        android:padding="5dp"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/licence_number_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/licence_state_layout"
+                    android:layout_marginLeft="20dp"
+                    app:hintTextColor="@color/Back_color"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/white_rounded"
+                    android:hint="@string/license_number"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/garage_number_ET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hk_grotesk_regular"
+                        android:inputType="text"
+                        android:background="@null"
+                        android:padding="5dp"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/vat_number_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/licence_number_layout"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    app:hintTextColor="@color/Back_color"
+                    android:background="@drawable/white_rounded"
+                    android:hint="@string/vat_number"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/vat_number_ET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hk_grotesk_regular"
+                        android:inputType="text"
+                        android:background="@null"
+                        android:padding="5dp"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/expire_date_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/vat_number_layout"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    app:hintTextColor="@color/Back_color"
+                    android:background="@drawable/white_rounded"
+                    android:hint="@string/_12_06_2022"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/expire_date_ET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hk_grotesk_regular"
+                        android:inputType="text"
+                        android:background="@null"
+                        android:padding="5dp"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/specialization"
+                    android:text="@string/specialization"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/hk_grotesk_semi_bold"
+                    android:layout_below="@id/expire_date_layout"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="30dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/search_layout"
+                    android:padding="2dp"
+                    android:layout_below="@id/specialization"
+                    android:background="@drawable/white_rounded">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:paddingStart="10dp"
+                        android:id="@+id/search_src"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/search"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@null"
+                        android:padding="5dp"
+                        android:hint="@string/select_specialization"
+                        android:fontFamily="@font/hk_grotesk_regular"
+                        android:textSize="16sp"
+                        android:layout_toRightOf="@id/search_src"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/award"
+                    android:text="Awards"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/hk_grotesk_semi_bold"
+                    android:textSize="16sp"
+
+                    android:layout_below="@id/search_layout"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/award_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/award"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    app:hintTextColor="@color/Back_color"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/white_rounded"
+                    android:hint="Awards"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/award_ET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hk_grotesk_regular"
+                        android:inputType="text"
+                        android:background="@null"
+                        android:padding="5dp"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/award_layout"
+                    android:id="@+id/dropdown_year"
+                    android:background="@drawable/white_rounded"
+                    android:layout_marginLeft="20dp"
+                    app:hintTextColor="@color/Back_color"
+                    android:layout_marginTop="20dp"
+                    android:hint="Year"
+                    android:layout_marginRight="30dp">
+                    <!--
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+                        -->
+                    <AutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:menu="@menu/dropdown"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+
+                        android:inputType="none"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:id="@+id/upload_garage_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:layout_below="@id/dropdown_year"
+                    android:background="@drawable/doted_border"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ring"
+                        android:text="+"
+                        android:gravity="center"
+                        android:textColor="@color/orange"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hk_grotesk_semi_bold"
+                        android:text="@string/add_more"
+                        android:textColor="@color/orange"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/continue_btn_step"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/rounded"
+                android:layout_below="@id/middle_relative">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/continuebtn"
+                    android:id="@+id/continuetx"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="19sp"
+                    android:fontFamily="@font/hk_grotesk_semi_bold"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_arrow"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/continuetx"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

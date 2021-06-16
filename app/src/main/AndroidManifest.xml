@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name="Common.ProfileStep3"></activity>
         <activity android:name=".Common.VehicleSevice" />
         <activity android:name="Common.OTP_Verify" />
         <activity android:name="Common.PasswordScreen" />

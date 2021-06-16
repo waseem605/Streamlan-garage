@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context="Common.ProfileStep1">
 
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -15,44 +14,45 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/work_profile"
-                android:text="@string/your_work_profile"
-                android:gravity="center"
-                android:textSize="24sp"
-                android:textColor="@color/black"
-                android:fontFamily="@font/hk_grotesk_bold"
-                android:padding="10dp"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/work_profile_desc"
-                android:gravity="center"
-                android:text="@string/profile_desc"
-                android:textSize="16sp"
-                android:layout_below="@id/work_profile"
-                android:layout_marginStart="50dp"
-                android:layout_marginEnd="50dp"
-                android:textColor="@color/black"
-                android:fontFamily="@font/hk_grotesk_regular"/>
-
             <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/work_profile_desc"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true">
 
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/work_profile"
+                        android:text="@string/your_work_profile"
+                        android:gravity="center"
+                        android:textSize="24sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/hk_grotesk_bold"
+                        android:padding="10dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/work_profile_desc"
+                        android:gravity="center"
+                        android:text="@string/profile_desc"
+                        android:textSize="16sp"
+                        android:layout_below="@id/work_profile"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginEnd="50dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/hk_grotesk_regular"/>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="15dp"
+                        android:layout_below="@id/work_profile_desc"
                         android:background="@drawable/rounded"
                         android:backgroundTint="@color/white"
                         android:id="@+id/imgLinear"
@@ -73,7 +73,7 @@
                             android:layout_marginTop="25dp"
                             android:background="@drawable/doted_border"
                             android:orientation="horizontal"
-                            android:padding="10dp">
+                            android:padding="5dp">
 
                             <Button
                                 android:layout_width="wrap_content"
@@ -121,6 +121,9 @@
                             android:layout_marginLeft="30dp"
                             android:layout_marginTop="20dp"
                             android:layout_marginRight="30dp"
+                            app:boxStrokeColor="@color/black"
+                            app:counterOverflowTextColor="@color/Back_color"
+                            app:hintTextColor="@color/Back_color"
                             android:background="@drawable/white_rounded"
                             android:hint="@string/garage_name"
                             android:paddingLeft="5dp"
@@ -130,9 +133,11 @@
                                 android:id="@+id/garage_name_ET"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:padding="5dp"
                                 android:fontFamily="@font/hk_grotesk_regular"
                                 android:inputType="text"
-                                android:textSize="24sp" />
+                                android:textSize="16sp" />
                         </com.google.android.material.textfield.TextInputLayout>
                         <com.google.android.material.textfield.TextInputLayout
                             android:id="@+id/owner_name_layout"
@@ -153,7 +158,9 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/hk_grotesk_regular"
                                 android:inputType="text"
-                                android:textSize="24sp" />
+                                android:background="@null"
+                                android:padding="5dp"
+                                android:textSize="16sp" />
                         </com.google.android.material.textfield.TextInputLayout>
                         <com.google.android.material.textfield.TextInputLayout
                             android:id="@+id/Address_layout"
@@ -173,13 +180,18 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/hk_grotesk_regular"
                                 android:inputType="text"
-                                android:textSize="24sp" />
+                                android:background="@null"
+                                android:padding="5dp"
+                                android:textSize="16sp" />
                         </com.google.android.material.textfield.TextInputLayout>
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:id="@+id/dropdown_country"
+                            android:hint="@string/country"
+                            app:hintTextColor="@color/Back_color"
                             android:layout_marginLeft="30dp"
+                            android:background="@drawable/white_rounded"
                             android:layout_marginTop="20dp"
                             android:layout_marginRight="30dp">
                             <!--
@@ -188,6 +200,7 @@
                             <AutoCompleteTextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:background="@null"
                                 app:menu="@menu/dropdown"
                                 android:inputType="none"/>
 
@@ -196,7 +209,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:id="@+id/dropdown_state"
+                            app:hintTextColor="@color/Back_color"
                             android:layout_marginStart="30dp"
+                            android:background="@drawable/white_rounded"
                             android:layout_marginLeft="20dp"
                             android:layout_marginTop="20dp"
                             android:layout_marginEnd="30dp"
@@ -208,6 +223,7 @@
                             <AutoCompleteTextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:background="@null"
                                 app:menu="@menu/dropdown"
                                 android:inputType="none"/>
 
@@ -230,7 +246,9 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/hk_grotesk_regular"
                                 android:inputType="text"
-                                android:textSize="24sp" />
+                                android:background="@null"
+                                android:padding="5dp"
+                                android:textSize="16sp" />
                         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -304,7 +322,6 @@
                                 android:backgroundTint="@color/orange"
                                 android:textColor="@color/white"
                                 android:padding="5dp"/>
-
                             <CheckBox
                                 android:layout_width="155dp"
                                 android:layout_height="wrap_content"
@@ -318,7 +335,6 @@
                                 android:backgroundTint="@color/orange"
                                 android:textColor="@color/white"
                                 android:padding="5dp"/>
-
                             <CheckBox
                                 android:layout_width="155dp"
                                 android:layout_height="wrap_content"
@@ -333,7 +349,6 @@
                                 android:backgroundTint="@color/orange"
                                 android:textColor="@color/white"
                                 android:padding="5dp"/>
-
                             <CheckBox
                                 android:layout_width="155dp"
                                 android:layout_height="wrap_content"
@@ -361,7 +376,6 @@
                                 android:backgroundTint="@color/orange"
                                 android:textColor="@color/white"
                                 android:padding="5dp"/>
-
                             <CheckBox
                                 android:layout_width="155dp"
                                 android:layout_height="wrap_content"
@@ -375,7 +389,6 @@
                                 android:backgroundTint="@color/orange"
                                 android:textColor="@color/white"
                                 android:padding="5dp"/>
-
                             <CheckBox
                                 android:layout_width="155dp"
                                 android:layout_height="wrap_content"
@@ -401,7 +414,6 @@
                         android:id="@+id/continuebtn"
                         android:gravity="center"
                         android:layout_margin="20dp"
-
                         android:background="@drawable/rounded"
                         android:layout_below="@id/bottomL">
                         <TextView
@@ -424,17 +436,9 @@
 
                     </RelativeLayout>
 
-
                 </RelativeLayout>
-
-
-
 
             </ScrollView>
 
         </RelativeLayout>
-
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
