@@ -129,7 +129,8 @@
                 android:layout_marginBottom="20dp"
                 android:text="Diagnose"
                 android:textColor="@color/orange"
-                android:textSize="14sp"></TextView>
+                android:textSize="14sp"
+                android:id="@+id/diagnose"></TextView>
 
 
         </LinearLayout>
