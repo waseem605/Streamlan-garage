@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name="Common.TermsandPrivacyPolicy"></activity>
+        <activity android:name="Common.PromoCodeHistory"></activity>
+        <activity android:name="Common.TermsandPrivacyPolicy" />
         <activity android:name="Common.PromoCodeRequest" />
         <activity android:name="Common.ApprovedDetails" />
         <activity android:name="Common.Chat" />

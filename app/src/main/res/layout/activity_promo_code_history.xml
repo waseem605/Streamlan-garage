@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Common.PromoCodeHistory">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/left_arrow"></ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Promo History"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:fontFamily="@font/hk_grotesk_bold"
+                android:gravity="center"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:text="+"
+                android:textSize="26sp"
+                android:textColor="@color/orange"></TextView>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_below="@id/toolbar">
+        <include layout="@layout/sample_promo_history"
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"></include>
+        <include layout="@layout/sample_promo_history"
+            android:layout_marginTop="2dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"></include>
+    </LinearLayout>
+
+
+</RelativeLayout>
