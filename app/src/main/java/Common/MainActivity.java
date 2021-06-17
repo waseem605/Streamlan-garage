@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
                     case R.id.booking_nav:
                         fragment = new VehicleServiceProgress();
+                        //frgfgfdg
                         break;
 
                     case R.id.earning_nav:
