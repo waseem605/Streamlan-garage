@@ -9,8 +9,8 @@ import android.view.MenuItem;
 
 import com.example.streamlangarage.Common.Fragment.Booking;
 import com.example.streamlangarage.Common.Fragment.Earning;
-import com.example.streamlangarage.Common.Fragment.Notifications;
 import com.example.streamlangarage.Common.Fragment.UserProfile;
+import com.example.streamlangarage.Common.Fragments.Navigations.Notification;
 import com.example.streamlangarage.Common.Fragments.Navigations.QutationManagement;
 import com.example.streamlangarage.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case R.id.notification_nav:
-                        fragment = new Notifications();
+                        fragment = new Notification();
                         break;
 
                     case R.id.user_nav:
