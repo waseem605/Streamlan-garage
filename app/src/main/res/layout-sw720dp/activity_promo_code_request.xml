@@ -134,7 +134,6 @@
             android:hint="5%"
             android:layout_below="@+id/tv3"
             android:fontFamily="@font/hk_grotesk_regular"
-            android:text="5%"
             android:textSize="22sp"
             android:layout_marginTop="5dp"
             android:layout_marginStart="5dp"

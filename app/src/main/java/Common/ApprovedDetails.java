@@ -16,7 +16,7 @@ public class ApprovedDetails extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_approved_details);
         btn=(Button)findViewById(R.id.btnvehicleservice);
-        tv=(TextView)findViewById(R.id.diagnose);
+        tv=(TextView)findViewById(R.id.serv);
         tv.setText("Approved");
         tv.setTextColor(getResources().getColor(R.color.green));
         btn.setText("Message");

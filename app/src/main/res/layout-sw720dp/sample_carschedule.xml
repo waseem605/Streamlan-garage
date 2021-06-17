@@ -1,35 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/gray"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:id="@+id/carschedule">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginLeft="10dp"
-        android:layout_marginEnd="10dp"
-        >
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
         <LinearLayout
+            android:id="@+id/samplecar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
             android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
             android:layout_marginEnd="10dp"
             android:background="#FFFFFF"
-            android:orientation="horizontal"
-            android:id="@+id/samplecar">
+            android:orientation="horizontal">
+
             <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/carpic"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_marginTop="15dp"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
                 android:layout_marginLeft="5dp"
-                android:src="@drawable/car"
+                android:layout_marginTop="15dp"
                 android:padding="5dp"
+                android:src="@drawable/car"
                 app:civ_border_color="#FF000000" />
-
 
 
             <LinearLayout
@@ -42,13 +45,13 @@
                     android:id="@+id/carname"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/hk_grotesk_semi_bold"
-                    android:layout_marginTop="15dp"
-                    android:paddingTop="5dp"
                     android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/hk_grotesk_semi_bold"
+                    android:paddingTop="5dp"
                     android:text="Vehicle Model"
                     android:textColor="@color/black"
-                    android:textSize="32sp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -56,78 +59,67 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/hk_grotesk_regular"
                     android:paddingTop="5dp"
                     android:paddingBottom="5dp"
-                    android:fontFamily="@font/hk_grotesk_regular"
-                    android:textSize="24sp"
-                    android:text="BMW X5 2019 " />
+                    android:text="BMW X5 2019 "
+                    android:textSize="18sp" />
 
             </LinearLayout>
 
         </LinearLayout>
-        <LinearLayout
+
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
+            android:background="@drawable/bottomsheet"
+            android:backgroundTint="@color/white"
             android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:background="@color/white"
-            android:orientation="horizontal"
-            android:id="@+id/LLrange"
-            android:layout_below="@id/samplecar">
-
+            android:layout_marginEnd="10dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/preferred_service_date_range"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="20dp"
-                android:textSize="26sp"
-                android:textColor="@color/black" />
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="10dp"
+                android:text="Estimated Completion date"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:id="@+id/tv"></TextView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
                 android:text="Service"
                 android:textColor="@color/black"
-                android:textSize="26sp"
-                android:layout_marginStart="50dp"></TextView>
-
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:background="@color/white"
-            android:orientation="horizontal"
-            android:id="@+id/LLrange1"
-            android:layout_below="@id/LLrange">
+                android:id="@+id/typ"></TextView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="21-03-2020-20-04-2020(Evening)"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"
-                android:textSize="24sp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentStart="true"
+                android:text="12-03-2020 at 12:00am"
                 android:textColor="@color/black"
-                ></TextView>
+                android:layout_below="@id/tv"></TextView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"
                 android:text="Diagnose"
                 android:textColor="@color/orange"
-                android:textSize="24sp"
-                android:layout_marginStart="45dp"
-                android:id="@+id/diagnose"></TextView>
+                android:id="@+id/serv"
+                android:layout_below="@id/typ"></TextView>
 
-
-        </LinearLayout>
+        </RelativeLayout>
 
 
     </LinearLayout>
+
 </RelativeLayout>

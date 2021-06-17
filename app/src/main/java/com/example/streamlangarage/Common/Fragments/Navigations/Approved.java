@@ -13,7 +13,7 @@ import android.widget.TextView;
 import com.example.streamlangarage.R;
 
 public class Approved extends Fragment {
-    TextView mservice,mdiagnose;
+    TextView mjob,mjobno;
     Button mbtn;
 
     @Override
@@ -26,12 +26,12 @@ public class Approved extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v= inflater.inflate(R.layout.fragment_open_request, container, false);
-        mservice=(TextView)v.findViewById(R.id.service);
-        mservice.setText("Type");
-        mdiagnose=(TextView)v.findViewById(R.id.diagnose);
-        mdiagnose.setText("Service");
         mbtn=(Button)v.findViewById(R.id.btnopenrequest);
         mbtn.setText("View Details");
+        mjob=(TextView)v.findViewById(R.id.job);
+        mjob.setVisibility(View.INVISIBLE);
+        mjobno=(TextView)v.findViewById(R.id.jobno);
+        mjobno.setVisibility(View.INVISIBLE);
         return v;
     }
 }
