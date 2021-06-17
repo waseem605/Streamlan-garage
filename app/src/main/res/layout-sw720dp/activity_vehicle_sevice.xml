@@ -25,20 +25,18 @@
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:src="@drawable/left_arrow"
-                        android:id="@+id/lefarrow"
                         android:layout_marginTop="5dp"
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentTop="true" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
                         android:layout_alignParentRight="true"
                         android:text="Vehicle Services"
                         android:layout_marginTop="5dp"
-                        android:layout_toEndOf="@id/lefarrow"
                         android:textSize="36sp"
-                        android:layout_marginStart="130dp"></TextView>
+                       android:gravity="center"></TextView>
                 </RelativeLayout>
             </androidx.appcompat.widget.Toolbar>
 

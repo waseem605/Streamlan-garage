@@ -32,7 +32,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Message"
-                android:textSize="20sp"
+                android:textSize="30sp"
                 android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:textColor="@color/black"
               android:gravity="center" />
@@ -68,7 +68,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_alignParentLeft="true"
                     android:text="Request Services"
-                    android:textSize="14sp"
+                    android:textSize="24sp"
                     android:fontFamily="@font/hk_grotesk_semi_bold"
                     android:textColor="@color/black"
                     android:id="@+id/tvheading"></TextView>
@@ -80,7 +80,7 @@
                     android:text="Labour"
                     android:gravity="center"
                     android:layout_marginStart="30dp"
-                    android:textSize="14sp"
+                    android:textSize="24sp"
                     android:fontFamily="@font/hk_grotesk_semi_bold"
                     android:textColor="@color/black"
                     ></TextView>
@@ -91,7 +91,7 @@
                     android:text="parts"
                     android:layout_marginRight="20dp"
                     android:layout_alignParentRight="true"
-                    android:textSize="14sp"
+                    android:textSize="24sp"
                     android:fontFamily="@font/hk_grotesk_semi_bold"
                     android:textColor="@color/black"></TextView>
             </RelativeLayout>
@@ -99,20 +99,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <TextView
-                    android:layout_width="150dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_alignParentLeft="true"
                     android:text="Ac Compressor Repair"
-                    android:textSize="14sp"
+                    android:textSize="20sp"
                     android:fontFamily="@font/hk_grotesk_regular"
                     android:textColor="@color/black"></TextView>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:textSize="14sp"
+                    android:textSize="20sp"
                     android:fontFamily="@font/hk_grotesk_regular"
                     android:text="$16.99"
                     android:gravity="center"
@@ -128,27 +128,27 @@
                     android:gravity="center"
                     android:text="$16.99"
                     android:textColor="@color/black"
-                    android:textSize="14sp"
+                    android:textSize="20sp"
                     android:fontFamily="@font/hk_grotesk_regular"></TextView>
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <TextView
-                    android:layout_width="150dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_alignParentLeft="true"
                     android:text="Brake Services"
-                    android:textSize="14sp"
+                    android:textSize="20sp"
                     android:fontFamily="@font/hk_grotesk_regular"
                     android:textColor="@color/black"></TextView>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:textSize="14sp"
+                    android:textSize="20sp"
                     android:fontFamily="@font/hk_grotesk_regular"
                     android:gravity="center"
                     android:layout_marginStart="30dp"
@@ -158,7 +158,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:textSize="14sp"
+                    android:textSize="20sp"
                     android:fontFamily="@font/hk_grotesk_regular"
                     android:gravity="center"
                     android:layout_marginRight="15dp"
@@ -170,20 +170,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <TextView
-                    android:layout_width="150dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_alignParentLeft="true"
                     android:text="Oil Change"
-                    android:textSize="14sp"
+                    android:textSize="20sp"
                     android:fontFamily="@font/hk_grotesk_regular"
                     android:textColor="@color/black"></TextView>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:textSize="14sp"
+                    android:textSize="20sp"
                     android:fontFamily="@font/hk_grotesk_regular"
                     android:gravity="center"
                     android:layout_marginStart="30dp"
@@ -193,7 +193,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:textSize="14sp"
+                    android:textSize="20sp"
                     android:fontFamily="@font/hk_grotesk_regular"
                     android:gravity="center"
                     android:layout_marginRight="15dp"
@@ -214,7 +214,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
-                android:layout_width="150dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="10dp"
@@ -227,7 +227,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:textSize="14sp"
+                android:textSize="20sp"
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:gravity="center"
                 android:layout_marginStart="30dp"
@@ -237,7 +237,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:textSize="14sp"
+                android:textSize="20sp"
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:gravity="center"
                 android:layout_marginRight="15dp"
@@ -249,20 +249,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
-                android:layout_width="150dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_alignParentLeft="true"
                 android:text="Discount"
-                android:textSize="14sp"
+                android:textSize="20sp"
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:textColor="@color/black"></TextView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:textSize="14sp"
+                android:textSize="20sp"
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:gravity="center"
                 android:layout_marginRight="15dp"
@@ -274,20 +274,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
-                android:layout_width="150dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_alignParentLeft="true"
                 android:text="Total"
-                android:textSize="14sp"
+                android:textSize="20sp"
                 android:fontFamily="@font/hk_grotesk_bold"
                 android:textColor="@color/black"></TextView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:textSize="16sp"
+                android:textSize="22sp"
                 android:fontFamily="@font/hk_grotesk_bold"
                 android:gravity="center"
                 android:layout_marginRight="15dp"
@@ -309,7 +309,7 @@
                 android:layout_height="wrap_content"
                 android:text="Description"
                 android:layout_marginStart="10dp"
-                android:textSize="15sp"
+                android:textSize="25sp"
                 android:fontFamily="@font/hk_grotesk_medium"
                 android:textColor="@color/black"></TextView>
             <TextView
@@ -317,7 +317,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:fontFamily="@font/hk_grotesk_regular"
-                android:textSize="14sp"
+                android:textSize="24sp"
                 android:text="Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available."></TextView>
         </LinearLayout>
         <LinearLayout
@@ -333,7 +333,7 @@
                 android:layout_height="wrap_content"
                 android:text="Location"
                 android:layout_marginStart="10dp"
-                android:textSize="15sp"
+                android:textSize="25sp"
                 android:fontFamily="@font/hk_grotesk_medium"
                 android:textColor="@color/black"></TextView>
             <TextView
@@ -341,7 +341,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginBottom="10dp"
-                android:textSize="14sp"
+                android:textSize="24sp"
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:text="1 Aash park, pembroke dock, 5A72, 7958 swift village"></TextView>
         </LinearLayout>
@@ -349,7 +349,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <Button
-                android:layout_width="150dp"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_marginTop="20dp"
@@ -358,11 +358,13 @@
                 android:text="Car Recieved"
                 android:layout_marginBottom="20dp"
                 android:textColor="@color/white"
-                android:textSize="19sp"
+                android:textSize="29sp"
+                android:padding="15dp"
                 android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:textAllCaps="false"></Button>
             <Button
-                android:layout_width="150dp"
+                android:padding="15dp"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="20dp"
@@ -372,7 +374,7 @@
                 android:text="Cancel"
                 android:layout_marginBottom="20dp"
                 android:textColor="@color/white"
-                android:textSize="19sp"
+                android:textSize="29sp"
                 android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:textAllCaps="false"></Button>
 
