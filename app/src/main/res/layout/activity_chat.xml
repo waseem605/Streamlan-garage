@@ -21,14 +21,12 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginStart="10dp"
                 android:src="@drawable/left_arrow"
-                app:tint="@color/white"
-                android:id="@+id/lefarrow"></ImageView>
+                app:tint="@color/white"></ImageView>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Messages"
-                android:layout_toEndOf="@id/lefarrow"
-                android:layout_marginStart="60dp"
+               android:gravity="center"
                 android:layout_marginTop="2dp"
                 android:textSize="24sp"
                 android:fontFamily="@font/dm_sans_bold"

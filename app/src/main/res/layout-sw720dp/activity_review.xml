@@ -23,16 +23,14 @@
                android:layout_marginTop="5dp"
                android:layout_alignParentStart="true"
                android:layout_alignParentTop="true"
-               android:layout_marginStart="10dp"
-               android:id="@+id/lefarrow"/>
+               android:layout_marginStart="10dp" />
            <TextView
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:text="Reviews"
-               android:layout_toEndOf="@id/lefarrow"
                android:textSize="40sp"
                android:layout_marginTop="2dp"
-               android:layout_marginStart="150dp"
+              android:gravity="center"
                android:textColor="@color/white"
                android:fontFamily="@font/dm_sans_bold"
                ></TextView>

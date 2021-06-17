@@ -24,15 +24,13 @@
                 app:tint="@color/white"
                 android:layout_alignParentLeft="true"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="5dp"
-                android:id="@+id/lefarrow" />
+                android:layout_marginTop="5dp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_toEndOf="@id/lefarrow"
                 android:text="Services"
-                android:layout_marginStart="130dp"
+                android:gravity="center"
                 android:textSize="40sp"
                 android:fontFamily="@font/dm_sans_bold"
                 android:textColor="@color/white"

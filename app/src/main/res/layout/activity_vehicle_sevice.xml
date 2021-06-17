@@ -25,20 +25,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/left_arrow"
-                android:id="@+id/lefarrow"
                 android:layout_marginTop="5dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true" />
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
                 android:layout_alignParentRight="true"
                 android:text="Vehicle Services"
                 android:layout_marginTop="5dp"
-                android:layout_toEndOf="@id/lefarrow"
                 android:textSize="22sp"
-                android:layout_marginStart="70dp"></TextView>
+                android:gravity="center"></TextView>
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
 
@@ -194,17 +192,16 @@
                         android:layout_alignParentLeft="true"
                         android:text="Proposed Services"
                         android:textSize="18sp"
-                        android:textColor="@color/black"
-                        android:id="@+id/tvheading"></TextView>
+                        android:textColor="@color/black"></TextView>
                     <TextView
-                        android:layout_width="80dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:text="Labour"
-                        android:layout_marginStart="30dp"
+                        android:layout_marginStart="40dp"
                         android:textSize="18sp"
                         android:textColor="@color/black"
-                        android:layout_toEndOf="@id/tvheading"></TextView>
+                        android:gravity="center"></TextView>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
