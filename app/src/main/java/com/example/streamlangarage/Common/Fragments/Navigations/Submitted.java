@@ -29,9 +29,9 @@ public class Submitted extends Fragment {
                              Bundle savedInstanceState) {
         View v= inflater.inflate(R.layout.fragment_open_request, container, false);
         mservice=(TextView)v.findViewById(R.id.service);
-        mservice.setVisibility(View.INVISIBLE);
+        mservice.setText("Type");
         mdiagnose=(TextView)v.findViewById(R.id.diagnose);
-        mdiagnose.setVisibility(View.INVISIBLE);
+        mdiagnose.setText("Service");
         mbtn=(Button)v.findViewById(R.id.btnopenrequest);
         mbtn.setText("View Details");
         return v;

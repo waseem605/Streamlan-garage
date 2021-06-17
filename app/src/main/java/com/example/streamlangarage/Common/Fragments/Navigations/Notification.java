@@ -7,31 +7,20 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.TextView;
 
 import com.example.streamlangarage.R;
 
-public class Approved extends Fragment {
-    TextView mservice,mdiagnose;
-    Button mbtn;
-
+public class Notification extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v= inflater.inflate(R.layout.fragment_open_request, container, false);
-        mservice=(TextView)v.findViewById(R.id.service);
-        mservice.setText("Type");
-        mdiagnose=(TextView)v.findViewById(R.id.diagnose);
-        mdiagnose.setText("Service");
-        mbtn=(Button)v.findViewById(R.id.btnopenrequest);
-        mbtn.setText("View Details");
+        // Inflate the layout for this fragment
+        View v= inflater.inflate(R.layout.fragment_notification, container, false);
         return v;
     }
 }
