@@ -3,7 +3,7 @@
 
     <item android:id="@+id/quotes_nav"
         android:title="@string/quotes"
-        android:icon="@drawable/quotes">
+        android:icon="@drawable/quote_nav">
     </item>
     <item android:id="@+id/booking_nav"
         android:title="@string/booking"
@@ -12,16 +12,16 @@
     <item
         android:id="@+id/earning_nav"
         android:title="@string/earning"
-        android:icon="@drawable/wallet">
+        android:icon="@drawable/wallet_nav">
 
     </item>
     <item android:id="@+id/notification_nav"
         android:title="@string/notification"
-        android:icon="@drawable/notification">
+        android:icon="@drawable/notification_nav">
     </item>
     <item android:id="@+id/user_nav"
         android:title="@string/user"
-        android:icon="@drawable/user">
+        android:icon="@drawable/user_nav">
     </item>
 
 </menu>

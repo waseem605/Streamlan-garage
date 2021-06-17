@@ -5,7 +5,7 @@
     android:id="@+id/approved"
     android:layout_height="match_parent"
     tools:context=".Common.Fragments.Navigations.Approved">
-    <include layout="@layout/sample_submitted"></include>
+    <include layout="@layout/sample_openrequest"></include>
 
 
 

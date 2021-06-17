@@ -63,6 +63,7 @@
                             android:id="@+id/garage_image"
                             android:layout_width="match_parent"
                             android:layout_height="180dp"
+                            android:scaleType="fitXY"
                             android:background="@drawable/white_rounded"
                             android:src="@drawable/garage_pic" />
 

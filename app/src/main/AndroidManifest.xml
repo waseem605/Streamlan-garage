@@ -17,9 +17,11 @@
         <activity android:name="Common.OpenRequestDetails" />
         <activity android:name=".Common.VehicleSevice" />
         <activity android:name="Common.OTP_Verify" />
+        <activity android:name="Common.MainActivity" />
         <activity android:name="Common.PasswordScreen" />
         <activity android:name="Common.ProfileStep1" />
         <activity android:name="Common.ProfileStep2" />
+        <activity android:name="Common.ProfileStep3" />
         <activity android:name="Common.Login" />
         <activity android:name=".Common.GetStarted" />
         <activity android:name=".Common.SplashScreen">
