@@ -241,12 +241,14 @@
                             android:layout_marginStart="10dp"
                             android:layout_marginTop="20dp"
                             android:layout_toRightOf="@id/box_noti"/>
-                        <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:src="@drawable/next_icon"
+                        <Switch
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:thumb="@drawable/thumb"
+                            android:track="@drawable/thumb_track"
+                            android:layout_marginTop="15dp"
                             android:layout_alignParentEnd="true"
-                            android:layout_margin="14dp"/>
+                            />
                     </RelativeLayout>
                     <RelativeLayout
                         android:layout_width="match_parent"

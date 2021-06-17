@@ -180,5 +180,6 @@
     <string name="change_bank_account">Change Bank Account</string>
     <string name="account_number">Account Number</string>
     <string name="_10033020304050607080">10033020304050607080</string>
+    <string name="online">online</string>
 
 </resources>
