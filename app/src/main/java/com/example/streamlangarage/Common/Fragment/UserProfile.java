@@ -12,15 +12,17 @@ import android.widget.RelativeLayout;
 
 import com.example.streamlangarage.R;
 
+import Common.BankAccount;
 import Common.Chat;
 import Common.PromoCodeRequest;
+import Common.Review;
 import Common.Services;
 import Common.VerifySuccessfully;
 
 
 public class UserProfile extends Fragment {
 
-private RelativeLayout mPromotion,mMessage,mServices,mReview,mTerms;
+private RelativeLayout mPromotion,mMessage,mServices,mReview,mTerms,mBankAccount;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +39,7 @@ private RelativeLayout mPromotion,mMessage,mServices,mReview,mTerms;
         mServices = (RelativeLayout)view.findViewById(R.id.servicesRL);
         mReview = (RelativeLayout)view.findViewById(R.id.reviewRL);
         mTerms = (RelativeLayout)view.findViewById(R.id.termRL);
+        mBankAccount = (RelativeLayout)view.findViewById(R.id.bankRL);
         callScreen();
 
         return view;
@@ -64,6 +67,21 @@ private RelativeLayout mPromotion,mMessage,mServices,mReview,mTerms;
                 startActivity(new Intent(UserProfile.this.getActivity(), Chat.class));
             }
         });
+
+        mReview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(UserProfile.this.getActivity(), Review.class));
+            }
+        });
+
+        mBankAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(UserProfile.this.getActivity(), BankAccount.class));
+            }
+        });
+
 
     }
 }

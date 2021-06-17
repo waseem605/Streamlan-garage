@@ -177,5 +177,8 @@
     <string name="bank_account">Bank Account</string>
     <string name="review">Review</string>
     <string name="steamlane_v1_0">Steamlane V1 0</string>
+    <string name="change_bank_account">Change Bank Account</string>
+    <string name="account_number">Account Number</string>
+    <string name="_10033020304050607080">10033020304050607080</string>
 
 </resources>

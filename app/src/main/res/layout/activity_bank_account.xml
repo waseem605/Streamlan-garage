@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Common.BankAccount">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/bankToolbar"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/left_arrow"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/toolbarBank"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/change_bank_account"
+                android:fontFamily="@font/hk_grotesk_bold"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="24sp"/>
+        </RelativeLayout>
+
+    </Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/round_high"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toBottomOf="@id/bankToolbar"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:textSize="16sp"
+            android:id="@+id/bankTx"
+            android:text="@string/bank_account"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/user_b_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/bankTx"
+            app:hintTextColor="@color/Back_color"
+            android:background="@drawable/white_rounded"
+            android:hint="Name"
+            android:padding="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/user_b_name_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/hk_grotesk_regular"
+                android:inputType="text"
+                android:background="@null"
+                android:padding="5dp"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dropdown_bank"
+            android:layout_below="@id/user_b_name_layout"
+            android:hint="@string/country"
+            app:hintTextColor="@color/Back_color"
+            android:layout_marginLeft="20dp"
+            android:padding="5dp"
+            android:background="@drawable/white_rounded"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp">
+            <!--
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+                -->
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:textSize="16sp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                app:menu="@menu/dropdown"
+                android:inputType="none"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/account_number_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/dropdown_bank"
+            android:background="@drawable/white_rounded"
+            android:hint="@string/account_number"
+            app:hintTextColor="@color/Back_color"
+            android:padding="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/account_number_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/hk_grotesk_regular"
+                android:inputType="text"
+                android:background="@null"
+                android:padding="5dp"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bank_confirm_btn"
+            android:layout_below="@id/account_number_layout"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:text="@string/Confirm_btn"
+            android:background="@drawable/rounded"
+            android:textAllCaps="false"
+            android:textSize="19sp"
+            android:fontFamily="@font/hk_grotesk_semi_bold"
+            android:textColor="@color/white"/>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
