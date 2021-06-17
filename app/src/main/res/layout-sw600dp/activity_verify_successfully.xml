@@ -47,6 +47,7 @@
         android:padding="15dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
+        android:id="@+id/goto_Home"
         android:layout_marginTop="80dp"
         android:background="@drawable/rounded"
         android:text="Go to Home Dashboard"

@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name="Common.Chat"></activity>
+        <activity android:name="Common.MainActivity"></activity>
+        <activity android:name="Common.Chat" />
         <activity android:name="Common.Review" />
         <activity android:name="Common.Services" />
         <activity android:name="Common.VerifySuccessfully" />
@@ -19,6 +20,7 @@
         <activity android:name="Common.PasswordScreen" />
         <activity android:name="Common.ProfileStep1" />
         <activity android:name="Common.ProfileStep2" />
+        <activity android:name="Common.ProfileStep3" />
         <activity android:name="Common.Login" />
         <activity android:name=".Common.GetStarted" />
         <activity android:name=".Common.SplashScreen">
