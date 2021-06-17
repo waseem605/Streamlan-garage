@@ -47,7 +47,6 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginTop="2dp"
-            android:layout_below="@id/LLrange1"
             android:background="@drawable/white_background_b_round">
             <Button
                 android:layout_width="match_parent"

@@ -8,59 +8,79 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true">
-        <LinearLayout
+        >
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:background="@drawable/bottomsheet"
             android:backgroundTint="@color/white"
-            android:layout_marginTop="10dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp">
-
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/esther_berry"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:textSize="30sp"
-                android:textColor="@color/black" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/today_08_30_am"
-                android:textSize="22sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="10dp"
+                android:text="Esther Berry"
+                android:textSize="18sp"
                 android:textColor="@color/black"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"/>
-        </LinearLayout>
-       <include layout="@layout/sample_carschedule"></include>
+                android:id="@+id/tv"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:text="Job #"
+                android:textColor="@color/black"
+                android:id="@+id/job"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentStart="true"
+                android:text="Today 08:30 AM"
+                android:textColor="@color/black"
+                android:layout_below="@id/tv"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:text="#asdv2121"
+                android:id="@+id/jobno"
+                android:layout_below="@id/job"></TextView>
+
+        </RelativeLayout>
+        <include layout="@layout/sample_carschedule"></include>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginTop="2dp"
-            android:layout_below="@id/LLrange1"
             android:background="@drawable/white_background_b_round">
             <Button
+                android:id="@+id/btnopenrequest"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:layout_marginStart="150dp"
-                android:layout_marginEnd="150dp"
-                android:textSize="26sp"
                 android:background="@drawable/rounded"
+                android:backgroundTint="@color/Back_color"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="100dp"
                 android:textColor="@color/white"
+                android:layout_marginEnd="100dp"
+                android:textSize="16sp"
                 android:text="Estimate"></Button>
 
         </LinearLayout>
-
     </LinearLayout>
 
 </RelativeLayout>
