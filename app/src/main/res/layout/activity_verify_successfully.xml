@@ -45,6 +45,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/TVtxt"
         android:padding="15dp"
+        android:textAllCaps="false"
+        android:id="@+id/goto_Home"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:layout_marginTop="80dp"

@@ -435,7 +435,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/continuebtn"
+                            android:text="Continue"
                             android:id="@+id/continuetx"
                             android:padding="10dp"
                             android:textColor="@color/white"

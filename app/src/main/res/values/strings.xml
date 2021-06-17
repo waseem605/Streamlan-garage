@@ -141,5 +141,32 @@
     <string name="view_diagnosis_quotes">View Diagnosis Quotes</string>
     <string name="view_history">View History</string>
     <string name="view_history_desc">Your service quote has been saved in services history. You can view it again in completed history tab.</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="others_information">Others Information</string>
+    <string name="availability_hours">Availability hours</string>
+    <string name="day">Day</string>
+    <string name="time">Time</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="send_request_for_approval">Send Request for Approval</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="quotes">Quotes</string>
+    <string name="booking">Booking</string>
+    <string name="earning">Earning</string>
+    <string name="add">ADD</string>
+    <string name="country">Country</string>
+    <string name="cctv">CCTV</string>
+    <string name="loaner_car">Loaner Car</string>
+    <string name="shuttle_service">Shuttle Service</string>
+    <string name="license_county">License County</string>
+    <string name="license_of_state">License of State</string>
+    <string name="license_number">License Number</string>
+    <string name="vat_number">VAT number</string>
+    <string name="_12_06_2022">12 06 2022</string>
+    <string name="specialization">Specialization</string>
+    <string name="select_specialization">Select Specialization</string>
+    <string name="add_more">Add more</string>
+    <string name="mcontinue">Continue</string>
 
 </resources>
