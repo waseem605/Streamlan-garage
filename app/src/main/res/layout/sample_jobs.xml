@@ -18,7 +18,6 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingStart="15dp"
             android:id="@+id/left_RL"
             android:gravity="center"
             android:padding="10dp">
@@ -114,7 +113,6 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingStart="15dp"
             android:gravity="center"
             android:layout_toEndOf="@id/vertical_line"
             android:padding="10dp">
