@@ -14,8 +14,7 @@ import com.example.streamlangarage.R;
 
 
 public class Submitted extends Fragment {
-
-    TextView mjob,mjobno;
+    TextView mjob,mjobno,jobcalculate;
     Button mbtn;
 
     @Override

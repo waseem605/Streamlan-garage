@@ -1,5 +1,6 @@
 package com.example.streamlangarage.Common.Fragments.Navigations;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,13 +8,17 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.streamlangarage.R;
 
+import Common.OpenRequestDetails;
+
 
 public class OpenRequest extends Fragment {
     TextView mjob,mjobno;
+    Button btnopenrequest;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -29,6 +34,13 @@ public class OpenRequest extends Fragment {
         mjob.setVisibility(View.INVISIBLE);
         mjobno=(TextView)v.findViewById(R.id.jobno);
         mjobno.setVisibility(View.INVISIBLE);
+        btnopenrequest=(Button)v.findViewById(R.id.btnopenrequest);
+        btnopenrequest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(OpenRequest.this.getActivity(), OpenRequestDetails.class));
+            }
+        });
 
         return v;
     }
