@@ -5,60 +5,59 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Common.Invoice.InvoiceActivity">
-    <Toolbar
+
+    <ScrollView
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
-        android:id="@+id/Toolbar_invoice"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_height="wrap_content">
+        app:layout_constraintStart_toStartOf="parent">
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/left_arrow"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="5dp"
-                android:id="@+id/toolbarBank"/>
-            <TextView
+            <androidx.appcompat.widget.Toolbar
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/invoice"
-                android:fontFamily="@font/hk_grotesk_semi_bold"
-                android:textColor="@color/black"
-                android:gravity="center"
-                android:textSize="20sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/cancel"
-                android:layout_marginEnd="7dp"
-                android:fontFamily="@font/hk_grotesk_semi_bold"
-                android:textColor="@color/orange"
-                android:layout_alignParentEnd="true"
-                android:textSize="16sp"/>
-        </RelativeLayout>
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/Toolbar_invoice"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/left_arrow"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/toolbarBank"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/invoice"
+                        android:fontFamily="@font/hk_grotesk_semi_bold"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cancel"
+                        android:layout_marginEnd="7dp"
+                        android:fontFamily="@font/hk_grotesk_semi_bold"
+                        android:textColor="@color/orange"
+                        android:layout_alignParentEnd="true"
+                        android:textSize="16sp"/>
+                </RelativeLayout>
 
-    </Toolbar>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Toolbar_invoice">
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true">
+            </androidx.appcompat.widget.Toolbar>
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Toolbar_invoice">
 
                 <include layout="@layout/sample_garage_name"
                     android:id="@+id/garag_neme"/>
@@ -572,8 +571,12 @@
 
                 </RelativeLayout>
             </RelativeLayout>
-        </ScrollView>
 
-    </RelativeLayout>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
