@@ -181,5 +181,12 @@
     <string name="account_number">Account Number</string>
     <string name="_10033020304050607080">10033020304050607080</string>
     <string name="online">online</string>
+    <string name="invoice">Invoice</string>
+    <string name="cancel">Cancel</string>
+    <string name="service_requested">Service Requested</string>
+    <string name="payment_method_tex">PAYMENT METHOD</string>
+    <string name="master_card_ending">Master Card ending</string>
+    <string name="receipt_photo">Receipt photo</string>
+    <string name="today_feb_20_2020">Today - Feb 20,2020</string>
 
 </resources>

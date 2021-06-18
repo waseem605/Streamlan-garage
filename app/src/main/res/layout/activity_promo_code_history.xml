@@ -32,6 +32,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="10dp"
+                android:id="@+id/promo_tbn"
                 android:text="+"
                 android:textSize="26sp"
                 android:textColor="@color/orange"></TextView>

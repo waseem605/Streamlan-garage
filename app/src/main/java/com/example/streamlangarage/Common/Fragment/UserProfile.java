@@ -14,9 +14,11 @@ import com.example.streamlangarage.R;
 
 import Common.BankAccount;
 import Common.Chat;
+import Common.PromoCodeHistory;
 import Common.PromoCodeRequest;
 import Common.Review;
 import Common.Services;
+import Common.TermsandPrivacyPolicy;
 import Common.VerifySuccessfully;
 
 
@@ -50,7 +52,7 @@ private RelativeLayout mPromotion,mMessage,mServices,mReview,mTerms,mBankAccount
         mPromotion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(UserProfile.this.getActivity(), PromoCodeRequest.class));
+                startActivity(new Intent(UserProfile.this.getActivity(), PromoCodeHistory.class));
             }
         });
 
@@ -79,6 +81,13 @@ private RelativeLayout mPromotion,mMessage,mServices,mReview,mTerms,mBankAccount
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(UserProfile.this.getActivity(), BankAccount.class));
+            }
+        });
+
+        mTerms.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(UserProfile.this.getActivity(), TermsandPrivacyPolicy.class));
             }
         });
 

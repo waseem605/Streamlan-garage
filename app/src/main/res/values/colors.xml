@@ -8,6 +8,10 @@
     <color name="orange">#FE732E</color>
     <color name="red">#fa2525</color>
     <color name="gray">#e3e3e3</color>
+    <color name="gray_doted">#D8D8D8</color>
     <color name="silver">#F9F9F9</color>
     <color name="green">#1FC857</color>
+    <color name="green_text">#31CC64</color>
+
+
 </resources>

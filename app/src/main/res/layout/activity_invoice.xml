@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Common.Invoice.InvoiceActivity">
+    <Toolbar
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/Toolbar_invoice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/left_arrow"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/toolbarBank"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/invoice"
+                android:fontFamily="@font/hk_grotesk_semi_bold"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:layout_marginEnd="7dp"
+                android:fontFamily="@font/hk_grotesk_semi_bold"
+                android:textColor="@color/orange"
+                android:layout_alignParentEnd="true"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+
+    </Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Toolbar_invoice">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/sample_garage_name"
+                    android:id="@+id/garag_neme"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/garag_neme"
+                    android:id="@+id/centerRL"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded"
+                        android:backgroundTint="@color/white"
+                        android:id="@+id/middle_line"
+                        android:orientation="vertical"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:id="@+id/requestRL"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:text="@string/service_requested"
+                                android:fontFamily="@font/hk_grotesk_semi_bold"
+                                android:textSize="15sp"
+                                android:textColor="@color/black"
+                                android:layout_margin="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pending: "
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/hk_grotesk_medium"
+                                android:textSize="15sp"
+                                android:layout_toStartOf="@id/invoice_date"
+                                android:textColor="@color/green_text"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" 12-03-2020"
+                                android:inputType="date"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:id="@+id/invoice_date"
+                                android:fontFamily="@font/hk_grotesk_medium"
+                                android:textSize="15sp"
+                                android:textColor="@color/green_text"/>
+                        </RelativeLayout>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"
+                            android:id="@+id/line_dotted"
+                            android:src="@drawable/dotted_line"
+                            android:layerType="software"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_margin="10dp"
+                                android:text="Scheduled Service Repair Date"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/hk_grotesk_medium"
+                                android:textColor="@color/black"
+                                android:id="@+id/tv"></TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="20dp"
+                                android:text="Type"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/hk_grotesk_medium"
+                                android:textColor="@color/black"
+                                android:id="@+id/typ" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/schedule_date"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_alignParentStart="true"
+                                android:text="12-03-2020"
+                                android:fontFamily="@font/hk_grotesk_regular"
+                                android:textSize="13sp"
+                                android:textColor="@color/black"
+                                android:layout_below="@id/tv" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/at"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginEnd="2dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_toEndOf="@id/schedule_date"
+                                android:text=" at "
+                                android:fontFamily="@font/hk_grotesk_regular"
+                                android:textSize="13sp"
+                                android:textColor="@color/black"
+                                android:layout_below="@id/tv" />
+
+                            <TextView
+                                android:id="@+id/schedule_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="time"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_toEndOf="@id/at"
+                                android:text="12:00am"
+                                android:fontFamily="@font/hk_grotesk_regular"
+                                android:textSize="13sp"
+                                android:textColor="@color/black"
+                                android:layout_below="@id/tv" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Service"
+                                android:textSize="13sp"
+                                android:fontFamily="@font/hk_grotesk_regular"
+                                android:id="@+id/serv"
+                                android:layout_below="@id/typ" />
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                android:text="Request Services"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/hk_grotesk_semi_bold"
+                                android:textColor="@color/black"
+                                android:id="@+id/tvheading" />
+
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Labour"
+                                android:gravity="center"
+                                android:layout_marginStart="30dp"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/hk_grotesk_semi_bold"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="parts"
+                                android:layout_marginRight="20dp"
+                                android:layout_alignParentRight="true"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/hk_grotesk_semi_bold"
+                                android:textColor="@color/black"></TextView>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                android:text="Ac Compressor Repair"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/hk_grotesk_regular"
+                                android:textColor="@color/black"></TextView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/hk_grotesk_regular"
+                                android:text="$16.99"
+                                android:gravity="center"
+                                android:layout_marginStart="30dp"
+                                android:textColor="@color/black"></TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="15dp"
+                                android:gravity="center"
+                                android:text="$16.99"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/hk_grotesk_regular"></TextView>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                android:text="Brake Services"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/hk_grotesk_regular"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/hk_grotesk_regular"
+                                android:gravity="center"
+                                android:layout_marginStart="30dp"
+                                android:text="$16.99"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/hk_grotesk_regular"
+                                android:gravity="center"
+                                android:layout_marginRight="15dp"
+                                android:layout_alignParentRight="true"
+                                android:text="$16.99"
+                                android:textColor="@color/black" />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                android:text="Oil Change"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/hk_grotesk_regular"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/hk_grotesk_regular"
+                                android:gravity="center"
+                                android:layout_marginStart="30dp"
+                                android:text="$16.99"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/hk_grotesk_regular"
+                                android:gravity="center"
+                                android:layout_marginRight="15dp"
+                                android:layout_alignParentRight="true"
+                                android:text="$16.99"
+                                android:textColor="@color/black" />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                android:text="Subtotal"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/hk_grotesk_semi_bold"
+                                android:textColor="@color/black"
+                                android:id="@+id/subtotal" />
+
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="$90.97"
+                                android:gravity="center"
+                                android:layout_marginStart="30dp"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/hk_grotesk_semi_bold"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="$90.97"
+                                android:layout_marginRight="20dp"
+                                android:layout_alignParentRight="true"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/hk_grotesk_semi_bold"
+                                android:textColor="@color/black" />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                android:text="Discount"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/hk_grotesk_regular"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/hk_grotesk_regular"
+                                android:gravity="center"
+                                android:layout_marginRight="15dp"
+                                android:layout_alignParentRight="true"
+                                android:text="$16.99"
+                                android:textColor="@color/black" />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                android:text="VAT (10%)"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/hk_grotesk_regular"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/hk_grotesk_regular"
+                                android:gravity="center"
+                                android:layout_marginRight="15dp"
+                                android:layout_alignParentRight="true"
+                                android:text="$2.99"
+                                android:textColor="@color/black" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                android:text="Total"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/hk_grotesk_semi_bold"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="$90.97"
+                                android:layout_marginRight="10dp"
+                                android:layout_alignParentRight="true"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/hk_grotesk_semi_bold"
+                                android:textColor="@color/black" />
+                        </RelativeLayout>
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"
+                            android:src="@drawable/dotted_line"
+                            android:layerType="software"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="13sp"
+                                android:id="@+id/payment_tx"
+                                android:text="@string/payment_method_tex"
+                                android:textAllCaps="true"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/hk_grotesk_regular"/>
+
+                            <ImageView
+                                android:id="@+id/master_card"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/master_card"
+                                android:layout_below="@id/payment_tx"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginStart="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/payment_card_tx"
+                                android:layout_toEndOf="@id/master_card"
+                                android:text="@string/master_card_ending"
+                                android:layout_below="@id/payment_tx"
+                                android:fontFamily="@font/hk_grotesk_regular"
+                                android:textSize="15sp"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:padding="5dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="**13"
+                                android:layout_below="@id/payment_tx"
+                                android:fontFamily="@font/hk_grotesk_regular"
+                                android:textSize="15sp"
+                                android:textAllCaps="false"
+                                android:layout_toEndOf="@id/payment_card_tx"
+                                android:textColor="@color/black"
+                                android:padding="5dp"/>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rounded"
+                    android:padding="5sp"
+                    android:gravity="center"
+                    android:layout_below="@id/centerRL">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="14dp"
+                        android:id="@+id/eye"
+                        android:src="@drawable/eye_on_button"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/receipt_photo"
+                        android:layout_toEndOf="@id/eye"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/hk_grotesk_semi_bold"
+                        android:textSize="20sp"/>
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
