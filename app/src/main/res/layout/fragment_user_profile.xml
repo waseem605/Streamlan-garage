@@ -335,7 +335,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/review"
+                            android:text="@string/about_streamlan"
                             android:textSize="16sp"
                             android:fontFamily="@font/hk_grotesk_medium"
                             android:textColor="@color/black"

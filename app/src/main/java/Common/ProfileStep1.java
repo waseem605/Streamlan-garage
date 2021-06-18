@@ -32,7 +32,7 @@ public class ProfileStep1 extends AppCompatActivity {
         mContinue = (RelativeLayout) findViewById(R.id.continuebtn);
 
         mUploadImage = (LinearLayout)findViewById(R.id.upload_garage_img);
-        mCountry = findViewById(R.id.dropdown_country);
+        mCountry = (AutoCompleteTextView) findViewById(R.id.dropdown_country);
 
         //selectCountry();
 
@@ -57,7 +57,7 @@ public class ProfileStep1 extends AppCompatActivity {
 
         //ArrayAdapter arrayAdapter =new ArrayAdapter(this,R.layout.country_dropdown_sample,country);
         ArrayAdapter arrayAdapter =new ArrayAdapter(this,R.layout.support_simple_spinner_dropdown_item,country);
-        mCountry.setText((CharSequence) arrayAdapter.getItem(0),false);
+        //mCountry.setText((CharSequence) arrayAdapter.getItem(0),false);
         mCountry.setAdapter(arrayAdapter);
 
 

@@ -209,20 +209,17 @@
                                               android:layout_marginLeft="20dp"
                                               android:layout_marginRight="20dp"
                                               android:layout_width="match_parent"
-                                              style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
                                               android:layout_height="wrap_content"
+                                              style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
                                               android:hint="Last name">
                                               <AutoCompleteTextView
                                                   android:layout_width="match_parent"
                                                   android:layout_height="wrap_content"
-
                                                   android:id="@+id/dropdown_country"
                                                   android:enabled="false"/>
-
-
                                           </com.google.android.material.textfield.TextInputLayout>
 
-                  -->
+-->
 
                         <com.google.android.material.textfield.TextInputLayout
                             android:id="@+id/email_layout"
