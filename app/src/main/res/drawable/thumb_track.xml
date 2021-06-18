@@ -8,7 +8,7 @@
             <corners android:radius="100dp"/>
             <stroke android:color="@color/Back_color"
                 android:width="4dp"/>
-            <size android:height="20dp"/>
+            <size android:height="30dp"/>
         </shape>
     </item>
 
@@ -18,7 +18,7 @@
             <corners android:radius="100dp"/>
             <stroke android:color="@color/Back_color"
                 android:width="2dp"/>
-            <size android:height="20dp"/>
+            <size android:height="30dp"/>
         </shape>
     </item>
 

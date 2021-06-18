@@ -21,7 +21,6 @@ public class QutationManagement extends Fragment {
     QutatationManagementAdapter qutatationManagementAdapter;
     private TabLayout mtabLayout;
     private ViewPager mviewPager;
-
     private Switch mSwitch;
     private TextView mOnline;
     @Override

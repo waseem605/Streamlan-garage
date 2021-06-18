@@ -1,5 +1,7 @@
 package com.example.streamlangarage.Common.Adapters;
 
+import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -13,6 +15,7 @@ import com.example.streamlangarage.Common.Fragments.Navigations.Submitted;
 import org.jetbrains.annotations.NotNull;
 
 public class QutatationManagementAdapter extends FragmentPagerAdapter {
+
     public QutatationManagementAdapter(@NonNull @NotNull FragmentManager fm) {
         super(fm);
     }
@@ -28,6 +31,7 @@ public class QutatationManagementAdapter extends FragmentPagerAdapter {
                 return new OpenRequest();
             case 1:
                 return new Submitted();
+
             case 2:
                 return new Approved();
             default:

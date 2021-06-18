@@ -30,7 +30,7 @@ public class Paid extends Fragment {
        View v =inflater.inflate(R.layout.fragment_paid, container, false);
 
        mInvoice = (Button)v.findViewById(R.id.btnopenrequest);
-
+       mInvoice.setText("Invoce");
        mInvoice.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {

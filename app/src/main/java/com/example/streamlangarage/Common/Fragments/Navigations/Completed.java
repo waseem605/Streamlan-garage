@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.streamlangarage.Common.Invoice.UnpaidInvoice;
 import com.example.streamlangarage.R;
@@ -17,6 +18,8 @@ import com.example.streamlangarage.R;
 public class Completed extends Fragment {
 
     private Button mInvoice;
+
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -29,7 +32,7 @@ public class Completed extends Fragment {
                              Bundle savedInstanceState) {
       View v=inflater.inflate(R.layout.fragment_completed, container, false);
       mInvoice =(Button)v.findViewById(R.id.btnopenrequest);
-
+      mInvoice.setText("Invoce");
       mInvoice.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View v) {
