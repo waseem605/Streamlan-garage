@@ -5,13 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context=".Common.Invoice.UnpaidInvoice">
-
-    <Toolbar
+    <ScrollView
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
-        android:id="@+id/bankToolbar_invoice"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintStart_toStartOf="parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/bankToolbar_invoice"
         android:layout_height="wrap_content">
         <RelativeLayout
             android:layout_width="match_parent"
@@ -43,22 +49,14 @@
                 android:textSize="16sp"/>
         </RelativeLayout>
 
-    </Toolbar>
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/bankToolbar_invoice"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="30dp"
-        app:layout_constraintStart_toStartOf="parent">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+    </androidx.appcompat.widget.Toolbar>
+
 
             <include
                 layout="@layout/sample_profile"
                 android:layout_margin="10dp"
                 android:id="@+id/profile_lt"
+                android:layout_below="@id/bankToolbar_invoice"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content" />
 
