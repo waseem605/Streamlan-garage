@@ -6,9 +6,6 @@
     android:background="@color/gray_doted"
     tools:context=".Common.Fragment.Earning">
 
-   <include layout="@layout/sample_bar_chart"
-       android:layout_margin="10dp"
-       android:layout_height="wrap_content"
-       android:layout_width="wrap_content"></include>
+
 
 </FrameLayout>

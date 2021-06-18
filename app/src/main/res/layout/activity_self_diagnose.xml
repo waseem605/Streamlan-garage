@@ -3,9 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/gray"
     android:layout_height="match_parent"
-    tools:context=".Common.VehicleSevice">
+    tools:context="Common.Self_Diagnose">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -354,13 +353,13 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginLeft="10dp"
-                        android:text="Discount "
+                        android:text="Diagnoses Prices"
                         android:textSize="16sp"></TextView>
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:hint="Enter Price"
+                        android:hint="$30"
                         android:background="@null"
                         android:layout_marginLeft="10dp"
                         android:gravity="start"
@@ -393,34 +392,40 @@
                         android:layout_marginStart="10dp"
                         android:layout_marginBottom="10dp"></EditText>
                 </LinearLayout>
-           <RelativeLayout
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:background="@color/white">
-               <Button
-                   android:layout_width="130dp"
-                   android:layout_height="wrap_content"
-                   android:text="Submit Quote"
-                   android:layout_alignParentLeft="true"
-                   android:layout_marginTop="20dp"
-                   android:layout_marginLeft="20dp"
-                   android:textSize="18sp"
-                   android:layout_marginBottom="20dp"
-                   android:textColor="@color/white"
-                   android:background="@drawable/rounded"></Button>
-               <Button
-                   android:layout_width="130dp"
-                   android:layout_height="wrap_content"
-                   android:text="Cancel"
-                   android:textSize="18sp"
-                   android:layout_marginBottom="20dp"
-                   android:layout_marginRight="20dp"
-                   android:layout_marginTop="20dp"
-                   android:layout_alignParentRight="true"
-                   android:textColor="@color/white"
-                   android:background="@drawable/rounded"
-                   android:backgroundTint="@color/orange"></Button>
-           </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Submit Quote"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:textSize="18sp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/rounded"
+                        android:id="@+id/btnsubmit"></Button>
+                    <Button
+                        android:layout_below="@id/btnsubmit"
+                        android:id="@+id/btncncl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cancel"
+                        android:textSize="18sp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/white"
+                        android:background="@drawable/rounded"
+                        android:backgroundTint="@color/orange"></Button>
+                </RelativeLayout>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

@@ -9,10 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".Common.Invoice.EarningActivity"></activity>
+        <activity android:name="Common.Self_Diagnose"></activity>
+        <activity android:name="Common.Chat_Details" />
+        <activity android:name=".Common.Invoice.EarningActivity" />
         <activity android:name=".Common.Invoice.InvoiceActivity" />
         <activity android:name=".Common.Invoice.UnpaidInvoice" />
         <activity android:name="Common.PromoCodeHistory" />
+        <activity android:name="Common.BankAccount" />
         <activity android:name="Common.TermsandPrivacyPolicy" />
         <activity android:name="Common.PromoCodeRequest" />
         <activity android:name="Common.ApprovedDetails" />
