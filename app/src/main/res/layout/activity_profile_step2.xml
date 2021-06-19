@@ -71,7 +71,7 @@
                         android:fontFamily="@font/hk_grotesk_regular"
                         android:inputType="text"
                         android:background="@null"
-                        android:padding="5dp"
+                        android:padding="10dp"
                         android:textSize="16sp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -96,7 +96,7 @@
                         android:fontFamily="@font/hk_grotesk_regular"
                         android:inputType="text"
                         android:background="@null"
-                        android:padding="5dp"
+                        android:padding="10dp"
                         android:textSize="16sp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -121,7 +121,7 @@
                         android:fontFamily="@font/hk_grotesk_regular"
                         android:inputType="text"
                         android:background="@null"
-                        android:padding="5dp"
+                        android:padding="10dp"
                         android:textSize="16sp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -146,7 +146,7 @@
                         android:fontFamily="@font/hk_grotesk_regular"
                         android:inputType="text"
                         android:background="@null"
-                        android:padding="5dp"
+                        android:padding="10dp"
                         android:textSize="16sp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -171,7 +171,7 @@
                         android:fontFamily="@font/hk_grotesk_regular"
                         android:inputType="text"
                         android:background="@null"
-                        android:padding="5dp"
+                        android:padding="10dp"
                         android:textSize="16sp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -210,7 +210,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:background="@null"
-                        android:padding="5dp"
+                        android:padding="10dp"
                         android:hint="@string/select_specialization"
                         android:fontFamily="@font/hk_grotesk_regular"
                         android:textSize="16sp"
@@ -252,39 +252,35 @@
                         android:fontFamily="@font/hk_grotesk_regular"
                         android:inputType="text"
                         android:background="@null"
-                        android:padding="5dp"
+                        android:padding="10dp"
                         android:textSize="16sp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
 
-                <com.google.android.material.textfield.TextInputLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
                     android:layout_below="@id/award_layout"
                     android:id="@+id/dropdown_year"
-                    android:background="@drawable/white_rounded"
-                    android:layout_marginLeft="20dp"
-                    android:padding="7dp"
-                    app:hintTextColor="@color/Back_color"
                     android:layout_marginTop="20dp"
-                    android:hint="Year"
-                    android:layout_marginRight="20dp">
-                    <!--
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
-                        -->
-                    <AutoCompleteTextView
+                    android:background="@drawable/white_rounded">
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:menu="@menu/dropdown"
-                        android:textSize="16sp"
-                        android:textColor="@color/black"
-                        android:paddingStart="5dp"
-                        android:paddingEnd="5dp"
-                        android:background="@null"
-                        android:inputType="none"/>
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Year"
+                        />
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="5dp"
+                        android:id="@+id/Years"/>
 
-                </com.google.android.material.textfield.TextInputLayout>
-
+                </RelativeLayout>
                 <LinearLayout
                     android:id="@+id/upload_garage_img"
                     android:layout_width="match_parent"

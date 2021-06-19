@@ -12,9 +12,13 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.example.streamlangarage.R;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class ProfileStep1 extends AppCompatActivity {
 
@@ -22,6 +26,7 @@ public class ProfileStep1 extends AppCompatActivity {
     private ImageView mGarageImage;
     AutoCompleteTextView mCountry;
     private LinearLayout mUploadImage;
+    private Spinner mcountrySpinner ,mStateSpinner;
 
 
     @Override
@@ -31,10 +36,12 @@ public class ProfileStep1 extends AppCompatActivity {
         mGarageImage = (ImageView)findViewById(R.id.garage_image);
         mContinue = (RelativeLayout) findViewById(R.id.continuebtn);
 
+        mcountrySpinner =(Spinner)findViewById(R.id.country_names);
+        mStateSpinner =(Spinner)findViewById(R.id.state);
         mUploadImage = (LinearLayout)findViewById(R.id.upload_garage_img);
         mCountry = (AutoCompleteTextView) findViewById(R.id.dropdown_country);
 
-        //selectCountry();
+        selectCountry();
 
         mUploadImage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,13 +60,17 @@ public class ProfileStep1 extends AppCompatActivity {
 
     public void selectCountry()
     {
-         final String[] country={"USA","UK","Canada"};
+          String[] country={"USA","UK","Canada"};
 
-        //ArrayAdapter arrayAdapter =new ArrayAdapter(this,R.layout.country_dropdown_sample,country);
-        ArrayAdapter arrayAdapter =new ArrayAdapter(this,R.layout.support_simple_spinner_dropdown_item,country);
-        //mCountry.setText((CharSequence) arrayAdapter.getItem(0),false);
-        mCountry.setAdapter(arrayAdapter);
+        ArrayList<String> arrayList = new ArrayList<String>(Arrays.asList(country));
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item,arrayList);
+        mcountrySpinner.setAdapter(arrayAdapter);
 
+        String[] state={"Dubai","USA","UK","Canada"};
+
+        ArrayList<String> List_state = new ArrayList<String>(Arrays.asList(state));
+        ArrayAdapter<String> stateAdapter = new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item,List_state);
+        mStateSpinner.setAdapter(stateAdapter);
 
     }
 

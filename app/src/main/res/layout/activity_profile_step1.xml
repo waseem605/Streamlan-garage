@@ -135,7 +135,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@null"
-                                android:padding="5dp"
+                                android:padding="10dp"
+                                android:layout_margin="5dp"
                                 android:fontFamily="@font/hk_grotesk_regular"
                                 android:inputType="text"
                                 android:textSize="16sp" />
@@ -148,6 +149,7 @@
                             android:layout_marginLeft="30dp"
                             android:layout_marginTop="20dp"
                             android:layout_marginRight="30dp"
+                            app:hintTextColor="@color/Back_color"
                             android:background="@drawable/white_rounded"
                             android:hint="@string/owner_name"
                             android:paddingLeft="5dp"
@@ -160,7 +162,7 @@
                                 android:fontFamily="@font/hk_grotesk_regular"
                                 android:inputType="text"
                                 android:background="@null"
-                                android:padding="5dp"
+                                android:padding="10dp"
                                 android:textSize="16sp" />
                         </com.google.android.material.textfield.TextInputLayout>
                         <com.google.android.material.textfield.TextInputLayout
@@ -169,6 +171,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="30dp"
                             android:layout_marginTop="20dp"
+                            app:hintTextColor="@color/Back_color"
                             android:layout_marginRight="30dp"
                             android:background="@drawable/white_rounded"
                             android:hint="@string/addressP"
@@ -182,44 +185,56 @@
                                 android:fontFamily="@font/hk_grotesk_regular"
                                 android:inputType="text"
                                 android:background="@null"
-                                android:padding="5dp"
+                                android:padding="10dp"
                                 android:textSize="16sp" />
                         </com.google.android.material.textfield.TextInputLayout>
 
-                        <!--  error area
-                                          <com.google.android.material.textfield.TextInputLayout
-                                              android:layout_width="match_parent"
-                                              android:layout_height="wrap_content"
-                                              android:hint="@string/country"
-                                              app:hintTextColor="@color/Back_color"
-                                              android:layout_marginLeft="30dp"
-                                              android:layout_marginTop="20dp"
-                                              android:layout_marginRight="30dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/white_rounded">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:text="Country"
+                                />
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginStart="5dp"
+                                android:id="@+id/country_names"/>
 
-                                              <AutoCompleteTextView
-                                                  android:layout_width="match_parent"
-                                                  android:layout_height="wrap_content"
-                                                  android:background="@null"
-                                                  android:enabled="false"
-                                                  android:inputType="none"
-                                                  tools:ignore="LabelFor" />
-                                          </com.google.android.material.textfield.TextInputLayout>
+                        </RelativeLayout>
 
-                                          <com.google.android.material.textfield.TextInputLayout
-                                              android:layout_marginLeft="20dp"
-                                              android:layout_marginRight="20dp"
-                                              android:layout_width="match_parent"
-                                              android:layout_height="wrap_content"
-                                              style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
-                                              android:hint="Last name">
-                                              <AutoCompleteTextView
-                                                  android:layout_width="match_parent"
-                                                  android:layout_height="wrap_content"
-                                                  android:id="@+id/dropdown_country"
-                                                  android:enabled="false"/>
-                                          </com.google.android.material.textfield.TextInputLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/white_rounded">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:text="State"
+                                />
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginStart="5dp"
+                                android:id="@+id/state"/>
 
--->
+                        </RelativeLayout>
+
 
                         <com.google.android.material.textfield.TextInputLayout
                             android:id="@+id/email_layout"
@@ -228,6 +243,7 @@
                             android:layout_marginLeft="30dp"
                             android:layout_marginTop="30dp"
                             android:layout_marginRight="30dp"
+                            app:hintTextColor="@color/Back_color"
                             android:background="@drawable/white_rounded"
                             android:hint="@string/email_p"
                             android:paddingLeft="5dp"
@@ -240,7 +256,7 @@
                                 android:fontFamily="@font/hk_grotesk_regular"
                                 android:inputType="text"
                                 android:background="@null"
-                                android:padding="5dp"
+                                android:padding="10dp"
                                 android:textSize="16sp" />
                         </com.google.android.material.textfield.TextInputLayout>
 
@@ -267,6 +283,7 @@
                                 android:layout_height="80dp"
                                 android:layout_margin="10dp"
                                 android:padding="10dp"
+                                android:background="@null"
                                 android:hint="@string/basic_info_garage"
                                 android:textSize="13sp"
                                 android:textColor="@color/black"/>
