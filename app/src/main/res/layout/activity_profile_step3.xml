@@ -49,9 +49,10 @@
                 android:id="@+id/middle_relative_three"
                 android:paddingStart="10dp"
                 android:layout_margin="15dp"
-
                 android:paddingEnd="20dp"
                 android:background="@drawable/rounded">
+
+
 
                 <TextView
                     android:layout_width="match_parent"
@@ -64,35 +65,128 @@
                     android:gravity="center"
                     android:layout_margin="15dp"/>
 
-                <TextView
-                    android:layout_width="130dp"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/day"
-                    android:text="@string/day"
-                    android:fontFamily="@font/hk_grotesk_medium"
-                    android:textSize="18sp"
-                    android:padding="5dp"
-                    android:textColor="@color/black"
-                    android:layout_below="@id/availability_hour"
-                    android:gravity="center"
-                    android:background="@drawable/rounded"
-                    android:backgroundTint="@color/gray"/>
-
-                <TextView
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/time"
-                    android:text="@string/time"
-                    android:fontFamily="@font/hk_grotesk_medium"
-                    android:textSize="18sp"
-                    android:textColor="@color/black"
-                    android:padding="5dp"
-                    android:background="@drawable/rounded"
-                    android:backgroundTint="@color/gray"
-                    android:layout_below="@id/availability_hour"
-                    android:layout_marginStart="10dp"
-                    android:layout_toEndOf="@id/day"
-                    android:gravity="center"/>
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/day_time"
+                    android:layout_below="@+id/availability_hour">
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/day"
+                        android:text="@string/day"
+                        android:layout_alignParentStart="true"
+                        android:fontFamily="@font/hk_grotesk_medium"
+                        android:textSize="18sp"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:background="@drawable/rounded"
+                        android:backgroundTint="@color/gray"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/time"
+                        android:text="@string/time"
+                        android:fontFamily="@font/hk_grotesk_medium"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:padding="5dp"
+                        android:background="@drawable/rounded"
+                        android:backgroundTint="@color/gray"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@id/day"
+                        android:gravity="center"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/monday_RL"
+                    android:layout_below="@id/day_time"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true">
+
+                    <CheckBox
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/monday"
+                        android:text="@string/monday"
+                        android:buttonTint="@color/orange"
+                        android:background="@drawable/white_rounded"
+                        android:padding="10dp"
+                        android:layout_marginTop="15dp"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tuesday_RL"
+                    android:layout_below="@id/monday_RL"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true">
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wednesday_RL"
+                    android:layout_below="@id/tuesday_RL"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true">
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/thursday_RL"
+                    android:layout_below="@id/wednesday_RL"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true">
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/friday_RL"
+                    android:layout_below="@id/thursday_RL"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true">
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/saturday_RL"
+                    android:layout_below="@id/friday_RL"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true">
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sunday_RL"
+                    android:layout_below="@id/saturday_RL"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true">
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+
+
+<!--
 
                 <CheckBox
                     android:layout_width="130dp"
@@ -341,7 +435,7 @@
                     android:layout_marginStart="10dp"
                     android:gravity="center"
                     android:padding="3dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="15.5dp"
                     android:background="@drawable/white_rounded"
                     android:orientation="horizontal">
                     <EditText
@@ -398,7 +492,7 @@
                     android:layout_marginStart="10dp"
                     android:gravity="center"
                     android:padding="3dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="16dp"
                     android:background="@drawable/white_rounded"
                     android:orientation="horizontal">
                     <EditText
@@ -453,7 +547,7 @@
                     android:id="@+id/linear_Time_sun"
                     android:layout_below="@id/linear_Time_sat"
                     android:layout_toEndOf="@id/sunday"
-                    android:layout_marginStart="10dp"
+                    android:layout_marginStart="11dp"
                     android:gravity="center"
                     android:padding="8dp"
                     android:layout_marginTop="15dp"
@@ -509,6 +603,8 @@
                 android:layout_marginEnd="30dp"
                 android:layout_marginBottom="30dp"
                 android:text="@string/send_request_for_approval"/>
+
+-->
 
         </RelativeLayout>
     </ScrollView>
