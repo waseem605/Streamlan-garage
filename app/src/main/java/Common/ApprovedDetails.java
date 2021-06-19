@@ -13,7 +13,7 @@ import com.example.streamlangarage.R;
 
 public class ApprovedDetails extends AppCompatActivity {
    Button btn;
-   TextView tv;
+   TextView statustype;
    ImageView mBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,9 +21,9 @@ public class ApprovedDetails extends AppCompatActivity {
         setContentView(R.layout.activity_approved_details);
         btn=(Button)findViewById(R.id.btnvehicleservice);
         mBack = (ImageView) findViewById(R.id.lefarrow);
-        tv=(TextView)findViewById(R.id.serv);
-        tv.setText("Approved");
-        tv.setTextColor(getResources().getColor(R.color.green));
+        statustype=findViewById(R.id.statustype);
+        statustype.setText("Approved");
+        statustype.setTextColor(getResources().getColor(R.color.green));
         btn.setText("Message");
 
 

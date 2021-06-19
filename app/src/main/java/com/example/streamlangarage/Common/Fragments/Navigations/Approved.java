@@ -16,7 +16,7 @@ import com.example.streamlangarage.R;
 import Common.ApprovedDetails;
 
 public class Approved extends Fragment {
-    TextView mjob,mjobno;
+    TextView mjob,mjobno,status,statustype;
     Button mbtn;
 
     @Override
@@ -35,6 +35,10 @@ public class Approved extends Fragment {
         mjob.setVisibility(View.INVISIBLE);
         mjobno=(TextView)v.findViewById(R.id.jobno);
         mjobno.setVisibility(View.INVISIBLE);
+        status=v.findViewById(R.id.status);
+        status.setVisibility(View.INVISIBLE);
+        statustype=v.findViewById(R.id.statustype);
+        statustype.setVisibility(View.INVISIBLE);
         mbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

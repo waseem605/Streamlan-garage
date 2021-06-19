@@ -36,15 +36,14 @@
                 app:civ_border_color="#FF000000" />
 
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="wrap_content">
 
 
                 <TextView
                     android:id="@+id/carname"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="15dp"
@@ -54,10 +53,24 @@
                     android:textColor="@color/black"
                     android:textSize="15sp"
                     android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/hk_grotesk_medium"
+                    android:paddingTop="5dp"
+                    android:text="status"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/chesisno"
-                    android:layout_width="match_parent"
+                    android:layout_below="@id/carname"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:fontFamily="@font/hk_grotesk_regular"
@@ -65,8 +78,22 @@
                     android:paddingBottom="5dp"
                     android:text="BMW X5 2019 "
                     android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/statustype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/dm_sans_regular"
+                    android:paddingTop="5dp"
+                    android:text="Submitted"
+                    android:layout_below="@id/status"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/orange"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
 
-            </LinearLayout>
+            </RelativeLayout>
 
         </LinearLayout>
 
