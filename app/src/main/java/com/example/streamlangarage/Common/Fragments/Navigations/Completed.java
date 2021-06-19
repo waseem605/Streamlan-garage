@@ -18,6 +18,7 @@ import com.example.streamlangarage.R;
 public class Completed extends Fragment {
 
     private Button mInvoice;
+    TextView status,statustype;
 
 
 
@@ -32,6 +33,10 @@ public class Completed extends Fragment {
                              Bundle savedInstanceState) {
       View v=inflater.inflate(R.layout.fragment_completed, container, false);
       mInvoice =(Button)v.findViewById(R.id.btnopenrequest);
+        status=v.findViewById(R.id.status);
+        status.setVisibility(View.INVISIBLE);
+        statustype=v.findViewById(R.id.statustype);
+        statustype.setVisibility(View.INVISIBLE);
       mInvoice.setText("Invoce");
       mInvoice.setOnClickListener(new View.OnClickListener() {
           @Override

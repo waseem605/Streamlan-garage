@@ -22,6 +22,7 @@ public class SubmittedDetail extends AppCompatActivity {
         mAmendBtn = (Button)findViewById(R.id.amend_Btn);
         mDeleteBtn = (Button)findViewById(R.id.delete_btn);
         mMessageBtn = (Button)findViewById(R.id.btnvehicleservice);
+        mMessageBtn.setText("Message");
 
 
 

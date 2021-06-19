@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".Common.Invoice.SelftDiagnose"></activity>
+        <activity android:name="Common.ProgressRequestDetails"></activity>
+        <activity android:name=".Common.Invoice.SelftDiagnose" />
         <activity android:name=".Common.Invoice.SubmittedDetail" />
         <activity android:name="Common.Self_Diagnose" />
         <activity android:name="Common.Chat_Details" />
