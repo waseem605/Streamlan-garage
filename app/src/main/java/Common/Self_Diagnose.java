@@ -23,7 +23,7 @@ public class Self_Diagnose extends AppCompatActivity {
         statustype.setVisibility(View.INVISIBLE);
         changetype=findViewById(R.id.serv);
         changetype.setText("Diagnosis");
-        btnopenrequest=findViewById(R.id.btnopenrequest);
+        btnopenrequest=findViewById(R.id.btnvehicleservice);
         btnopenrequest.setText("Vehical Diagnosis");
 
     }

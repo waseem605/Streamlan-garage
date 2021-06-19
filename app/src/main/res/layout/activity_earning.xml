@@ -113,6 +113,7 @@
                 android:padding="10dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
+                android:id="@+id/withdraw_heading"
                 android:background="@drawable/bottomsheet"
                 android:backgroundTint="@color/white"
                 android:layout_below="@+id/top_RL">
@@ -125,14 +126,154 @@
                     android:textSize="16sp"
                     android:fontFamily="@font/hk_grotesk_semi_bold"/>
 
+
             </RelativeLayout>
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/white_background_b_round"
-                />
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/bank_detail_RL"
+                android:padding="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@id/withdraw_heading"
+                android:background="@drawable/white_background_b_round" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/withdraw_to_bank"
+                    android:fontFamily="@font/hk_grotesk_regular"
+                    android:textSize="14sp"
+                    android:padding="10dp"
+                    android:id="@+id/text_1"
+                    android:layout_alignParentStart="true"
+                    android:gravity="left"
+                    android:textColor="@color/black_light"/>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/first_bank"
+                    android:fontFamily="@font/hk_grotesk_regular"
+                    android:textSize="14sp"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/bank_text"
+                    android:padding="10dp"
+                    android:gravity="right"
+                    android:textColor="@color/black_light"/>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Name"
+                    android:fontFamily="@font/hk_grotesk_regular"
+                    android:textSize="14sp"
+                    android:layout_below="@id/text_1"
+                    android:id="@+id/name_text"
+                    android:padding="10dp"
+                    android:layout_alignParentStart="true"
+                    android:gravity="left"
+                    android:textColor="@color/black_light"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/samuel_smith"
+                    android:layout_below="@id/bank_text"
+                    android:fontFamily="@font/hk_grotesk_regular"
+                    android:textSize="14sp"
+                    android:id="@+id/user_name"
+                    android:layout_alignParentEnd="true"
+                    android:padding="10dp"
+                    android:gravity="right"
+                    android:textColor="@color/black_light"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Account Number"
+                    android:fontFamily="@font/hk_grotesk_regular"
+                    android:textSize="14sp"
+                    android:layout_below="@id/name_text"
+                    android:padding="10dp"
+                    android:layout_alignParentStart="true"
+                    android:gravity="left"
+                    android:textColor="@color/black_light"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="10033020304050607080"
+                    android:id="@+id/account_number"
+                    android:layout_below="@id/user_name"
+                    android:fontFamily="@font/hk_grotesk_regular"
+                    android:textSize="14sp"
+                    android:layout_alignParentEnd="true"
+                    android:padding="10dp"
+                    android:gravity="right"
+                    android:textColor="@color/black_light"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/manage_btn"
+                    android:text="MANAGE "
+                    android:fontFamily="@font/hk_grotesk_regular"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/rounded"
+                    android:layout_below="@id/account_number"
+                    android:layout_margin="40dp"
+                    android:backgroundTint="@color/orange"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Withdraw History"
+                android:textColor="@color/black"
+                android:id="@+id/history_text"
+                android:fontFamily="@font/hk_grotesk_bold"
+                android:textSize="20sp"
+                android:layout_below="@id/bank_detail_RL"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/history_RL"
+                android:layout_below="@id/history_text"
+                android:layout_margin="20dp">
+
+                <include layout="@layout/sample_withdraw_details"
+                    android:id="@+id/layout_1"/>
+
+                <include layout="@layout/sample_withdraw_details"
+                    android:layout_below="@id/layout_1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirm_withdraw"
+                android:text="@string/confirm_amp_withdraw"
+                android:layout_below="@id/history_RL"
+                android:layout_margin="30dp"
+                android:background="@drawable/rounded"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                android:fontFamily="@font/hk_grotesk_semi_bold"/>
 
         </RelativeLayout>
 

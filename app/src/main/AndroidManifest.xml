@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name="Common.ProgressRequestDetails"></activity>
-        <activity android:name=".Common.Invoice.SelftDiagnose" />
+        <activity android:name="Common.ProgressRequestDetails"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Common.Invoice.SelftDiagnose"
+            android:screenOrientation="portrait"/>
         <activity android:name=".Common.Invoice.SubmittedDetail" />
         <activity android:name="Common.Self_Diagnose" />
         <activity android:name="Common.Chat_Details" />
@@ -29,8 +31,10 @@
         <activity android:name="Common.OpenRequestDetails" />
         <activity android:name=".Common.VehicleSevice" />
         <activity android:name="Common.OTP_Verify" />
+        <activity android:name="Common.LoginScreen" />
         <activity android:name="Common.MainActivity" />
         <activity android:name="Common.PasswordScreen" />
+        <activity android:name="Common.PasswordVerify" />
         <activity android:name="Common.ProfileStep1" />
         <activity android:name="Common.ProfileStep2" />
         <activity android:name="Common.ProfileStep3" />

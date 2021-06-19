@@ -188,5 +188,9 @@
     <string name="master_card_ending">Master Card ending</string>
     <string name="receipt_photo">Receipt photo</string>
     <string name="today_feb_20_2020">Today - Feb 20,2020</string>
+    <string name="withdraw_to_bank">Withdraw to bank:</string>
+    <string name="first_bank">First Bank</string>
+    <string name="samuel_smith">Samuel Smith</string>
+    <string name="confirm_amp_withdraw"><![CDATA[Confirm & Withdraw]]></string>
 
 </resources>

@@ -98,7 +98,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:padding="10dp"
+                android:dropDownSelector="@color/orange"
+                android:background="@drawable/syle_spinner_orange"
                 android:layout_marginStart="5dp"
                 android:id="@+id/coutry_names_bank"/>
 

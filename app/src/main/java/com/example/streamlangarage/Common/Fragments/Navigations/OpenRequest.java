@@ -45,6 +45,7 @@ public class OpenRequest extends Fragment {
         statustype=v.findViewById(R.id.statustype);
         statustype.setVisibility(View.INVISIBLE);
         btnopenrequest=(Button)v.findViewById(R.id.btnopenrequest);
+
         btnopenrequest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
