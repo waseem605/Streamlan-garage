@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.streamlangarage.Common.VehicleSevice;
 import com.example.streamlangarage.R;
@@ -15,6 +16,7 @@ import Common.Chat_Details;
 public class SubmittedDetail extends AppCompatActivity {
 
     private Button mAmendBtn,mDeleteBtn , mMessageBtn;
+    TextView tvserv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +24,7 @@ public class SubmittedDetail extends AppCompatActivity {
         mAmendBtn = (Button)findViewById(R.id.amend_Btn);
         mDeleteBtn = (Button)findViewById(R.id.delete_btn);
         mMessageBtn = (Button)findViewById(R.id.btnvehicleservice);
+
 
 
 
