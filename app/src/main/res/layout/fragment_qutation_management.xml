@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Common.Fragments.Navigations.QutationManagement">
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
@@ -88,6 +89,10 @@
     <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:tabTextColor="@color/black"
+        app:tabIndicatorColor="@null"
+        app:tabSelectedTextColor="@color/Back_color"
+        android:background="@color/white"
         android:id="@+id/endtb"
         android:layout_below="@id/midtb"></com.google.android.material.tabs.TabLayout>
     <androidx.viewpager.widget.ViewPager
