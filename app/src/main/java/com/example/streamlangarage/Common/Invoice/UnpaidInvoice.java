@@ -16,7 +16,7 @@ public class UnpaidInvoice extends AppCompatActivity {
 
     private ImageView mBackArrow;
     private Button carmodel;
-    private TextView mCancel;
+    private TextView mCancel,tvtime;
     private ImageView iv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,8 @@ public class UnpaidInvoice extends AppCompatActivity {
         setContentView(R.layout.activity_unpaid_invoice);
         carmodel=(Button)findViewById(R.id.viewprofile);
         carmodel.setText("BMW X5 2019");
+        tvtime=findViewById(R.id.tvtime);
+        tvtime.setText("Esther Berry");
         mBackArrow = (ImageView)findViewById(R.id.toolbarBank);
         mCancel = (TextView) findViewById(R.id.cancel);
         iv=findViewById(R.id.iv);
