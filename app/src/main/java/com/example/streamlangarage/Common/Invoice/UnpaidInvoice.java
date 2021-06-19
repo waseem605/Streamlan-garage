@@ -17,6 +17,7 @@ public class UnpaidInvoice extends AppCompatActivity {
     private ImageView mBackArrow;
     private Button carmodel;
     private TextView mCancel;
+    private ImageView iv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +26,8 @@ public class UnpaidInvoice extends AppCompatActivity {
         carmodel.setText("BMW X5 2019");
         mBackArrow = (ImageView)findViewById(R.id.toolbarBank);
         mCancel = (TextView) findViewById(R.id.cancel);
-
+        iv=findViewById(R.id.iv);
+        iv.setImageResource(R.drawable.avatar);
 
         mBackArrow.setOnClickListener(new View.OnClickListener() {
             @Override
