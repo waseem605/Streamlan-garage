@@ -16,7 +16,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -71,6 +70,7 @@
                         android:fontFamily="@font/hk_grotesk_regular"
                         android:inputType="text"
                         android:background="@null"
+                        android:textCursorDrawable="@drawable/curser_color"
                         android:padding="10dp"
                         android:textSize="16sp" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -95,6 +95,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/hk_grotesk_regular"
                         android:inputType="text"
+                        android:textCursorDrawable="@drawable/curser_color"
                         android:background="@null"
                         android:padding="10dp"
                         android:textSize="16sp" />
@@ -118,6 +119,7 @@
                         android:id="@+id/garage_number_ET"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textCursorDrawable="@drawable/curser_color"
                         android:fontFamily="@font/hk_grotesk_regular"
                         android:inputType="text"
                         android:background="@null"
@@ -146,6 +148,7 @@
                         android:fontFamily="@font/hk_grotesk_regular"
                         android:inputType="text"
                         android:background="@null"
+                        android:textCursorDrawable="@drawable/curser_color"
                         android:padding="10dp"
                         android:textSize="16sp" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -169,8 +172,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/hk_grotesk_regular"
-                        android:inputType="text"
+                        android:inputType="date"
                         android:background="@null"
+                        android:textCursorDrawable="@drawable/curser_color"
                         android:padding="10dp"
                         android:textSize="16sp" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -210,6 +214,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:background="@null"
+                        android:textCursorDrawable="@drawable/curser_color"
                         android:padding="10dp"
                         android:hint="@string/select_specialization"
                         android:fontFamily="@font/hk_grotesk_regular"
@@ -341,6 +346,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/hk_grotesk_regular"
                         android:inputType="text"
+                        android:textCursorDrawable="@drawable/curser_color"
                         android:background="@null"
                         android:padding="10dp"
                         android:textSize="16sp" />

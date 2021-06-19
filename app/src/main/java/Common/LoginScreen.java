@@ -2,6 +2,7 @@ package Common;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -16,5 +17,7 @@ public class LoginScreen extends AppCompatActivity {
     }
 
     public void callToPassVerification(View view) {
+
+        startActivity(new Intent(LoginScreen.this,PasswordVerify.class));
     }
 }

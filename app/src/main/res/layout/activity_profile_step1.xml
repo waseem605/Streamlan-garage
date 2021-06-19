@@ -162,6 +162,7 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/hk_grotesk_regular"
                                 android:inputType="text"
+                                android:textCursorDrawable="@drawable/curser_color"
                                 android:background="@null"
                                 android:padding="10dp"
                                 android:textSize="16sp" />
@@ -185,6 +186,7 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/hk_grotesk_regular"
                                 android:inputType="text"
+                                android:textCursorDrawable="@drawable/curser_color"
                                 android:background="@null"
                                 android:padding="10dp"
                                 android:textSize="16sp" />
@@ -257,6 +259,7 @@
                                 android:fontFamily="@font/hk_grotesk_regular"
                                 android:inputType="text"
                                 android:background="@null"
+                                android:textCursorDrawable="@drawable/curser_color"
                                 android:padding="10dp"
                                 android:textSize="16sp" />
                         </com.google.android.material.textfield.TextInputLayout>
@@ -284,6 +287,7 @@
                                 android:layout_height="80dp"
                                 android:layout_margin="10dp"
                                 android:padding="10dp"
+                                android:textCursorDrawable="@drawable/curser_color"
                                 android:background="@null"
                                 android:hint="@string/basic_info_garage"
                                 android:textSize="13sp"

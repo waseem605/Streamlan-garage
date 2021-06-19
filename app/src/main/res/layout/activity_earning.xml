@@ -96,6 +96,7 @@
                         android:layout_height="wrap_content"
                         android:background="@null"
                         android:padding="10dp"
+                        android:textCursorDrawable="@drawable/curser_color"
                         android:fontFamily="@font/hk_grotesk_regular"
                         android:inputType="text"
                         android:textSize="16sp" />
@@ -123,6 +124,7 @@
                     android:gravity="center"
                     android:textSize="16sp"
                     android:fontFamily="@font/hk_grotesk_semi_bold"/>
+
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="match_parent"
