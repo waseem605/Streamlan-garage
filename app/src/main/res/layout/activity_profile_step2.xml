@@ -228,37 +228,39 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/suggest_Text"
                     android:layout_marginTop="10dp"
-                    android:layout_marginStart="25dp"
+                    android:layout_marginStart="20dp"
                     android:layout_alignParentStart="true"
                     android:layout_below="@id/search_layout">
 
                     <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:padding="5dp"
                         android:id="@+id/porsche_layout"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
                         android:background="@drawable/rounded"
-                        android:backgroundTint="@color/orange">
+                        android:backgroundTint="@color/orange"
+                        android:padding="5dp">
+
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Porsche"
                             android:id="@+id/porsche"
-                            android:fontFamily="@font/hk_grotesk_medium"
-                            android:textSize="12sp"
-                            android:textColor="@color/white"/>
-                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="x"
-                            android:layout_toEndOf="@id/porsche"
-                            android:id="@+id/dismis1"
-                            android:layout_marginStart="15dp"
+                            android:fontFamily="@font/hk_grotesk_medium"
+                            android:text="Porsche"
                             android:textColor="@color/white"
-                            android:textSize="12sp"/>
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/dismis1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/porsche"
+                            android:text="x"
+                            android:layout_marginStart="30dp"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
                     </RelativeLayout>
                     <RelativeLayout
-                        android:layout_width="wrap_content"
+                        android:layout_width="90dp"
                         android:layout_height="wrap_content"
                         android:padding="5dp"
                         android:layout_toEndOf="@id/porsche_layout"
@@ -280,12 +282,12 @@
                             android:text="x"
                             android:layout_toEndOf="@id/mercheds"
                             android:id="@+id/dismis2"
-                            android:layout_marginStart="15dp"
+                            android:layout_marginStart="20dp"
                             android:textColor="@color/white"
                             android:textSize="12sp"/>
                     </RelativeLayout>
                     <RelativeLayout
-                        android:layout_width="wrap_content"
+                        android:layout_width="90dp"
                         android:layout_height="wrap_content"
                         android:padding="5dp"
                         android:layout_toEndOf="@id/mercheds_layout"
@@ -307,7 +309,7 @@
                             android:text="x"
                             android:layout_toEndOf="@id/audi"
                             android:id="@+id/dismis3"
-                            android:layout_marginStart="15dp"
+                            android:layout_marginStart="45dp"
                             android:textColor="@color/white"
                             android:textSize="12sp"/>
                     </RelativeLayout>
