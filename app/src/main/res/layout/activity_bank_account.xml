@@ -77,33 +77,31 @@
                 android:textSize="16sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/dropdown_bank"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
             android:layout_below="@id/user_b_name_layout"
-            android:hint="@string/country"
-            app:hintTextColor="@color/Back_color"
-            android:layout_marginLeft="20dp"
-            android:padding="5dp"
-            android:background="@drawable/white_rounded"
+            android:id="@+id/dropdown_country"
             android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp">
-            <!--
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
-                -->
-            <AutoCompleteTextView
+            android:background="@drawable/white_rounded">
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@null"
-                android:textSize="16sp"
-                android:paddingStart="5dp"
-                android:paddingEnd="5dp"
-                app:menu="@menu/dropdown"
-                android:inputType="none"/>
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Country"
+                />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:layout_marginStart="5dp"
+                android:id="@+id/coutry_names_bank"/>
 
-        </com.google.android.material.textfield.TextInputLayout>
-
+        </RelativeLayout>
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/account_number_layout"
             android:layout_width="match_parent"
@@ -111,7 +109,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
-            android:layout_below="@id/dropdown_bank"
+            android:layout_below="@id/dropdown_country"
             android:background="@drawable/white_rounded"
             android:hint="@string/account_number"
             app:hintTextColor="@color/Back_color"
