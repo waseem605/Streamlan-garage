@@ -92,6 +92,7 @@
         android:layout_height="wrap_content"
         app:tabTextColor="@color/black"
         app:tabIndicatorColor="@null"
+        app:tabTextAppearance="@style/CustomTabText"
         app:tabSelectedTextColor="@color/Back_color"
         android:background="@color/white"
         android:id="@+id/endtb"

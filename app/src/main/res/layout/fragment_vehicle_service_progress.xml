@@ -91,6 +91,7 @@
         android:layout_height="wrap_content"
         android:background="@color/white"
         app:tabTextColor="@color/black"
+        app:tabTextAppearance="@style/CustomTabText"
         app:tabSelectedTextColor="@color/Back_color"
         app:tabIndicatorColor="@null"
         android:id="@+id/tbvsp"
