@@ -21,7 +21,7 @@ public class OTP_Verify extends AppCompatActivity {
         mBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(OTP_Verify.this, LoginScreen.class);
+                Intent intent = new Intent(OTP_Verify.this, PasswordScreen.class);
                 startActivity(intent);
             }
         });

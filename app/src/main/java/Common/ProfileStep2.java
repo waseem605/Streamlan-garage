@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
 
@@ -18,6 +19,7 @@ public class ProfileStep2 extends AppCompatActivity {
 
     private Spinner mYear;
     private RelativeLayout mContinue;
+    private ImageView mBackLink;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,7 @@ public class ProfileStep2 extends AppCompatActivity {
         setContentView(R.layout.activity_profile_step2);
         mContinue = (RelativeLayout) findViewById(R.id.continue_btn_step);
         mYear = (Spinner)findViewById(R.id.Years);
+        mBackLink = (ImageView)findViewById(R.id.back_arrow_sig);
 
 
         String[]year= {"2013","2014","2015","2016"};
@@ -33,6 +36,15 @@ public class ProfileStep2 extends AppCompatActivity {
         mYear.setAdapter(arrayAdapter);
 
 
+
+
+        mBackLink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ProfileStep2.this,ProfileStep1.class));
+
+            }
+        });
 
         mContinue.setOnClickListener(new View.OnClickListener() {
             @Override

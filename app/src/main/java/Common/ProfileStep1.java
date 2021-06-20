@@ -23,7 +23,7 @@ import java.util.Arrays;
 public class ProfileStep1 extends AppCompatActivity {
 
     private RelativeLayout mContinue;
-    private ImageView mGarageImage;
+    private ImageView mGarageImage, mBacklink;
     AutoCompleteTextView mCountry;
     private LinearLayout mUploadImage;
     private Spinner mcountrySpinner ,mStateSpinner;
@@ -34,6 +34,7 @@ public class ProfileStep1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile_step1);
         mGarageImage = (ImageView)findViewById(R.id.garage_image);
+        mBacklink = (ImageView)findViewById(R.id.back_arrow_si);
         mContinue = (RelativeLayout) findViewById(R.id.continuebtn);
 
         mcountrySpinner =(Spinner)findViewById(R.id.country_names);
@@ -54,6 +55,13 @@ public class ProfileStep1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(ProfileStep1.this,ProfileStep2.class));
+            }
+        });
+
+        mBacklink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ProfileStep1.this,Login.class));
             }
         });
     }
