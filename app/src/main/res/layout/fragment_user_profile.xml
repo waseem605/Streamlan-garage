@@ -13,10 +13,35 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp">
+            >
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolbar_pr">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/left_arrow"
+                        android:id="@+id/back_arrow_pr"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Profile"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/hk_grotesk_semi_bold"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
 
             <include layout="@layout/sample_profile"
                 android:id="@+id/sample_p"
+                android:layout_margin="10dp"
+                android:layout_below="@id/toolbar_pr"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent" />/
 
@@ -25,6 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:layout_marginStart="5dp"
+                android:layout_margin="10dp"
                 android:layout_marginEnd="5dp"
                 android:layout_below="@id/sample_p"
                 android:id="@+id/upperRL"
@@ -207,11 +233,11 @@
                 android:id="@+id/lowerRL"
                 android:layout_below="@id/upperRL"
                 android:layout_marginTop="15dp"
-                android:layout_marginStart="5dp"
-                android:layout_marginEnd="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/round_high"
-                android:backgroundTint="@color/white"
-                android:layout_margin="10dp">
+                android:backgroundTint="@color/white">
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

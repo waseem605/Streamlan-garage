@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.streamlangarage.R;
@@ -12,6 +13,7 @@ import com.example.streamlangarage.R;
 public class Self_Diagnose extends AppCompatActivity {
     TextView status,statustype,changetype;
     Button btnopenrequest;
+    LinearLayout samplecar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,8 @@ public class Self_Diagnose extends AppCompatActivity {
         changetype.setText("Diagnosis");
         btnopenrequest=findViewById(R.id.btnvehicleservice);
         btnopenrequest.setText("Vehical Diagnosis");
+        samplecar=findViewById(R.id.samplecar);
+        samplecar.setBackgroundDrawable(getDrawable(R.drawable.top_round));
 
     }
 }

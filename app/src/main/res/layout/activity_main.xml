@@ -17,10 +17,14 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/hk_grotesk_regular"
         android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:itemIconSize="24sp"
-        app:itemIconTint="#0c73ec"
-        app:itemTextColor="#0c73ec"
+        app:itemIconTint="@color/bottom_navigation_style"
+        app:itemRippleColor="@color/Back_color"
+        app:labelVisibilityMode="labeled"
+        app:itemTextColor="@color/bottom_navigation_style"
         android:layout_centerHorizontal="true"
         app:menu="@menu/bottom_navigation" />
 

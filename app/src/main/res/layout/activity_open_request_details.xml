@@ -56,9 +56,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="2dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
-                android:background="@color/white"
+                android:background="@drawable/top_round"
                 android:orientation="vertical">
 
                 <TextView
@@ -66,7 +66,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="20dp"
-                    android:text="Schedule Service Repair Date"
+                    android:text="Customer Note"
                     android:textColor="@color/black"
                     android:textSize="16sp" />
 
@@ -163,7 +163,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="Problem Description"
+                        android:text="Customer Note"
                         android:textSize="18sp"></TextView>
 
                     <TextView
@@ -180,8 +180,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
                 android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
                 android:layout_marginEnd="10dp"
-                android:background="@color/white"
+                android:background="@drawable/white_background_b_round"
                 android:orientation="vertical">
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -192,7 +193,7 @@
                         android:layout_marginTop="10dp"
                         android:layout_marginLeft="10dp"
                         android:layout_alignParentLeft="true"
-                        android:text="Proposed Services"
+                        android:text="Requested Services"
                         android:textSize="18sp"
                         android:textColor="@color/black"
                         android:id="@+id/tvheading"></TextView>
@@ -333,10 +334,11 @@
                     android:padding="10dp">
 
                     <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
                         android:background="@drawable/ring"
                         android:text="+"
+                        android:layout_marginStart="60dp"
                         android:textColor="@color/orange"
                         android:textSize="20sp" />
 
@@ -353,7 +355,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:layout_marginStart="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     android:background="@drawable/white_rounded">
                     <TextView
                         android:layout_width="wrap_content"
@@ -378,9 +380,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:orientation="vertical"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginStart="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     android:background="@drawable/white_rounded">
                     <TextView
                         android:layout_width="wrap_content"
@@ -402,34 +404,42 @@
                         android:layout_marginBottom="10dp"></EditText>
                 </LinearLayout>
            <RelativeLayout
-               android:layout_width="match_parent"
+               android:layout_width="fill_parent"
                android:layout_height="wrap_content"
-               android:layout_marginBottom="30dp"
+               android:layout_marginBottom="20dp"
                android:layout_marginTop="20dp"
-               android:layout_marginEnd="20dp"
-               android:layout_marginStart="20dp"
-               android:gravity="center"
-               android:background="@color/white">
+               android:layout_marginEnd="10dp"
+               android:layout_marginStart="10dp"
+               android:background="@drawable/white_background_b_round">
 
                <Button
-                   android:layout_width="150dp"
+                   android:layout_width="fill_parent"
                    android:layout_height="wrap_content"
                    android:id="@+id/submit_quote"
-                   android:layout_marginStart="0dp"
                    android:background="@drawable/rounded"
+                   android:layout_alignParentLeft="true"
                    android:fontFamily="@font/hk_grotesk_semi_bold"
-                   android:padding="10dp"
                    android:text="Submit Quote"
+                   android:layout_marginEnd="5dp"
+                   android:layout_toLeftOf="@id/view"
                    android:textAllCaps="false"
                    android:textColor="@color/white"
                    android:textSize="19sp"></Button>
+               <View
+                   android:id="@+id/view"
+                   android:layout_height="1dp"
+                   android:layout_width="0dp"
+                   android:layout_centerHorizontal="true"
+                   />
 
                <Button
-                   android:layout_width="150dp"
+                   android:layout_width="fill_parent"
                    android:layout_height="wrap_content"
-                   android:layout_marginStart="40dp"
+                   android:layout_toRightOf="@id/view"
+                   android:layout_marginStart="5dp"
                    android:layout_toEndOf="@+id/submit_quote"
                    android:background="@drawable/rounded"
+                   android:layout_alignParentRight="true"
                    android:backgroundTint="@color/orange"
                    android:fontFamily="@font/hk_grotesk_semi_bold"
                    android:padding="10dp"

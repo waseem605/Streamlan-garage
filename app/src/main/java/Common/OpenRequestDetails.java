@@ -4,12 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.streamlangarage.R;
 
 public class OpenRequestDetails extends AppCompatActivity {
     TextView status,statustype;
+    LinearLayout samplecar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,5 +21,7 @@ public class OpenRequestDetails extends AppCompatActivity {
         status.setVisibility(View.INVISIBLE);
         statustype=findViewById(R.id.statustype);
         statustype.setVisibility(View.INVISIBLE);
+        samplecar=findViewById(R.id.samplecar);
+        samplecar.setBackgroundDrawable(getDrawable(R.drawable.top_round));
     }
 }

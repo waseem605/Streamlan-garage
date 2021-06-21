@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/gray"
     android:layout_height="match_parent"
     tools:context="Common.Self_Diagnose">
     <ScrollView
@@ -353,7 +354,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:layout_marginStart="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     android:background="@drawable/white_rounded">
                     <TextView
                         android:layout_width="wrap_content"
@@ -378,9 +379,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:orientation="vertical"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginStart="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     android:background="@drawable/white_rounded">
                     <TextView
                         android:layout_width="wrap_content"
@@ -404,7 +405,7 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/white">
+                    android:background="@drawable/white_background_b_round">
                     <Button
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -412,8 +413,8 @@
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentRight="true"
                         android:layout_marginTop="20dp"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
                         android:textSize="18sp"
                         android:layout_marginBottom="10dp"
                         android:textColor="@color/white"
@@ -427,9 +428,9 @@
                         android:text="Cancel"
                         android:textSize="18sp"
                         android:layout_alignParentLeft="true"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginLeft="10dp"
                         android:layout_marginBottom="10dp"
-                        android:layout_marginRight="20dp"
+                        android:layout_marginRight="10dp"
                         android:layout_alignParentRight="true"
                         android:textColor="@color/white"
                         android:background="@drawable/rounded"

@@ -9,6 +9,7 @@
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/white"
         android:id="@+id/toptb">
         <RelativeLayout
             android:layout_width="match_parent"
@@ -63,6 +64,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/toptb"
+        android:background="@color/white"
+        android:layout_marginTop="2dp"
         android:id="@+id/midtb">
         <RelativeLayout
             android:layout_width="match_parent"
@@ -90,6 +93,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
+        android:layout_marginTop="2dp"
         app:tabTextColor="@color/black"
         app:tabTextAppearance="@style/CustomTabText"
         app:tabSelectedTextColor="@color/Back_color"
