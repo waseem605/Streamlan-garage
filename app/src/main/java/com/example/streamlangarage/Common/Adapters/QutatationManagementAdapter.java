@@ -14,21 +14,22 @@ import com.example.streamlangarage.Common.Fragments.Navigations.Submitted;
 
 import org.jetbrains.annotations.NotNull;
 
-public class QutatationManagementAdapter extends FragmentPagerAdapter {
+public class  QutatationManagementAdapter extends FragmentPagerAdapter {
 
     public QutatationManagementAdapter(@NonNull @NotNull FragmentManager fm) {
         super(fm);
     }
+
+
 
     @NonNull
     @NotNull
     @Override
     public Fragment getItem(int position) {
         switch (position) {
-
-
             case 0:
                 return new OpenRequest();
+
             case 1:
                 return new Submitted();
 

@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/silver"
+    android:id="@+id/in_progress_main"
     tools:context=".Common.Fragments.Navigations.InProgress">
 
    <include layout="@layout/sample_openrequest"></include>

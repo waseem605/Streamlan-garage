@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/silver"
     tools:context="Common.VerifySuccessfully">
     <ImageView
         android:layout_width="200dp"
@@ -33,10 +34,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/TVmsg"
         android:gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginTop="20dp"
-        android:text="Our Expert Team will check and confirm about your profile within 2-3 Business days."
-        android:layout_alignParentRight="true"
-        android:layout_alignParentLeft="true"
+        android:text="@string/our_expert_team_will_check"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
         android:textSize="15sp"
         android:fontFamily="@font/hk_grotesk_regular"/>
 
@@ -44,7 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/TVtxt"
-        android:padding="15dp"
+        android:padding="20dp"
         android:textAllCaps="false"
         android:id="@+id/goto_Home"
         android:layout_marginLeft="30dp"

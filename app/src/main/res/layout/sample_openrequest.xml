@@ -2,16 +2,15 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray">
+    android:background="@color/silver">
     <LinearLayout
         android:id="@+id/llopenrequest"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:orientation="vertical"
         android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         >
         <RelativeLayout
             android:layout_width="match_parent"
@@ -19,30 +18,36 @@
             android:background="@drawable/bottomsheet"
             android:backgroundTint="@color/white"
             android:layout_marginStart="10dp"
+            android:paddingTop="15dp"
+            android:paddingStart="12dp"
             android:layout_marginEnd="10dp">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true"
-                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
                 android:text="Esther Berry"
                 android:textSize="15sp"
                 android:fontFamily="@font/hk_grotesk_medium"
                 android:textColor="@color/black"
-                android:id="@+id/tv"></TextView>
+                android:id="@+id/user_name_TV" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="10dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginEnd="40dp"
                 android:text="Job #"
                 android:fontFamily="@font/hk_grotesk_medium"
                 android:textSize="15sp"
                 android:textColor="@color/black"
-                android:id="@+id/job"></TextView>
+                android:id="@+id/job" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -51,20 +56,23 @@
                 android:layout_marginBottom="10dp"
                 android:layout_alignParentStart="true"
                 android:textSize="15dp"
+                android:paddingTop="5dp"
                 android:fontFamily="@font/hk_grotesk_medium"
                 android:text="Today 08:30 AM"
                 android:textColor="@color/black"
-                android:layout_below="@id/tv"></TextView>
+                android:paddingBottom="10dp"
+                android:layout_below="@id/user_name_TV" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="15dp"
                 android:text="#asdv2121"
                 android:textSize="13sp"
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:id="@+id/jobno"
-                android:layout_below="@id/job"></TextView>
+                android:layout_below="@id/job" />
 
         </RelativeLayout>
         <include layout="@layout/sample_carschedule"></include>
@@ -86,6 +94,7 @@
                 android:backgroundTint="@color/Back_color"
                 android:layout_marginBottom="20dp"
                 android:textAllCaps="false"
+                android:padding="15dp"
                 android:layout_marginStart="100dp"
                 android:textColor="@color/white"
                 android:layout_marginEnd="100dp"

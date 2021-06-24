@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/silver"
     tools:context=".Common.Invoice.InvoiceActivity">
 
     <ScrollView
@@ -32,7 +33,7 @@
                         android:src="@drawable/left_arrow"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="5dp"
-                        android:id="@+id/toolbarBank"/>
+                        android:id="@+id/toolbarBank_invoice"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -88,11 +89,11 @@
                                 android:fontFamily="@font/hk_grotesk_semi_bold"
                                 android:textSize="15sp"
                                 android:textColor="@color/black"
-                                android:layout_margin="10dp"/>
+                              android:layout_margin="10dp" />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Pending: "
+                                android:text="Paid on: "
                                 android:layout_marginTop="10dp"
                                 android:fontFamily="@font/hk_grotesk_medium"
                                 android:textSize="15sp"
@@ -124,8 +125,8 @@
                             android:layout_height="wrap_content"
                             android:background="@color/white"
                             android:layout_marginTop="2dp"
-                            android:layout_marginStart="10dp"
                             android:layout_marginEnd="10dp">
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -136,7 +137,7 @@
                                 android:textSize="15sp"
                                 android:fontFamily="@font/hk_grotesk_medium"
                                 android:textColor="@color/black"
-                                android:id="@+id/tv"></TextView>
+                                android:id="@+id/tv" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -550,7 +551,7 @@
                     android:layout_marginBottom="30dp"
                     android:layout_marginTop="15dp"
                     android:background="@drawable/rounded"
-                    android:padding="5sp"
+                    android:padding="12dp"
                     android:gravity="center"
                     android:layout_below="@id/centerRL">
                     <ImageView
@@ -558,6 +559,7 @@
                         android:layout_height="20dp"
                         android:layout_marginTop="14dp"
                         android:id="@+id/eye"
+                        android:layout_centerVertical="true"
                         android:src="@drawable/eye_on_button"/>
                     <TextView
                         android:layout_width="wrap_content"

@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/gray"
+    android:background="@color/silver"
     android:layout_height="match_parent"
     tools:context=".Common.Fragments.Navigations.Notification">
 
@@ -13,13 +13,14 @@
        <RelativeLayout
            android:layout_width="match_parent"
            android:layout_height="wrap_content">
+
            <ImageView
                android:layout_width="30dp"
                android:layout_height="30dp"
                android:src="@drawable/left_arrow"
                android:layout_alignParentTop="true"
                android:layout_alignParentLeft="true"
-               android:layout_marginStart="10dp"></ImageView>
+               android:layout_marginStart="10dp" />
        </RelativeLayout>
    </androidx.appcompat.widget.Toolbar>
     <androidx.appcompat.widget.Toolbar
@@ -58,8 +59,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:paddingTop="10dp"
+        android:paddingTop="30dp"
         android:layout_marginRight="10dp"
+        android:paddingStart="10dp"
+        android:paddingBottom="5dp"
         android:layout_marginLeft="10dp"
         android:background="@drawable/bottomsheet"
         android:backgroundTint="@color/white"
@@ -76,6 +79,7 @@
         <TextView
             android:layout_width="180dp"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/hk_grotesk_regular"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="5dp"
             android:textSize="16sp"
@@ -87,7 +91,10 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="1dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="2dp"
         android:background="@color/white"
         android:backgroundTint="@color/white"
         android:orientation="horizontal">
@@ -100,12 +107,13 @@
             android:src="@drawable/green_notifi"
             app:civ_border_color="#FF000000" />
         <TextView
-            android:layout_width="180dp"
+            android:layout_width="220dp"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/hk_grotesk_regular"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="5dp"
             android:textSize="16sp"
-            android:text="Your Quotes has been Schedule"></TextView>
+            android:text="Your Service #1234 has been been completed"></TextView>
 
     </LinearLayout>
     <LinearLayout
@@ -113,7 +121,10 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="2dp"
+        android:paddingBottom="5dp"
+        android:paddingEnd="5dp"
+        android:paddingStart="10dp"
         android:background="@color/white"
         android:backgroundTint="@color/white"
         android:orientation="horizontal">
@@ -131,7 +142,8 @@
             android:layout_marginTop="20dp"
             android:layout_marginLeft="5dp"
             android:textSize="16sp"
-            android:text="Your Service has been Schedule"></TextView>
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:text="Your booking #1205 has been cancelled"></TextView>
 
     </LinearLayout>
     <LinearLayout
@@ -139,7 +151,10 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="1dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="2dp"
         android:background="@color/white"
         android:backgroundTint="@color/white"
         android:orientation="horizontal">
@@ -154,6 +169,7 @@
         <TextView
             android:layout_width="180dp"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/hk_grotesk_regular"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="5dp"
             android:textSize="16sp"
@@ -165,7 +181,10 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="2dp"
+        android:paddingBottom="5dp"
+        android:paddingEnd="5dp"
+        android:paddingStart="10dp"
         android:background="@color/white"
         android:backgroundTint="@color/white"
         android:orientation="horizontal">
@@ -182,6 +201,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="5dp"
+            android:fontFamily="@font/hk_grotesk_regular"
             android:textSize="16sp"
             android:text="Your Service has been Schedule"></TextView>
 
@@ -191,7 +211,10 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="2dp"
+        android:paddingEnd="5dp"
+        android:paddingStart="10dp"
+        android:paddingBottom="30dp"
         android:background="@drawable/white_background_b_round"
         android:backgroundTint="@color/white"
         android:orientation="horizontal">
@@ -207,6 +230,7 @@
             android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:fontFamily="@font/hk_grotesk_regular"
             android:layout_marginLeft="5dp"
             android:textSize="16sp"
             android:text="Your Service has been Schedule"></TextView>

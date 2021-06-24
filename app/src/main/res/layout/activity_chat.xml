@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/silver"
     tools:context="Common.Chat">
+
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -13,6 +15,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
@@ -21,23 +24,24 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginStart="10dp"
                 android:src="@drawable/left_arrow"
-                app:tint="@color/white"></ImageView>
+                app:tint="@color/white" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Messages"
-               android:gravity="center"
+                android:gravity="center"
                 android:layout_marginTop="2dp"
                 android:textSize="24sp"
                 android:fontFamily="@font/dm_sans_bold"
-                android:textColor="@color/white"></TextView>
+                android:textColor="@color/white" />
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:src="@drawable/delete_button"
                 android:layout_alignParentRight="true"
                 android:layout_marginEnd="20dp"
-                android:layout_marginTop="5dp"></ImageView>
+                android:layout_marginTop="3dp"></ImageView>
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
     <RelativeLayout
@@ -62,9 +66,21 @@
             android:fontFamily="@font/dm_sans_regular"></EditText>
     </RelativeLayout>
 
-<include layout="@layout/sample_message"
-    android:layout_below="@id/RLsearch"
-    android:layout_height="wrap_content"
-    android:layout_margin="10dp"
-    android:layout_width="match_parent"></include>
+    <include
+        layout="@layout/sample_message"
+        android:layout_below="@id/RLsearch"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/msg"
+        android:layout_width="match_parent" />
+    <include
+        layout="@layout/sample_message"
+        android:layout_below="@id/msg"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent" />
 </RelativeLayout>

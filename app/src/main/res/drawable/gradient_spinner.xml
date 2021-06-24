@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true"
+        android:drawable="@drawable/ic_arrow_right">
+        <shape>
+
+            <solid
+                android:color="@color/white" />
+
+            <corners android:radius="3dp" />
+
+            <padding
+                android:bottom="10dp"
+                android:left="10dp"
+                android:right="10dp"
+                android:top="10dp" />
+
+            <stroke
+                android:width="2dp"
+                android:color="@color/Back_color" />
+        </shape>
+    </item>
+    <!-- spinner_ab_default_new_theme_bs -> this image for corner triangle -->
+    <item
+
+        android:drawable="@drawable/ic_arrow_right" >
+        <shape>
+            <solid
+                android:color="@color/white">
+            </solid>
+
+            <corners android:radius="3dp" />
+
+            <padding
+                android:bottom="10dp"
+                android:left="10dp"
+                android:right="10dp"
+                android:top="10dp" />
+            <stroke
+                android:width="2dp"
+                android:color="@color/gray"/>
+        </shape>
+    </item>
+</selector>

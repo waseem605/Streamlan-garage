@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/silver"
     tools:context=".Common.Invoice.SelftDiagnose">
 
     <ScrollView
@@ -90,6 +91,7 @@
                             android:textSize="14sp"
                             android:fontFamily="@font/hk_grotesk_semi_bold"
                             android:textColor="@color/black" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -99,11 +101,12 @@
                             android:layout_alignParentRight="true"
                             android:textSize="14sp"
                             android:fontFamily="@font/hk_grotesk_semi_bold"
-                            android:textColor="@color/black"></TextView>
+                            android:textColor="@color/black" />
                     </RelativeLayout>
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
+
                         <TextView
                             android:layout_width="150dp"
                             android:layout_height="wrap_content"
@@ -113,7 +116,7 @@
                             android:text="Ac Compressor Repair"
                             android:textSize="14sp"
                             android:fontFamily="@font/hk_grotesk_regular"
-                            android:textColor="@color/black"></TextView>
+                            android:textColor="@color/black" />
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"

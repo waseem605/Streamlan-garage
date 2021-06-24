@@ -11,18 +11,18 @@
     <string name="_24_7_service">24/7 Service</string>
     <string name="wifi">Wifi</string>
     <string name="tuesday">Tuesday</string>
-    <string name="others_information">Others Information</string>
     <string name="availability_hours">Availability hours</string>
     <string name="day">Day</string>
     <string name="time">Time</string>
     <string name="thursday">Thursday</string>
     <string name="friday">Friday</string>
     <string name="saturday">Saturday</string>
-    <string name="send_request_for_approval">Send Request for Approval</string>
+    <string name="send_request_for_approval">Send request for approval</string>
     <string name="wednesday">Wednesday</string>
     <string name="quotes">Quotes</string>
     <string name="booking">Booking</string>
     <string name="earning">Earning</string>
+    <string name="profile_instruction">Your image should is a friendly and inviting image. Clearly identifies your \n<br>business</br> </string>
     <string name="add">ADD</string>
     <string name="country">Country</string>
     <string name="cctv">CCTV</string>
@@ -38,10 +38,10 @@
     <string name="add_more">Add more</string>
     <string name="mcontinue">Continue</string>
     <string name="condition">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, From a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, Richard McClintock, a Latin professor at Hampden-Sydney College in</string>
-    <string name="services">services</string>
+    <string name="services">Services</string>
     <string name="promotions">Promotions</string>
     <string name="bank_account">Bank Account</string>
-    <string name="review">Review</string>
+    <string name="review">Reviews</string>
     <string name="steamlane_v1_0">Steamlane V1 0</string>
     <string name="change_bank_account">Change Bank Account</string>
     <string name="account_number">Account Number</string>
@@ -58,5 +58,13 @@
     <string name="first_bank">First Bank</string>
     <string name="samuel_smith">Samuel Smith</string>
     <string name="confirm_amp_withdraw"><![CDATA[Confirm & Withdraw]]></string>
+    <string name="earnings">Earnings</string>
+    <string name="estimated_date">Estimated service completion date</string>
+    <string name="verify_phone"><br>We need to verify \n</br> your phone</string>
+    <string name="tow_pick_up">Tow pick up</string>
+    <string name="mobile_mechanic">Mobile mechanic</string>
+    <string name="others_information">Your work profile</string>
+    <string name="our_expert_team_will_check"><br>Our Expert Team will check and confirm about \n</br> your profile within 2-3 Business days.</string>
+
 
 </resources>

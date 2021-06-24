@@ -12,13 +12,17 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.streamlangarage.Common.Invoice.InvoiceActivity;
+import com.example.streamlangarage.Common.Invoice.UnpaidInvoice;
 import com.example.streamlangarage.R;
+
+import Common.MainActivity;
 
 
 public class Paid extends Fragment {
 
     private Button mInvoice;
-    TextView status,statustype;
+    TextView status,statustype , mjob, mjobno;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -30,6 +34,12 @@ public class Paid extends Fragment {
                              Bundle savedInstanceState) {
 
        View v =inflater.inflate(R.layout.fragment_paid, container, false);
+
+
+        mjob=(TextView)v.findViewById(R.id.job);
+        mjob.setVisibility(View.INVISIBLE);
+        mjobno=(TextView)v.findViewById(R.id.jobno);
+        mjobno.setVisibility(View.INVISIBLE);
         status=v.findViewById(R.id.status);
         status.setVisibility(View.INVISIBLE);
         statustype=v.findViewById(R.id.statustype);
@@ -42,6 +52,11 @@ public class Paid extends Fragment {
                startActivity(new Intent(Paid.this.getActivity(), InvoiceActivity.class));
            }
        });
+
+
+
+
+
        return v;
     }
 }

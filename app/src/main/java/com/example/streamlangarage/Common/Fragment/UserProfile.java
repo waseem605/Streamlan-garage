@@ -29,6 +29,7 @@ private RelativeLayout mPromotion,mMessage,mServices,mReview,mTerms,mBankAccount
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requireActivity().getWindow().setStatusBarColor(getResources().getColor(R.color.silver));
 
     }
 

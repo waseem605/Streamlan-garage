@@ -24,6 +24,8 @@ public class ProfileStep2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+       getWindow().setStatusBarColor(getResources().getColor(R.color.silver));
+       getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         setContentView(R.layout.activity_profile_step2);
         mContinue = (RelativeLayout) findViewById(R.id.continue_btn_step);
         mYear = (Spinner)findViewById(R.id.Years);

@@ -14,6 +14,7 @@ public class Notification extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requireActivity().getWindow().setStatusBarColor(getResources().getColor(R.color.silver));
     }
 
     @Override

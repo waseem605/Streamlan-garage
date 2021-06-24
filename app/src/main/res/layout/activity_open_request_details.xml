@@ -3,8 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/gray"
+    android:background="@color/silver"
     android:layout_height="match_parent"
+    android:id="@+id/open_request_id"
     tools:context=".Common.VehicleSevice">
     <ScrollView
         android:layout_width="match_parent"
@@ -25,33 +26,61 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/left_arrow"
-                        android:id="@+id/lefarrow"
+                        android:id="@+id/leftarrow"
                         android:layout_marginTop="5dp"
-                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true" />
+
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
-                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
                         android:text="Vehicle Services"
                         android:layout_marginTop="5dp"
-                        android:layout_toEndOf="@id/lefarrow"
-                        android:textSize="22sp"
-                        android:layout_marginStart="70dp"></TextView>
+                        android:gravity="center"
+                        android:textSize="22sp"/>
                 </RelativeLayout>
             </androidx.appcompat.widget.Toolbar>
 
-            <include layout="@layout/sample_garage_name"
+            <include
+                layout="@layout/sample_garage_name"
                 android:layout_below="@id/tb"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"></include>
+                android:layout_width="wrap_content" />
 
-            <include
-                layout="@layout/sample_carschedule"
-                android:id="@+id/include2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded"
+                android:backgroundTint="@color/white"
+                android:id="@+id/samples">
+                <include
+                    layout="@layout/sample_carschedule"
+                    android:id="@+id/include2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/tesxt"
+                    android:fontFamily="@font/hk_grotesk_regular"
+                    android:layout_below="@id/include2"
+                    android:text="Scheduled Service Repair Date"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <include layout="@layout/sample_date_time"
+                    android:layout_below="@id/tesxt"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" />
+
+            </RelativeLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -60,96 +89,6 @@
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/top_round"
                 android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="20dp"
-                    android:text="Customer Note"
-                    android:textColor="@color/black"
-                    android:textSize="16sp" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RelativeLayout
-                        android:layout_width="170dp"
-                        android:layout_height="45dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginEnd="10dp"
-                        android:background="@drawable/white_rounded">
-
-                        <TextView
-                            android:id="@+id/tvdate"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentTop="true"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="5dp"
-                            android:text="Date"
-                            android:textColor="@color/black"
-                            android:textSize="16sp"></TextView>
-
-                        <TextView
-                            android:id="@+id/tvrange"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/tvdate"
-                            android:layout_alignParentLeft="true"
-                            android:layout_marginLeft="10dp"
-                            android:text="12-03-2020"></TextView>
-
-                        <ImageView
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_alignParentTop="true"
-                            android:layout_alignParentRight="true"
-                            android:layout_alignParentBottom="true"
-                            android:layout_marginStart="71dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginRight="-41dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_toEndOf="@id/tvdate"
-                            android:src="@drawable/date_range_24"></ImageView>
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="120dp"
-                        android:layout_height="45dp"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginEnd="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:background="@drawable/white_rounded">
-
-                        <TextView
-                            android:id="@+id/tvtime"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentTop="true"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="5dp"
-                            android:text="Time"
-                            android:textColor="@color/black"
-                            android:textSize="16sp"></TextView>
-
-                        <TextView
-                            android:id="@+id/tvtimerange"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/tvtime"
-                            android:layout_alignParentLeft="true"
-                            android:layout_marginLeft="10dp"
-                            android:text="10:50 AM"></TextView>
-                    </RelativeLayout>
-                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -187,6 +126,7 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -196,39 +136,44 @@
                         android:text="Requested Services"
                         android:textSize="18sp"
                         android:textColor="@color/black"
-                        android:id="@+id/tvheading"></TextView>
+                        android:id="@+id/tvheading" />
+
                     <TextView
                         android:layout_width="80dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:text="Labour"
-                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="5dp"
                         android:textSize="18sp"
                         android:textColor="@color/black"
-                        android:layout_toEndOf="@id/tvheading"></TextView>
+                        android:layout_toStartOf="@id/part_id" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
+                        android:id="@+id/part_id"
                         android:text="parts"
-                        android:layout_marginRight="20dp"
-                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="20dp"
+                        android:layout_alignParentEnd="true"
                         android:textSize="18sp"
-                        android:textColor="@color/black"></TextView>
+                        android:textColor="@color/black" />
                 </RelativeLayout>
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <TextView
-                        android:layout_width="150dp"
+                        android:layout_width="170dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_alignParentStart="true"
                         android:text="Ac Compressor Repair"
                         android:textSize="14sp"
                         android:textColor="@color/black"
-                        android:id="@+id/tv2"></TextView>
+                        android:id="@+id/tv2" />
+
                     <EditText
                         android:layout_width="60dp"
                         android:layout_height="30dp"
@@ -236,25 +181,28 @@
                         android:textSize="14sp"
                         android:textCursorDrawable="@drawable/curser_color"
                         android:gravity="center"
-                        android:layout_marginStart="30dp"
-                        android:layout_toEndOf="@id/tv2"
+                        android:layout_marginEnd="20dp"
+                        android:layout_toStartOf="@id/compresser_ED_P"
                         android:background="@drawable/white_rounded"
-                        android:textColor="@color/black"></EditText>
+                        android:textColor="@color/black" />
+
                     <EditText
                         android:layout_width="60dp"
                         android:layout_height="30dp"
                         android:layout_marginTop="10dp"
+                        android:id="@+id/compresser_ED_P"
                         android:textCursorDrawable="@drawable/curser_color"
                         android:textSize="14sp"
                         android:gravity="center"
                         android:layout_marginRight="10dp"
                         android:layout_alignParentRight="true"
                         android:background="@drawable/white_rounded"
-                        android:textColor="@color/black"></EditText>
+                        android:textColor="@color/black" />
                 </RelativeLayout>
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <TextView
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
@@ -264,7 +212,8 @@
                         android:text="Brake Services"
                         android:textSize="14sp"
                         android:textColor="@color/black"
-                        android:id="@+id/tv3"></TextView>
+                        android:id="@+id/tv3" />
+
                     <EditText
                         android:layout_width="60dp"
                         android:layout_height="30dp"
@@ -272,13 +221,15 @@
                         android:textSize="14sp"
                         android:gravity="center"
                         android:textCursorDrawable="@drawable/curser_color"
-                        android:layout_marginStart="30dp"
-                        android:layout_toEndOf="@id/tv3"
+                        android:layout_marginEnd="20dp"
+                        android:layout_toStartOf="@id/brake_ET_P"
                         android:background="@drawable/white_rounded"
-                        android:textColor="@color/black"></EditText>
+                        android:textColor="@color/black" />
+
                     <EditText
                         android:layout_width="60dp"
                         android:layout_height="30dp"
+                        android:id="@+id/brake_ET_P"
                         android:layout_marginTop="10dp"
                         android:textSize="14sp"
                         android:gravity="center"
@@ -286,11 +237,12 @@
                         android:layout_marginRight="10dp"
                         android:layout_alignParentRight="true"
                         android:background="@drawable/white_rounded"
-                        android:textColor="@color/black"></EditText>
+                        android:textColor="@color/black" />
                 </RelativeLayout>
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <TextView
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
@@ -300,29 +252,32 @@
                         android:text="Oil Change"
                         android:textSize="14sp"
                         android:textColor="@color/black"
-                        android:id="@+id/tv1"></TextView>
+                        android:id="@+id/tv1" />
+
                     <EditText
                         android:layout_width="60dp"
                         android:layout_height="30dp"
                         android:layout_marginTop="10dp"
                         android:textSize="14sp"
                         android:gravity="center"
-                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="20dp"
                         android:textCursorDrawable="@drawable/curser_color"
-                        android:layout_toEndOf="@id/tv1"
+                        android:layout_toStartOf="@id/oil_ET_P"
                         android:background="@drawable/white_rounded"
-                        android:textColor="@color/black"></EditText>
+                        android:textColor="@color/black" />
+
                     <EditText
                         android:layout_width="60dp"
                         android:layout_height="30dp"
+                        android:id="@+id/oil_ET_P"
                         android:layout_marginTop="10dp"
                         android:textSize="14sp"
                         android:gravity="center"
                         android:textCursorDrawable="@drawable/curser_color"
-                        android:layout_marginRight="10dp"
-                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_alignParentEnd="true"
                         android:background="@drawable/white_rounded"
-                        android:textColor="@color/black"></EditText>
+                        android:textColor="@color/black" />
                 </RelativeLayout>
                 <LinearLayout
                     android:id="@+id/upload_garage_img"
@@ -357,24 +312,27 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
                     android:background="@drawable/white_rounded">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginLeft="10dp"
                         android:text="Discount "
-                        android:textSize="16sp"></TextView>
+                        android:textSize="16sp" />
+
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="15dp"
+                        android:layout_marginTop="5dp"
                         android:hint="Enter Price"
                         android:background="@null"
+                        android:padding="5dp"
                         android:textCursorDrawable="@drawable/curser_color"
                         android:layout_marginLeft="10dp"
                         android:gravity="start"
                         android:textSize="16sp"
-                        android:layout_marginBottom="10dp"></EditText>
+                        android:layout_marginBottom="10dp" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -417,14 +375,16 @@
                    android:layout_height="wrap_content"
                    android:id="@+id/submit_quote"
                    android:background="@drawable/rounded"
-                   android:layout_alignParentLeft="true"
+                   android:layout_alignParentStart="true"
                    android:fontFamily="@font/hk_grotesk_semi_bold"
                    android:text="Submit Quote"
+                   android:paddingTop="18dp"
+                   android:paddingBottom="18dp"
                    android:layout_marginEnd="5dp"
                    android:layout_toLeftOf="@id/view"
                    android:textAllCaps="false"
                    android:textColor="@color/white"
-                   android:textSize="19sp"></Button>
+                   android:textSize="19sp" />
                <View
                    android:id="@+id/view"
                    android:layout_height="1dp"
@@ -435,19 +395,19 @@
                <Button
                    android:layout_width="fill_parent"
                    android:layout_height="wrap_content"
-                   android:layout_toRightOf="@id/view"
                    android:layout_marginStart="5dp"
-                   android:layout_toEndOf="@+id/submit_quote"
+                   android:layout_toEndOf="@+id/view"
                    android:background="@drawable/rounded"
                    android:layout_alignParentRight="true"
                    android:backgroundTint="@color/orange"
                    android:fontFamily="@font/hk_grotesk_semi_bold"
-                   android:padding="10dp"
+                   android:paddingTop="18dp"
+                   android:paddingBottom="18dp"
                    android:text="Cancel"
                    android:textAllCaps="false"
                    android:id="@+id/cancel_qoute"
                    android:textColor="@color/white"
-                   android:textSize="19sp"></Button>
+                   android:textSize="19sp" />
            </RelativeLayout>
             </LinearLayout>
         </LinearLayout>

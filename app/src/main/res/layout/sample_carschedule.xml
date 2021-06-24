@@ -22,7 +22,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="2dp"
             android:layout_marginEnd="10dp"
-            android:background="#FFFFFF"
+            android:background="@color/white"
             android:orientation="horizontal">
 
             <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -40,7 +40,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-
                 <TextView
                     android:id="@+id/carname"
                     android:layout_width="wrap_content"
@@ -57,12 +56,12 @@
                     android:id="@+id/status"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="30dp"
                     android:layout_marginTop="15dp"
                     android:fontFamily="@font/hk_grotesk_medium"
                     android:paddingTop="5dp"
                     android:text="status"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
                     android:textColor="@color/black"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -82,13 +81,13 @@
                     android:id="@+id/statustype"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="15dp"
                     android:fontFamily="@font/dm_sans_regular"
                     android:paddingTop="5dp"
                     android:text="Submitted"
                     android:layout_below="@id/status"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
                     android:textColor="@color/orange"
                     android:textSize="13sp"
                     android:textStyle="bold" />
@@ -103,8 +102,11 @@
             android:background="@color/white"
             android:layout_marginTop="2dp"
             android:layout_marginStart="10dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="10dp"
             android:layout_marginEnd="10dp"
             android:id="@+id/Rlsamplecarschedule">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -115,7 +117,8 @@
                 android:textSize="15sp"
                 android:fontFamily="@font/hk_grotesk_medium"
                 android:textColor="@color/black"
-                android:id="@+id/tv"></TextView>
+                android:id="@+id/tv" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -127,10 +130,12 @@
                 android:textSize="15sp"
                 android:fontFamily="@font/hk_grotesk_medium"
                 android:textColor="@color/black"
-                android:id="@+id/typ"></TextView>
+                android:id="@+id/typ" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:id="@+id/date_time_s"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
@@ -139,7 +144,8 @@
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:textSize="13sp"
                 android:textColor="@color/black"
-                android:layout_below="@id/tv"></TextView>
+                android:layout_below="@id/tv" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -150,7 +156,7 @@
                 android:textSize="13sp"
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:id="@+id/serv"
-                android:layout_below="@id/typ"></TextView>
+                android:layout_below="@id/typ" />
 
         </RelativeLayout>
 

@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/openrequest"
+    android:background="@color/silver"
     tools:context=".Common.Fragments.Navigations.OpenRequest">
 
    <include layout="@layout/sample_openrequest"></include>

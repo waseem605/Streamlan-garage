@@ -4,21 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/chat_back"
     tools:context="Common.Chat_Details">
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="5dp"
         android:id="@+id/toolbar"
         >
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
                 android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:id="@+id/back_arrow_Cd"
                 android:src="@drawable/left_arrow">
             </ImageView>
@@ -31,7 +34,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="24sp"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
                     android:fontFamily="@font/hk_grotesk_bold"
                     android:text="Xpress Autos &amp; Tires">
                 </TextView>
@@ -69,13 +72,14 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             >
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/time_tx"
                 android:text="9:40 AM"
                 android:layout_marginTop="30dp"
-                android:layout_centerHorizontal="true"></TextView>
+                android:layout_centerHorizontal="true" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -88,7 +92,8 @@
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:textSize="18sp"
                 android:textColor="@color/white"
-                android:padding="10dp"></TextView>
+                android:padding="10dp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -101,7 +106,7 @@
                 android:text="yes i am fine "
                 android:textSize="18sp"
                 android:textColor="@color/black"
-                android:padding="10dp"></TextView>
+                android:padding="10dp" />
 
         </RelativeLayout>
 
@@ -111,12 +116,13 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="300dp"
+        android:layout_alignParentEnd="true"
         android:layout_gravity="center">
-
 
         <ImageView
             android:layout_width="wrap_content"
@@ -125,25 +131,24 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentStart="true"
             android:id="@+id/attach_file_btn"
-            android:src="@drawable/attach_btn"></ImageView>
+            android:src="@drawable/attach_btn" />
 
 
         <EditText
             android:id="@+id/sms_editText"
-            android:layout_width="250dp"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="2dp"
+            android:layout_marginTop="10dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="5dp"
             android:layout_toStartOf="@+id/send_sms_btn"
             android:layout_toEndOf="@+id/attach_file_btn"
-            android:background="@drawable/chat_details_white"
+            android:background="@drawable/rounded"
+            android:backgroundTint="@color/gray"
             android:fontFamily="@font/hk_grotesk_regular"
             android:hint="hello"
             android:padding="10dp"
-            android:textSize="20sp"></EditText>
+            android:textSize="20sp" />
 
         <ImageView
             android:id="@+id/send_sms_btn"
@@ -153,7 +158,7 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
             android:padding="5dp"
-            android:src="@drawable/send"></ImageView>
+            android:src="@drawable/send" />
 
 
     </RelativeLayout>

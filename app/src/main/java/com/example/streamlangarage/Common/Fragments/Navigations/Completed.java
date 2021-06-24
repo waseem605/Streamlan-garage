@@ -18,7 +18,7 @@ import com.example.streamlangarage.R;
 public class Completed extends Fragment {
 
     private Button mInvoice;
-    TextView status,statustype;
+    TextView status,statustype ,mCompleteServ , mjob ,mjobno;
 
 
 
@@ -34,9 +34,16 @@ public class Completed extends Fragment {
       View v=inflater.inflate(R.layout.fragment_completed, container, false);
       mInvoice =(Button)v.findViewById(R.id.btnopenrequest);
         status=v.findViewById(R.id.status);
+        mCompleteServ=v.findViewById(R.id.tv);
+
+        mCompleteServ.setText("Competed Service Repair Date");
         status.setVisibility(View.INVISIBLE);
         statustype=v.findViewById(R.id.statustype);
         statustype.setVisibility(View.INVISIBLE);
+        mjob=(TextView)v.findViewById(R.id.job);
+        mjob.setVisibility(View.INVISIBLE);
+        mjobno=(TextView)v.findViewById(R.id.jobno);
+        mjobno.setVisibility(View.INVISIBLE);
       mInvoice.setText("Invoce");
       mInvoice.setOnClickListener(new View.OnClickListener() {
           @Override

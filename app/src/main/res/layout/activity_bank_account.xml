@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/silver"
     tools:context="Common.BankAccount">
 
     <Toolbar
@@ -15,11 +16,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:src="@drawable/left_arrow"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="7dp"
                 android:id="@+id/toolbarBank"/>
             <TextView
                 android:layout_width="match_parent"
@@ -74,7 +75,7 @@
                 android:inputType="text"
                 android:background="@null"
                 android:textCursorDrawable="@drawable/curser_color"
-                android:padding="5dp"
+                android:padding="10dp"
                 android:textSize="16sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -92,7 +93,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="5dp"
-                android:text="Country"
+                android:text="Bank Name"
                 />
             <Spinner
                 android:layout_width="match_parent"
@@ -125,7 +126,7 @@
                 android:inputType="text"
                 android:textCursorDrawable="@drawable/curser_color"
                 android:background="@null"
-                android:padding="5dp"
+                android:padding="10dp"
                 android:textSize="16sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -139,6 +140,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginBottom="30dp"
             android:text="@string/Confirm_btn"
+            android:padding="20dp"
             android:background="@drawable/rounded"
             android:textAllCaps="false"
             android:textSize="19sp"

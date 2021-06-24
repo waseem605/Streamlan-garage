@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/silver"
     tools:context=".Common.Invoice.EarningActivity">
 
     <ScrollView
@@ -13,18 +14,50 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <RelativeLayout
+            <androidx.appcompat.widget.Toolbar
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
+                android:id="@+id/toolbar">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/left_arrow"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/ivleftarrow"></ImageView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Withdraw"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/hk_grotesk_semi_bold"
+                        android:textColor="@color/black"></TextView>
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
-                android:layout_margin="20dp"
+               android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@id/toolbar"
                 android:id="@+id/top_RL"
+                android:padding="15dp"
                 android:background="@drawable/rounded"
                 android:backgroundTint="@color/white">
 
@@ -69,38 +102,41 @@
                     android:layout_marginTop="30dp"
                     android:fontFamily="@font/hk_grotesk_bold"/>
 
-
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/garag_neme_layout"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:id="@+id/llamount"
+                    android:orientation="vertical"
                     android:layout_below="@id/balance"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="30dp"
-                    app:boxStrokeColor="@color/black"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginBottom="30dp"
-                    app:counterOverflowTextColor="@color/Back_color"
-                    app:hintTextColor="@color/Back_color"
-                    android:background="@drawable/white_rounded"
-                    android:hint="Enter Withdraw Amount"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp">
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/white_rounded">
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/garage_name_ET"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/hk_grotesk_semi_bold"
+                        android:textColor="@color/black_light"
+                        android:text="Enter Withdraw Amount "
+                        android:textSize="12sp" />
+
+                    <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Enter Amount"
                         android:background="@null"
-                        android:padding="10dp"
                         android:textCursorDrawable="@drawable/curser_color"
+                        android:layout_marginStart="12dp"
                         android:fontFamily="@font/hk_grotesk_regular"
-                        android:inputType="text"
-                        android:textSize="16sp" />
-                </com.google.android.material.textfield.TextInputLayout>
+                        android:gravity="start"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="10dp" />
+                </LinearLayout>
 
 
             </RelativeLayout>
@@ -111,6 +147,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:padding="10dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
                 android:id="@+id/withdraw_heading"
@@ -269,10 +306,12 @@
                 android:id="@+id/confirm_withdraw"
                 android:text="@string/confirm_amp_withdraw"
                 android:layout_below="@id/history_RL"
-                android:layout_margin="30dp"
+                android:layout_margin="28dp"
+                android:padding="18dp"
                 android:background="@drawable/rounded"
                 android:textColor="@color/white"
                 android:textSize="19sp"
+                android:textAllCaps="false"
                 android:fontFamily="@font/hk_grotesk_semi_bold"/>
 
         </RelativeLayout>

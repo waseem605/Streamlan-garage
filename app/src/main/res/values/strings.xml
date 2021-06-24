@@ -1,18 +1,24 @@
 <resources>
     <string name="app_name">Streamlane garage</string>
-    <string name="slide_heading4">Discover Mechanic Nearby You</string>
-    <string name="slide_description4">Looking for a garage you can trust for a auto service or car repair? Using the Streamlane, you can find a garage near you.</string>
+    <string name="slide_heading4">Discover Mechanic
+        <br>Nearby You</br>
+         </string>
+    <string name="slide_description4">Looking for a garage you can trust for a auto
+        <br>service or car repair? Using the Streamlane,</br>
+        <br>you can find a garage near you.</br></string>
 
     <string name="slide_Button">Get Started</string>
     <string name="get_otp">Get OTP</string>
-    <string name="verify_phone">We need to verify your phone</string>
+    <string name="verify_phone"><br>We need to verify \n</br> your phone</string>
     <string name="verify_Number">Verify Number</string>
     <string name="number">We have sent you an SMS with a code to number +971 2 xxxxxxx</string>
     <string name="resend_otp">Didn`t receive the OTP?</string>
     <string name="get_started">Get Started</string>
 
     <string name="otp_heading">Enter your phone number</string>
-    <string name="otp_desc">Please enter your mobile number.You will receive a code to verify mobile number.</string>
+    <string name="otp_desc">Please enter your mobile number.\n
+        <br>You will receive a code to verify mobile \n</br>
+        <br>number.</br></string>
     <string name="today_08_30_am">Today,08:30 AM</string>
     <string name="esther_berry">Esther Berry</string>
     <string name="vehicle_service">Vehicle Service</string>
@@ -57,7 +63,7 @@
     <string name="your_work_profile">Your Work Profile</string>
     <string name="profile_desc">Your information will be share with our Expert team who will verify your identity.</string>
     <string name="upload_garage_image">Upload Garage Image</string>
-    <string name="profile_instruction">Your image should is a friendly and inviting image. Clearly identifies your business</string>
+    <string name="profile_instruction">Your image should is a friendly and inviting image. Clearly identifies your \n<br>business</br> </string>
     <string name="address">Address</string>
     <string name="owner_name">Owner Name</string>
     <string name="garage_name">Garage Name</string>
@@ -142,14 +148,14 @@
     <string name="view_history">View History</string>
     <string name="view_history_desc">Your service quote has been saved in services history. You can view it again in completed history tab.</string>
     <string name="tuesday">Tuesday</string>
-    <string name="others_information">Others Information</string>
+    <string name="others_information">Your work profile</string>
     <string name="availability_hours">Availability hours</string>
     <string name="day">Day</string>
     <string name="time">Time</string>
     <string name="thursday">Thursday</string>
     <string name="friday">Friday</string>
     <string name="saturday">Saturday</string>
-    <string name="send_request_for_approval">Send Request for Approval</string>
+    <string name="send_request_for_approval">Send request for approval</string>
     <string name="wednesday">Wednesday</string>
     <string name="quotes">Quotes</string>
     <string name="booking">Booking</string>
@@ -166,16 +172,16 @@
     <string name="_12_06_2022">12 06 2022</string>
     <string name="specialization">Specialization</string>
     <string name="select_specialization">Select Specialization</string>
-    <string name="add_more">Add more</string>
+    <string name="add_more">Add More</string>
     <string name="mcontinue">Continue</string>
     <string name="condition">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,
         looked up one of the more obscure Latin words, consectetur, From a Lorem Ipsum passage,
         and going through the cites of the word in classical literature, discovered the undoubtable source.
         Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, Richard McClintock, a Latin professor at Hampden-Sydney College in</string>
-    <string name="services">services</string>
+    <string name="services">Services</string>
     <string name="promotions">Promotions</string>
     <string name="bank_account">Bank Account</string>
-    <string name="review">Review</string>
+    <string name="review">Reviews</string>
     <string name="steamlane_v1_0">Steamlane V1 0</string>
     <string name="change_bank_account">Change Bank Account</string>
     <string name="account_number">Account Number</string>
@@ -192,5 +198,10 @@
     <string name="first_bank">First Bank</string>
     <string name="samuel_smith">Samuel Smith</string>
     <string name="confirm_amp_withdraw"><![CDATA[Confirm & Withdraw]]></string>
+    <string name="earnings">Earnings</string>
+    <string name="estimated_date">Estimated service completion date</string>
+    <string name="mobile_mechanic">Mobile mechanic</string>
+    <string name="tow_pick_up">Tow pick up</string>
+    <string name="our_expert_team_will_check"><br>Our Expert Team will check and confirm about \n</br> your profile within 2-3 Business days.</string>
 
 </resources>

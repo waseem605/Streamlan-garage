@@ -16,7 +16,7 @@ import com.example.streamlangarage.R;
 
 
 public class Submitted extends Fragment {
-    TextView mjob,mjobno,status,statustype;
+    TextView mjob,mjobno,status,statustype, mPreferedDate;
     Button mbtn;
 
     @Override
@@ -29,6 +29,11 @@ public class Submitted extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v= inflater.inflate(R.layout.fragment_open_request, container, false);
+
+
+
+        mPreferedDate = (TextView)v.findViewById(R.id.tv);
+        mPreferedDate.setText("Preferred Service Repair Date");
         mbtn=(Button)v.findViewById(R.id.btnopenrequest);
         mbtn.setText("View Details");
         mjob=(TextView)v.findViewById(R.id.job);

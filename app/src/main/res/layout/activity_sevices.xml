@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/white"
+    android:background="@color/silver"
     android:layout_height="match_parent"
     tools:context="Common.Services">
     <androidx.appcompat.widget.Toolbar
@@ -14,8 +14,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:layout_width="25dp"
@@ -57,9 +56,11 @@
                 android:background="@drawable/rounded"
                 android:backgroundTint="@color/white"
                 android:layout_marginStart="10dp"
+                android:padding="10dp"
                 android:layout_marginEnd="10dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="10dp"
                 android:id="@+id/RL1">
+
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
@@ -67,7 +68,8 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:src="@drawable/maintenance"
-                    android:id="@+id/tv1"></ImageView>
+                    android:id="@+id/tv1" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -76,8 +78,7 @@
                     android:textColor="@color/black"
                     android:textSize="20dp"
                     android:fontFamily="@font/hk_grotesk_regular"
-                    android:layout_toEndOf="@id/tv1"
-                    ></TextView>
+                    android:layout_toEndOf="@id/tv1" />
 
                 <CheckBox
                     android:layout_width="25dp"
@@ -88,7 +89,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
-                    android:button="@drawable/custom_checkbox"></CheckBox>
+                    android:button="@drawable/custom_checkbox" />
 
             </RelativeLayout>
             <RelativeLayout
@@ -98,9 +99,11 @@
                 android:background="@drawable/rounded"
                 android:backgroundTint="@color/white"
                 android:layout_marginStart="10dp"
+                android:padding="10dp"
                 android:layout_marginEnd="10dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="10dp"
                 android:id="@+id/RL2">
+
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
@@ -108,13 +111,11 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:src="@drawable/oilandfilter"
-                    android:id="@+id/tv2"
-                    ></ImageView>
+                    android:id="@+id/tv2" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
@@ -123,7 +124,8 @@
                     android:layout_toEndOf="@id/tv2"
                     android:text="Oil and Filter Services"
                     android:textColor="@color/black"
-                    android:textSize="20dp"></TextView>
+                    android:textSize="20dp" />
+
                 <CheckBox
                     android:layout_width="25dp"
                     android:layout_height="25dp"
@@ -133,7 +135,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
-                    android:button="@drawable/custom_checkbox"></CheckBox>
+                    android:button="@drawable/custom_checkbox" />
 
             </RelativeLayout>
             <RelativeLayout
@@ -142,9 +144,10 @@
                 android:layout_below="@id/RL2"
                 android:background="@drawable/rounded"
                 android:backgroundTint="@color/white"
+                android:padding="10dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="10dp"
                 android:id="@+id/RL3">
                 <ImageView
                     android:layout_width="30dp"
@@ -185,7 +188,8 @@
                 android:backgroundTint="@color/white"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
                 android:id="@+id/RL4">
                 <ImageView
                     android:layout_width="30dp"
@@ -227,7 +231,8 @@
                 android:backgroundTint="@color/white"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
                 android:id="@+id/RL5">
                 <ImageView
                     android:layout_width="30dp"
@@ -269,7 +274,8 @@
                 android:backgroundTint="@color/white"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
                 android:id="@+id/RL6">
                 <ImageView
                     android:layout_width="30dp"
@@ -311,7 +317,8 @@
                 android:backgroundTint="@color/white"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
                 android:id="@+id/RL7">
                 <ImageView
                     android:layout_width="30dp"
@@ -353,7 +360,8 @@
                 android:backgroundTint="@color/white"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
                 android:id="@+id/RL8">
                 <ImageView
                     android:layout_width="30dp"
@@ -393,10 +401,11 @@
                 android:layout_below="@+id/RL8"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="30dp"
                 android:background="@drawable/rounded"
                 android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:text="@string/add"
+                android:padding="18dp"
                 android:textAllCaps="true"
                 android:textColor="@color/white"
                 android:textSize="20sp" />

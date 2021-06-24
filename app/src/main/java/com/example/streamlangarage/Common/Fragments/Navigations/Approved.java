@@ -16,12 +16,13 @@ import com.example.streamlangarage.R;
 import Common.ApprovedDetails;
 
 public class Approved extends Fragment {
-    TextView mjob,mjobno,status,statustype;
+    TextView mjob,mjobno,status,statustype , mPreferedDate;
     Button mbtn;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requireActivity().getWindow().setStatusBarColor(getResources().getColor(R.color.silver));
 
     }
 
@@ -30,6 +31,11 @@ public class Approved extends Fragment {
                              Bundle savedInstanceState) {
         View v= inflater.inflate(R.layout.fragment_open_request, container, false);
         mbtn=(Button)v.findViewById(R.id.btnopenrequest);
+
+
+
+        mPreferedDate = (TextView)v.findViewById(R.id.tv);
+        mPreferedDate.setText("Scheduled Service Repair Date");
         mbtn.setText("View Details");
         mjob=(TextView)v.findViewById(R.id.job);
         mjob.setVisibility(View.INVISIBLE);

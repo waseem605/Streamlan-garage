@@ -17,11 +17,16 @@ import com.example.streamlangarage.R;
 import Common.ProgressRequestDetails;
 
 public class InProgress extends Fragment {
+    public InProgress()
+    {
+
+    }
     TextView status,statustype;
    LinearLayout btnlinearLayout,llopenrequest;
    RelativeLayout scheduleRL;
     @Override
     public void onCreate(Bundle savedInstanceState) {
+
 
         super.onCreate(savedInstanceState);
     }

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/silver"
     tools:context="Common.ProfileStep1">
 
         <RelativeLayout
@@ -140,6 +141,7 @@
                         android:layout_below="@id/imgLinear"
                         android:orientation="vertical">
 
+
                         <com.google.android.material.textfield.TextInputLayout
                             android:id="@+id/garag_neme_layout"
                             android:layout_width="match_parent"
@@ -203,6 +205,8 @@
                             android:layout_marginRight="30dp"
                             android:background="@drawable/white_rounded"
                             android:hint="@string/addressP"
+                            app:startIconDrawable="@drawable/location_map"
+                            app:startIconTint="@color/orange"
                             android:paddingLeft="5dp"
                             android:paddingRight="5dp">
 
@@ -327,7 +331,10 @@
 
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_margin="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginBottom="20dp"
                             android:padding="10dp"
                             android:background="@drawable/white_rounded"
                             android:layout_height="wrap_content">
@@ -340,130 +347,241 @@
                                 android:textColor="@color/black"
                                 android:fontFamily="@font/hk_grotesk_regular"/>
 
-                            <CheckBox
-                                android:layout_width="155dp"
+                            <RelativeLayout
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:id="@+id/hours"
-                                android:text="@string/_24_7_service"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
                                 android:layout_below="@id/aminities"
-                                android:layout_marginTop="20dp"
-                                android:layout_marginStart="5dp"
-                                android:fontFamily="@font/hk_grotesk_medium"
-                                android:textSize="12sp"
-                                android:buttonTint="@color/white"
-                                android:background="@drawable/rounded"
-                                android:backgroundTint="@color/orange"
-                                android:textColor="@color/white"
-                                android:padding="5dp"/>
-                            <CheckBox
-                                android:layout_width="155dp"
+                                android:id="@+id/lr1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toStartOf="@id/view_wifi"
+                                    android:layout_marginEnd="5dp"
+                                    android:background="@drawable/rounded"
+                                    android:backgroundTint="@color/orange">
+                                    <CheckBox
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/hours"
+                                        android:text="@string/_24_7_service"
+                                        android:layout_marginStart="5dp"
+                                        android:fontFamily="@font/hk_grotesk_medium"
+                                        android:textSize="12sp"
+                                        android:buttonTint="@color/white"
+                                        android:background="@drawable/rounded"
+                                        android:backgroundTint="@color/orange"
+                                        android:textColor="@color/white"/>
+
+                                </LinearLayout>
+                                <View
+                                    android:id="@+id/view_wifi"
+                                    android:layout_height="1dp"
+                                    android:layout_width="0dp"
+                                    android:layout_centerHorizontal="true"
+                                    />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/rounded"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_toEndOf="@id/view_wifi"
+                                    android:backgroundTint="@color/orange">
+
+                                    <CheckBox
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/wifi"
+                                        android:text="@string/wifi"
+                                        android:fontFamily="@font/hk_grotesk_medium"
+                                        android:textSize="12sp"
+                                        android:layout_marginStart="5dp"
+                                        android:buttonTint="@color/white"
+                                        android:background="@drawable/rounded"
+                                        android:backgroundTint="@color/orange"
+                                        android:textColor="@color/white"
+                                        android:padding="5dp"/>
+
+                                </LinearLayout>
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:id="@+id/wifi"
-                                android:text="@string/wifi"
-                                android:layout_toEndOf="@id/hours"
-                                android:layout_below="@id/aminities"
-                                android:fontFamily="@font/hk_grotesk_medium"
-                                android:textSize="12sp"
-                                android:layout_marginStart="15dp"
-                                android:layout_marginTop="20dp"
-                                android:buttonTint="@color/white"
-                                android:background="@drawable/rounded"
-                                android:backgroundTint="@color/orange"
-                                android:textColor="@color/white"
-                                android:padding="5dp"/>
-                            <CheckBox
-                                android:layout_width="155dp"
+                                android:layout_below="@id/lr1"
+                                android:layout_marginBottom="10dp"
+                                android:id="@+id/lr2">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toStartOf="@id/view_cctv"
+                                    android:layout_marginEnd="5dp"
+                                    android:background="@drawable/rounded"
+                                    android:backgroundTint="@color/orange">
+
+                                    <CheckBox
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/cctv"
+                                        android:text="@string/cctv"
+                                        android:fontFamily="@font/hk_grotesk_medium"
+                                        android:textSize="12sp"
+                                        android:textAlignment="textStart"
+                                        android:layout_marginStart="5dp"
+                                        android:buttonTint="@color/white"
+                                        android:background="@drawable/rounded"
+                                        android:backgroundTint="@color/orange"
+                                        android:textColor="@color/white"
+                                        android:padding="5dp"/>
+                                </LinearLayout>
+                                <View
+                                    android:id="@+id/view_cctv"
+                                    android:layout_height="1dp"
+                                    android:layout_width="0dp"
+                                    android:layout_centerHorizontal="true"
+                                    />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/rounded"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_toEndOf="@id/view_cctv"
+                                    android:backgroundTint="@color/orange">
+                                    <CheckBox
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/Loaner_car"
+                                        android:text="@string/loaner_car"
+                                        android:layout_marginStart="10dp"
+                                        android:fontFamily="@font/hk_grotesk_medium"
+                                        android:textSize="12sp"
+                                        android:buttonTint="@color/white"
+                                        android:background="@drawable/rounded"
+                                        android:backgroundTint="@color/orange"
+                                        android:textColor="@color/white"
+                                        android:padding="5dp"/>
+
+                                </LinearLayout>
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:id="@+id/cctv"
-                                android:text="@string/cctv"
-                                android:layout_below="@id/hours"
-                                android:layout_marginTop="20dp"
-                                android:fontFamily="@font/hk_grotesk_medium"
-                                android:textSize="12sp"
-                                android:layout_marginStart="5dp"
-                                android:buttonTint="@color/white"
-                                android:background="@drawable/rounded"
-                                android:backgroundTint="@color/orange"
-                                android:textColor="@color/white"
-                                android:padding="5dp"/>
-                            <CheckBox
-                                android:layout_width="155dp"
+                                android:layout_below="@id/lr2"
+                                android:layout_marginBottom="10dp"
+                                android:id="@+id/lr3">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toStartOf="@id/view_shuttle"
+                                    android:layout_marginEnd="5dp"
+                                    android:background="@drawable/rounded"
+                                    android:backgroundTint="@color/orange">
+
+                                    <CheckBox
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/shuttleservice"
+                                        android:fontFamily="@font/hk_grotesk_medium"
+                                        android:textSize="12sp"
+                                        android:text="@string/shuttle_service"
+                                        android:layout_marginStart="5dp"
+                                        android:buttonTint="@color/white"
+                                        android:background="@drawable/rounded"
+                                        android:backgroundTint="@color/orange"
+                                        android:textColor="@color/white"
+                                        android:padding="5dp"/>
+                                </LinearLayout>
+                                <View
+                                    android:id="@+id/view_shuttle"
+                                    android:layout_height="1dp"
+                                    android:layout_width="0dp"
+                                    android:layout_centerHorizontal="true"
+                                    />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/rounded"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_toEndOf="@id/view_shuttle"
+                                    android:backgroundTint="@color/orange">
+
+                                    <CheckBox
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/tow_pic_up"
+                                        android:text="@string/tow_pick_up"
+                                        android:layout_marginStart="10dp"
+                                        android:fontFamily="@font/hk_grotesk_medium"
+                                        android:textSize="12sp"
+                                        android:buttonTint="@color/white"
+                                        android:background="@drawable/rounded"
+                                        android:backgroundTint="@color/orange"
+                                        android:textColor="@color/white"
+                                        android:padding="5dp"/>
+
+                                </LinearLayout>
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:id="@+id/Loaner_car"
-                                android:text="@string/loaner_car"
-                                android:layout_toEndOf="@id/cctv"
-                                android:layout_below="@id/wifi"
-                                android:layout_marginStart="15dp"
-                                android:fontFamily="@font/hk_grotesk_medium"
-                                android:textSize="12sp"
-                                android:layout_marginTop="20dp"
-                                android:buttonTint="@color/white"
-                                android:background="@drawable/rounded"
-                                android:backgroundTint="@color/orange"
-                                android:textColor="@color/white"
-                                android:padding="5dp"/>
-                            <CheckBox
-                                android:layout_width="155dp"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/shuttleservice"
-                                android:fontFamily="@font/hk_grotesk_medium"
-                                android:textSize="12sp"
-                                android:text="@string/shuttle_service"
-                                android:layout_below="@id/Loaner_car"
-                                android:layout_marginStart="5dp"
-                                android:layout_marginTop="20dp"
-                                android:buttonTint="@color/white"
-                                android:background="@drawable/rounded"
-                                android:backgroundTint="@color/orange"
-                                android:textColor="@color/white"
-                                android:padding="5dp"/>
-                            <CheckBox
-                                android:layout_width="155dp"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/tow_pic_up"
-                                android:text="Tow pick up"
-                                android:layout_toEndOf="@id/shuttleservice"
-                                android:layout_below="@id/Loaner_car"
-                                android:layout_marginStart="15dp"
-                                android:fontFamily="@font/hk_grotesk_medium"
-                                android:textSize="12sp"
-                                android:layout_marginTop="20dp"
-                                android:buttonTint="@color/white"
-                                android:background="@drawable/rounded"
-                                android:backgroundTint="@color/orange"
-                                android:textColor="@color/white"
-                                android:padding="5dp"/>
-                            <CheckBox
-                                android:layout_width="155dp"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/mobilemechanic"
-                                android:text="Mobile mechanic"
-                                android:layout_below="@id/shuttleservice"
-                                android:layout_marginStart="5dp"
-                                android:layout_marginTop="20dp"
-                                android:fontFamily="@font/hk_grotesk_medium"
-                                android:textSize="12sp"
-                                android:buttonTint="@color/white"
-                                android:background="@drawable/rounded"
-                                android:backgroundTint="@color/orange"
-                                android:textColor="@color/white"
-                                android:padding="5dp"/>
-                            <CheckBox
-                                android:layout_width="155dp"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/cardelivery"
-                                android:text="Tow pick up"
-                                android:layout_toEndOf="@id/mobilemechanic"
-                                android:layout_below="@id/tow_pic_up"
-                                android:layout_marginStart="15dp"
-                                android:fontFamily="@font/hk_grotesk_medium"
-                                android:textSize="12sp"
-                                android:layout_marginTop="20dp"
-                                android:buttonTint="@color/white"
-                                android:background="@drawable/rounded"
-                                android:backgroundTint="@color/orange"
-                                android:textColor="@color/white"
-                                android:padding="5dp"/>
+                                android:layout_below="@id/lr3"
+                                android:layout_marginBottom="10dp"
+                                android:id="@+id/lr4">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toStartOf="@id/view_mobile"
+                                    android:layout_marginEnd="5dp"
+                                    android:background="@drawable/rounded"
+                                    android:backgroundTint="@color/orange">
+                                    <CheckBox
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/mobilemechanic"
+                                        android:text="@string/mobile_mechanic"
+                                        android:layout_marginStart="5dp"
+                                        android:fontFamily="@font/hk_grotesk_medium"
+                                        android:textSize="12sp"
+                                        android:buttonTint="@color/white"
+                                        android:background="@drawable/rounded"
+                                        android:backgroundTint="@color/orange"
+                                        android:textColor="@color/white"
+                                        android:padding="5dp"/>
+
+                                </LinearLayout>
+                                <View
+                                    android:id="@+id/view_mobile"
+                                    android:layout_height="1dp"
+                                    android:layout_width="0dp"
+                                    android:layout_centerHorizontal="true"
+                                    />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/rounded"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_toEndOf="@id/view_mobile"
+                                    android:backgroundTint="@color/orange">
+                                    <CheckBox
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/cardelivery"
+                                        android:text="@string/tow_pick_up"
+                                        android:layout_marginStart="10dp"
+                                        android:fontFamily="@font/hk_grotesk_medium"
+                                        android:textSize="12sp"
+                                        android:buttonTint="@color/white"
+                                        android:background="@drawable/rounded"
+                                        android:backgroundTint="@color/orange"
+                                        android:textColor="@color/white"
+                                        android:padding="5dp"/>
+
+                                </LinearLayout>
+                            </RelativeLayout>
 
                         </RelativeLayout>
 
@@ -474,7 +592,11 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/continuebtn"
                         android:gravity="center"
-                        android:layout_margin="20dp"
+                        android:padding="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginBottom="50dp"
                         android:background="@drawable/rounded"
                         android:layout_below="@id/bottomL">
                         <TextView
@@ -482,18 +604,25 @@
                             android:layout_height="wrap_content"
                             android:text="Continue"
                             android:id="@+id/continuetx"
-                            android:padding="10dp"
+                            android:layout_toStartOf="@id/view"
                             android:textColor="@color/white"
                             android:textSize="19sp"
                             android:fontFamily="@font/hk_grotesk_semi_bold"/>
 
+                        <View
+                            android:id="@+id/view"
+                            android:layout_height="1dp"
+                            android:layout_width="0dp"
+                            android:layout_centerHorizontal="true"
+                            />
+
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/right_arrow"
-                            android:padding="10dp"
-                            android:layout_marginTop="5dp"
-                            android:layout_toRightOf="@id/continuetx"/>
+                            android:src="@drawable/right_arrow_white"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_toEndOf="@id/view"/>
 
                     </RelativeLayout>
 

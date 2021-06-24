@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/silver"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="Common.ProfileStep2">
 
@@ -232,6 +233,7 @@
                         android:layout_width="25dp"
                         android:layout_height="25dp"
                         android:paddingStart="10dp"
+                        android:layout_centerVertical="true"
                         android:id="@+id/search_src"
                         android:layout_margin="5dp"
                         android:src="@drawable/search"/>
@@ -239,10 +241,12 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
                         android:background="@null"
                         android:textCursorDrawable="@drawable/curser_color"
-                        android:padding="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="10dp"
                         android:hint="@string/select_specialization"
                         android:fontFamily="@font/hk_grotesk_regular"
                         android:textSize="16sp"
@@ -259,87 +263,136 @@
                     android:layout_alignParentStart="true"
                     android:layout_below="@id/search_layout">
 
-                    <RelativeLayout
-                        android:id="@+id/porsche_layout"
-                        android:layout_width="90dp"
+                    <GridLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/rounded"
-                        android:backgroundTint="@color/orange"
-                        android:padding="5dp">
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"
+                        android:columnCount="3"
+                        android:rowCount="1">
 
-                        <TextView
-                            android:id="@+id/porsche"
+                        <androidx.cardview.widget.CardView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/hk_grotesk_medium"
-                            android:text="Porsche"
-                            android:textColor="@color/white"
-                            android:textSize="12sp" />
+                            android:layout_row="0"
+                            android:background="@drawable/rounded"
+                            android:backgroundTint="@color/orange"
+                            android:layout_column="0"
+                            app:cardCornerRadius="10dp"
+                            android:layout_gravity="center"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="2dp">
+                            <RelativeLayout
+                                android:id="@+id/porsche_RL"
+                                android:layout_width="wrap_content"
+                                android:layout_marginStart="7dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp">
 
-                        <TextView
-                            android:id="@+id/dismis1"
+                                <TextView
+                                    android:id="@+id/porsche"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/hk_grotesk_medium"
+                                    android:text="Porsche"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/dismis1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toEndOf="@id/porsche"
+                                    android:text="x"
+                                    android:layout_marginStart="20dp"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_toEndOf="@id/porsche"
-                            android:text="x"
-                            android:layout_marginStart="30dp"
-                            android:textColor="@color/white"
-                            android:textSize="12sp" />
-                    </RelativeLayout>
-                    <RelativeLayout
-                        android:layout_width="90dp"
-                        android:layout_height="wrap_content"
-                        android:padding="5dp"
-                        android:layout_toEndOf="@id/porsche_layout"
-                        android:layout_marginStart="15dp"
-                        android:id="@+id/mercheds_layout"
-                        android:background="@drawable/rounded"
-                        android:backgroundTint="@color/orange">
-                        <TextView
+                            android:layout_row="0"
+                            android:background="@drawable/rounded"
+                            android:backgroundTint="@color/orange"
+                            android:layout_column="1"
+                            app:cardCornerRadius="10dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="2dp">
+                            <RelativeLayout
+                                android:id="@+id/merched_RL"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="7dp"
+                                android:layout_marginEnd="3dp"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Mercheds"
+                                    android:id="@+id/mercheds"
+                                    android:fontFamily="@font/hk_grotesk_medium"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/white"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="x"
+                                    android:layout_toEndOf="@id/mercheds"
+                                    android:id="@+id/dismis2"
+                                    android:layout_marginStart="20dp"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp"/>
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Mercheds"
-                            android:id="@+id/mercheds"
-                            android:fontFamily="@font/hk_grotesk_medium"
-                            android:textSize="12sp"
-                            android:textColor="@color/white"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="x"
-                            android:layout_toEndOf="@id/mercheds"
-                            android:id="@+id/dismis2"
-                            android:layout_marginStart="20dp"
-                            android:textColor="@color/white"
-                            android:textSize="12sp"/>
-                    </RelativeLayout>
-                    <RelativeLayout
-                        android:layout_width="90dp"
-                        android:layout_height="wrap_content"
-                        android:padding="5dp"
-                        android:layout_toEndOf="@id/mercheds_layout"
-                        android:layout_marginStart="15dp"
-                        android:id="@+id/Audi_layout"
-                        android:background="@drawable/rounded"
-                        android:backgroundTint="@color/orange">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Audi"
-                            android:id="@+id/audi"
-                            android:fontFamily="@font/hk_grotesk_medium"
-                            android:textSize="12sp"
-                            android:textColor="@color/white"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="x"
-                            android:layout_toEndOf="@id/audi"
-                            android:id="@+id/dismis3"
-                            android:layout_marginStart="45dp"
-                            android:textColor="@color/white"
-                            android:textSize="12sp"/>
-                    </RelativeLayout>
+                            android:layout_row="0"
+                            android:layout_column="2"
+                            app:cardCornerRadius="10dp"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/rounded"
+                            android:layout_marginEnd="10dp"
+                            android:backgroundTint="@color/orange"
+                            android:layout_gravity="center"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="2dp">
+                            <RelativeLayout
+                                android:id="@+id/audi_RL"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="7dp"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Audi"
+                                    android:id="@+id/audi"
+                                    android:layout_marginEnd="15dp"
+                                    android:fontFamily="@font/hk_grotesk_medium"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/white"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="x"
+                                    android:layout_toEndOf="@id/audi"
+                                    android:id="@+id/dismis3"
+                                    android:layout_marginStart="20dp"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp"/>
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </GridLayout>
 
                 </RelativeLayout>
 
@@ -419,11 +472,11 @@
                     android:layout_below="@id/dropdown_year"
                     android:background="@drawable/doted_border"
                     android:orientation="horizontal"
-                    android:padding="10dp">
+                    android:padding="15dp">
 
                     <Button
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
                         android:background="@drawable/ring"
                         android:text="+"
                         android:gravity="center"
@@ -437,7 +490,7 @@
                         android:text="@string/add_more"
                         android:layout_marginStart="5dp"
                         android:textColor="@color/orange"
-                        android:textSize="24sp" />
+                        android:textSize="16sp" />
                 </LinearLayout>
 
 
@@ -451,6 +504,8 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
+                android:layout_marginBottom="30dp"
+                android:padding="12dp"
                 android:background="@drawable/rounded"
                 android:layout_below="@id/middle_relative">
                 <TextView
@@ -459,17 +514,26 @@
                     android:text="@string/continue_btn"
                     android:id="@+id/continuetx"
                     android:padding="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/view"
                     android:textColor="@color/white"
                     android:textSize="19sp"
                     android:fontFamily="@font/hk_grotesk_semi_bold"/>
 
+                <View
+                    android:id="@+id/view"
+                    android:layout_height="1dp"
+                    android:layout_width="0dp"
+                    android:layout_centerHorizontal="true"
+                    />
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/right_arrow"
+                    android:src="@drawable/right_arrow_white"
                     android:padding="10dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_toRightOf="@id/continuetx"/>
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/view"/>
 
             </RelativeLayout>
 

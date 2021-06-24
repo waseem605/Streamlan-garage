@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/silver"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Common.Fragment.Earning">
 
@@ -37,7 +38,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/invoice"
+                        android:text="@string/earnings"
                         android:fontFamily="@font/hk_grotesk_semi_bold"
                         android:textColor="@color/black"
                         android:gravity="center"
@@ -58,6 +59,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
                     android:paddingTop="25dp"
@@ -66,20 +69,20 @@
                     android:backgroundTint="@color/white">
 
                     <RelativeLayout
-                        android:layout_width="wrap_content"
+                        android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/left_RL"
+                        android:layout_toLeftOf="@id/view"
                         android:layout_alignParentTop="true"
                         android:layout_alignParentStart="true"
                         android:gravity="center"
                         android:padding="5dp">
                         <RelativeLayout
-                            android:layout_width="160dp"
+                            android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
                             android:padding="8dp"
-                            android:layout_marginEnd="15dp"
+                            android:layout_alignParentEnd="true"
                             android:layout_alignParentTop="true"
-                            android:layout_alignParentStart="true"
                             android:id="@+id/left_calander"
                             android:background="@drawable/white_rounded">
                             <ImageView
@@ -94,11 +97,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:id="@+id/earning_datw"
+                                android:layout_alignParentEnd="true"
                                 android:layout_toEndOf="@id/calander_icon"
                                 android:text="@string/today_feb_20_2020"
                                 android:textColor="@color/black"
                                 android:fontFamily="@font/hk_grotesk_regular"
-                                android:textSize="13sp"/>
+                                android:textSize="14sp"/>
 
 
                         </RelativeLayout>
@@ -143,10 +147,10 @@
                             android:fontFamily="@font/hk_grotesk_bold"/>
 
                         <View
-                            android:layout_width="155dp"
+                            android:layout_width="fill_parent"
                             android:layout_height="2dp"
                             android:layout_below="@id/active_job_text"
-                            android:layout_marginTop="30dp"
+                            android:layout_marginTop="50dp"
                             android:layout_alignParentStart="true"
                             android:id="@+id/line_left"
                             android:background="@color/gray_doted"/>
@@ -159,6 +163,7 @@
                             android:textSize="18sp"
                             android:layout_marginTop="10dp"
                             android:layout_marginStart="80dp"
+                            android:paddingBottom="20dp"
                             android:fontFamily="@font/hk_grotesk_bold"
                             android:layout_below="@id/line_left"/>
 
@@ -173,18 +178,26 @@
                         android:layout_marginTop="40dp"
                         android:layout_toEndOf="@id/left_RL"
                         android:background="@color/gray_doted"/>
+                    <View
+                        android:id="@+id/view"
+                        android:layout_height="1dp"
+                        android:layout_width="0dp"
+                        android:layout_centerHorizontal="true"
+                        />
                     <RelativeLayout
-                        android:layout_width="wrap_content"
+                        android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_alignParentEnd="true"
                         android:layout_alignParentTop="true"
-                        android:layout_toEndOf="@id/vertical_line"
+                        android:layout_toEndOf="@id/view"
                         android:padding="5dp">
                         <RelativeLayout
-                            android:layout_width="160dp"
+                            android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
                             android:padding="8dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentEnd="true"
                             android:layout_alignParentTop="true"
                             android:id="@+id/right_calander"
                             android:background="@drawable/white_rounded">
@@ -202,10 +215,10 @@
                                 android:id="@+id/earning_date_r"
                                 android:layout_toEndOf="@id/calander_icon_r"
                                 android:text="@string/today_feb_20_2020"
-                                android:textColor="@color/black"
                                 android:layout_alignParentEnd="true"
+                                android:textColor="@color/black"
                                 android:fontFamily="@font/hk_grotesk_regular"
-                                android:textSize="13sp"/>
+                                android:textSize="14sp"/>
 
 
                         </RelativeLayout>
@@ -252,7 +265,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="2dp"
                             android:layout_below="@id/active_job_text_r"
-                            android:layout_marginTop="30dp"
+                            android:layout_marginTop="50dp"
                             android:layout_alignParentStart="true"
                             android:layout_alignParentEnd="true"
                             android:id="@+id/line_right"
@@ -265,6 +278,7 @@
                             android:textSize="18sp"
                             android:layout_marginTop="10dp"
                             android:layout_marginStart="80dp"
+                            android:paddingBottom="20dp"
                             android:layout_alignParentBottom="true"
                             android:layout_alignParentStart="true"
                             android:fontFamily="@font/hk_grotesk_bold"
@@ -284,8 +298,10 @@
                     android:backgroundTint="@color/white"
                     android:layout_marginTop="15dp"
                     android:paddingTop="10dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
                     android:paddingBottom="10dp"
-                    android:padding="10dp"
+                    android:padding="15dp"
                     android:layout_below="@id/double_job"
                     android:id="@+id/digital_RL">
                     <TextView
@@ -324,9 +340,11 @@
                     android:background="@drawable/rounded"
                     android:backgroundTint="@color/white"
                     android:layout_marginTop="15dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
-                    android:padding="10dp"
+                    android:padding="15dp"
                     android:layout_below="@id/digital_RL"
                     android:id="@+id/cash_RL">
                     <TextView
@@ -356,9 +374,11 @@
                     android:background="@drawable/rounded"
                     android:backgroundTint="@color/white"
                     android:layout_marginTop="15dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
-                    android:padding="10dp"
+                    android:padding="15dp"
                     android:layout_below="@id/cash_RL"
                     android:id="@+id/commission_RL">
                     <TextView
@@ -388,9 +408,12 @@
                     android:background="@drawable/rounded"
                     android:backgroundTint="@color/white"
                     android:layout_marginTop="15dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="10dp"
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
-                    android:padding="10dp"
+                    android:padding="15dp"
                     android:layout_below="@id/commission_RL"
                     android:id="@+id/commission__pRL">
                     <TextView
@@ -420,6 +443,9 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/rounded"
                 android:backgroundTint="@color/white"
                 android:layout_below="@id/top_relative">
@@ -438,9 +464,11 @@
                         android:layout_marginTop="5dp"
                         android:paddingStart="35dp"
                         android:paddingEnd="15dp"
+                        android:dropDownWidth="match_parent"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
                         android:layout_marginStart="5dp"
                         android:id="@+id/dropdown_view_spinner"/>
+
 
                 </RelativeLayout>
 

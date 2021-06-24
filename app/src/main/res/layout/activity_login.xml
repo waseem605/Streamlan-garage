@@ -23,22 +23,23 @@
             android:textColor="@color/black"
             android:textSize="26sp"
             android:gravity="center"
+            android:paddingTop="30dp"
+            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentStart="true"/>
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="313dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="60dp"
+            android:layout_marginTop="7dp"
             android:fontFamily="@font/hk_grotesk_regular"
             android:padding="5dp"
             android:text="@string/otp_desc"
-            android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="17sp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textAlignment="gravity"
             android:layout_below="@id/textView"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
@@ -48,7 +49,10 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
             android:id="@+id/otp_lay"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
@@ -59,12 +63,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="5dp"
                 android:fontFamily="@font/dm_sans_regular"
                 android:text="Phone Number"
                 android:textColor="@color/black"
-                android:textSize="14sp"></TextView>
+                android:textSize="14sp" />
 
             <LinearLayout
                 android:id="@+id/linear1"
@@ -84,7 +88,7 @@
                     app:ccp_showNameCode="false" />
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="267dp"
+                    android:layout_width="260dp"
                     android:layout_height="match_parent"
                     android:background="@null"
                     android:textCursorDrawable="@drawable/curser_color"
@@ -106,7 +110,7 @@
             android:background="@drawable/rounded"
             android:fontFamily="@font/hk_grotesk_semi_bold"
             android:text="@string/get_otp"
-            android:padding="10dp"
+            android:padding="20dp"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="19sp" />

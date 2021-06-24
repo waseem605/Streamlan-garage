@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/Frgment_Container"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Common.Fragments.Navigations.VehicleServiceProgress">
-
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -21,7 +24,8 @@
                 android:layout_marginTop="10dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:src="@drawable/notifications" />
+                android:id="@+id/combined_shape_V"
+                android:src="@drawable/combined_shape" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -35,29 +39,14 @@
                 android:layout_alignParentEnd="true"
                 android:gravity="center"
                 android:textColor="@color/black" />
-            <Switch
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_centerVertical="true"
                 android:layout_alignParentEnd="true"
-                android:thumb="@drawable/thumb"
-                android:layout_marginEnd="5dp"
-                android:layout_marginTop="10dp"
-                android:id="@+id/thumb_switch_q"
-                android:track="@drawable/thumb_track"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/online"
-                android:id="@+id/online_tx"
-                android:textColor="@color/orange"
-                android:layout_below="@id/thumb_switch_q"
-                android:fontFamily="@font/hk_grotesk_medium"
-                android:textSize="9sp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="20dp"
-                android:layout_alignParentEnd="true"/>
-
+                android:src="@drawable/notifications" />
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
     <androidx.appcompat.widget.Toolbar
@@ -89,21 +78,29 @@
 
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
+
     <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
         android:layout_marginTop="2dp"
+        android:padding="10dp"
         app:tabTextColor="@color/black"
         app:tabTextAppearance="@style/CustomTabText"
         app:tabSelectedTextColor="@color/Back_color"
         app:tabIndicatorColor="@null"
         android:id="@+id/tbvsp"
-        android:layout_below="@id/midtb"></com.google.android.material.tabs.TabLayout>
+        android:layout_below="@id/midtb" />
     <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/VPvsp"
-        android:layout_below="@id/tbvsp"></androidx.viewpager.widget.ViewPager>
-
+        android:layout_below="@id/tbvsp"
+        />
 </RelativeLayout>
+
+
+
+
+
+</FrameLayout>

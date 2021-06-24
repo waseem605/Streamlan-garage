@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/silver"
     tools:context="Common.ApprovedDetails">
     <ScrollView
         android:layout_width="match_parent"
@@ -222,14 +223,14 @@
                 android:layout_alignParentLeft="true"
                 android:text="Subtotal"
                 android:textSize="14sp"
-                android:fontFamily="@font/hk_grotesk_regular"
+                android:fontFamily="@font/hk_grotesk_bold"
                 android:textColor="@color/black"></TextView>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:textSize="14sp"
-                android:fontFamily="@font/hk_grotesk_regular"
+                android:fontFamily="@font/hk_grotesk_bold"
                 android:gravity="center"
                 android:layout_marginStart="30dp"
                 android:text="$16.99"
@@ -239,7 +240,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:textSize="14sp"
-                android:fontFamily="@font/hk_grotesk_regular"
+                android:fontFamily="@font/hk_grotesk_bold"
                 android:gravity="center"
                 android:layout_marginRight="15dp"
                 android:layout_alignParentRight="true"
@@ -300,7 +301,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
+            android:background="@drawable/white_background_b_round"
             android:layout_marginTop="2dp"
             android:orientation="vertical"
             android:layout_marginStart="10dp"
@@ -309,6 +310,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Description"
+                android:layout_marginTop="10dp"
                 android:layout_marginStart="10dp"
                 android:textSize="15sp"
                 android:fontFamily="@font/hk_grotesk_medium"
@@ -317,22 +319,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:textSize="14sp"
                 android:text="Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available."></TextView>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:layout_marginTop="2dp"
-            android:orientation="vertical"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Location"
+                android:layout_marginTop="10dp"
                 android:layout_marginStart="10dp"
                 android:textSize="15sp"
                 android:fontFamily="@font/hk_grotesk_medium"
@@ -341,33 +337,50 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="20dp"
                 android:textSize="14sp"
+                android:layout_marginTop="10dp"
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:text="1 Aash park, pembroke dock, 5A72, 7958 swift village"></TextView>
         </LinearLayout>
+
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <Button
-                android:layout_width="150dp"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
+                android:id="@+id/car_received_btn"
+                android:layout_alignParentStart="true"
                 android:layout_marginTop="20dp"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="15dp"
+                android:padding="20dp"
+                android:layout_toStartOf="@id/view"
+                android:layout_marginEnd="10dp"
                 android:background="@drawable/rounded"
-                android:text="Car Recieved"
+                android:text="Car Received"
                 android:layout_marginBottom="20dp"
                 android:textColor="@color/white"
                 android:textSize="19sp"
                 android:fontFamily="@font/hk_grotesk_semi_bold"
-                android:textAllCaps="false"></Button>
+                android:textAllCaps="false" />
+            <View
+                android:id="@+id/view"
+                android:layout_height="1dp"
+                android:layout_width="0dp"
+                android:layout_centerHorizontal="true"
+                />
             <Button
-                android:layout_width="150dp"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="15dp"
+                android:padding="20dp"
+                android:layout_toRightOf="@id/view"
                 android:background="@drawable/rounded"
                 android:backgroundTint="@color/orange"
                 android:text="Cancel"

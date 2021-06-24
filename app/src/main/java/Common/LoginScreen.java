@@ -17,6 +17,8 @@ public class LoginScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+       getWindow().setStatusBarColor(getResources().getColor(R.color.silver));
+       getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         setContentView(R.layout.activity_login_screen);
         mLogin = (Button)findViewById(R.id.login_btn);
         mForget = (TextView)findViewById(R.id.forget_text);
