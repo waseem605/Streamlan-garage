@@ -18,8 +18,9 @@
 
             <ImageView
                 android:id="@+id/combined_shape"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
                 android:layout_marginTop="10dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
@@ -38,9 +39,10 @@
 
             <ImageView
                 android:id="@+id/IVnotification"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
                 android:layout_marginTop="10dp"
+                android:layout_centerVertical="true"
                 android:layout_marginEnd="15dp"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentTop="true"
@@ -76,8 +78,8 @@
                 android:id="@+id/jobscalculate"/>
 
             <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="10dp"
@@ -112,23 +114,26 @@
 
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
+
     <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:tabTextColor="@color/black"
         android:layout_marginTop="2dp"
-        android:padding="10dp"
+        android:paddingTop="10dp"
         app:tabGravity="fill"
-        app:tabMode="fixed"
-        app:tabIndicatorColor="@null"
+        app:tabMinWidth="120dp"
+        app:tabMode="scrollable"
+        app:tabIndicatorColor="@color/Back_color"
         app:tabTextAppearance="@style/CustomTabText"
         app:tabSelectedTextColor="@color/Back_color"
         android:background="@color/white"
         android:id="@+id/endtb"
-        android:layout_below="@id/midtb"></com.google.android.material.tabs.TabLayout>
+        android:layout_below="@id/midtb" />
+
     <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/VPqm"
-        android:layout_below="@id/endtb"></androidx.viewpager.widget.ViewPager>
+        android:layout_below="@id/endtb" />
 </RelativeLayout>

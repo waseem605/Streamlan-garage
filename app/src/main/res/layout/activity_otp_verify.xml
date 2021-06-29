@@ -28,9 +28,8 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true">
 
-
             <View
-                android:layout_width="85dp"
+                android:layout_width="100dp"
                 android:layout_height="4dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginStart="150dp"
@@ -112,9 +111,9 @@
                 android:inputType="number"
                 app:itemCount="4"
                 android:padding="5dp"
-                app:itemHeight="60dp"
+                app:itemHeight="50dp"
                 app:itemRadius="10dp"
-                app:itemWidth="60dp"
+                app:itemWidth="50dp"
                 app:itemSpacing="10dp"
                 app:lineColor="@color/black" />
 
@@ -123,9 +122,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:layout_marginStart="40dp"
-                android:layout_marginEnd="40dp"
-                android:padding="20dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:padding="18dp"
                 android:layout_centerHorizontal="true"
                 android:background="@drawable/rounded"
                 android:text="@string/verify_Number"

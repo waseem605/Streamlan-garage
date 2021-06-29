@@ -62,7 +62,8 @@ public class Earning extends Fragment {
         String[] barChart={"Day View","Week View","Monthly View","Quarter View","Yearly View"};
 
         ArrayList<String> barChartList = new ArrayList<String>(Arrays.asList(barChart));
-        ArrayAdapter<String> stateAdapter = new ArrayAdapter<String>(getActivity(),R.layout.support_simple_spinner_dropdown_item,barChartList);
+        ArrayAdapter<String> stateAdapter = new ArrayAdapter<String>(getActivity(),R.layout.spinner_text,barChartList);
+        stateAdapter.setDropDownViewResource(R.layout.sample_spinner_text);
         mView.setAdapter(stateAdapter);
 
 

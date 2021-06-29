@@ -353,6 +353,7 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <Button
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
@@ -365,23 +366,24 @@
                         android:background="@drawable/rounded"
                         android:text="Amend Quote"
                         android:layout_marginBottom="20dp"
-                        android:padding="20dp"
+                        android:padding="18dp"
                         android:textColor="@color/white"
                         android:textSize="19sp"
                         android:fontFamily="@font/hk_grotesk_semi_bold"
-                        android:textAllCaps="false"></Button>
+                        android:textAllCaps="false" />
                     <View
                         android:id="@+id/view"
                         android:layout_height="1dp"
                         android:layout_width="0dp"
                         android:layout_centerHorizontal="true"
                         />
+
                     <Button
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/delete_btn"
                         android:layout_alignParentRight="true"
-                        android:padding="20dp"
+                        android:padding="18dp"
                         android:layout_marginTop="20dp"
                         android:layout_marginRight="10dp"
                         android:layout_marginStart="10dp"
@@ -394,7 +396,7 @@
                         android:textColor="@color/white"
                         android:textSize="19sp"
                         android:fontFamily="@font/hk_grotesk_semi_bold"
-                        android:textAllCaps="false"></Button>
+                        android:textAllCaps="false" />
 
                 </RelativeLayout>
             </LinearLayout>

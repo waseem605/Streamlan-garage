@@ -335,7 +335,7 @@
                             android:layout_marginStart="30dp"
                             android:layout_marginEnd="30dp"
                             android:layout_marginBottom="20dp"
-                            android:padding="10dp"
+                            android:padding="5dp"
                             android:background="@drawable/white_rounded"
                             android:layout_height="wrap_content">
                             <TextView
@@ -344,6 +344,7 @@
                                 android:id="@+id/aminities"
                                 android:text="@string/select_aminities"
                                 android:textSize="13sp"
+                                android:padding="5dp"
                                 android:textColor="@color/black"
                                 android:fontFamily="@font/hk_grotesk_regular"/>
 
@@ -592,7 +593,7 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/continuebtn"
                         android:gravity="center"
-                        android:padding="20dp"
+                        android:padding="18dp"
                         android:layout_marginTop="20dp"
                         android:layout_marginStart="30dp"
                         android:layout_marginEnd="30dp"

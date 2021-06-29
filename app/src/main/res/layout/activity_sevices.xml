@@ -405,7 +405,7 @@
                 android:background="@drawable/rounded"
                 android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:text="@string/add"
-                android:padding="18dp"
+                android:padding="16dp"
                 android:textAllCaps="true"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
