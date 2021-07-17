@@ -31,7 +31,7 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/tvrange"
+                    android:id="@+id/date_s"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/tvdate"
@@ -43,6 +43,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:id="@+id/calander_icon_s"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_marginStart="30dp"
@@ -62,6 +63,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
+                android:id="@+id/time_RL"
                 android:layout_marginTop="10dp"
                 android:layout_toEndOf="@id/view"
                 android:padding="2dp"
@@ -82,7 +84,7 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/tvtimerange"
+                    android:id="@+id/tvsettime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/tvtime"
@@ -102,6 +104,7 @@
                     android:layout_alignParentEnd="true"/>
                 <ImageView
                     android:layout_width="15dp"
+                    android:id="@+id/bottomclick"
                     android:layout_height="15dp"
                     android:src="@drawable/bottom_click"
                     android:layout_below="@id/top_time_click"

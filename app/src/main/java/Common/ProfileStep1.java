@@ -35,6 +35,7 @@ public class ProfileStep1 extends AppCompatActivity {
        getWindow().setStatusBarColor(getResources().getColor(R.color.silver));
        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         setContentView(R.layout.activity_profile_step1);
+
         mGarageImage = (ImageView)findViewById(R.id.garage_image);
         mBacklink = (ImageView)findViewById(R.id.back_arrow_si);
         mContinue = (RelativeLayout) findViewById(R.id.continuebtn);

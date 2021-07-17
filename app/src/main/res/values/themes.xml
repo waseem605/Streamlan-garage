@@ -25,5 +25,11 @@
 
     <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
     </style>
+    <style name="datepicker" parent="@android:style/Widget.DeviceDefault.DatePicker">
+        <item name="android:focusedMonthDateColor">@android:color/holo_red_dark</item>
+    </style>
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/Back_color</item>
+    </style>
 
 </resources>

@@ -48,7 +48,7 @@
                         android:background="@drawable/circle_button"
                         android:backgroundTint="@color/orange"
                         android:layout_marginLeft="25dp"
-                        android:layout_marginTop="5dp"></Button>
+                        android:layout_marginTop="5dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -101,7 +101,6 @@
                 android:layout_marginTop="20dp"
                 android:layout_alignParentEnd="true"
                 android:fontFamily="@font/hk_grotesk_regular"
-                android:layout_alignParentRight="true"
                 android:background="@drawable/chat_details_white"
                 android:text="yes i am fine "
                 android:textSize="18sp"
